@@ -79,11 +79,11 @@ ms.service: multiple
 ## 5-Minute Quickstarts
 Learn how to build Java apps with Azure services.
 <ul class="noBullet">
-   <li><a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-java">Deploy a Java webapp</a></li>
-   <li><a href="https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-java">Connect to Azure SQL Database</a></li>
+   <li><a href="/azure/app-service-web/app-service-web-get-started-java">Deploy a Java webapp</a></li>
+   <li><a href="/azure/sql-database/sql-database-connect-query-java">Connect to Azure SQL Database</a></li>
    <li><a href="/azure/mysql/connect-java">Connect to Azure Database for MySQL</a></li>
    <li><a href="/azure/postgresql/connect-java">Connect to Azure Database for PostgreSQL</a></li>
-   <li><a href="https://docs.microsoft.com/azure/cosmos-db/create-documentdb-java">Build a NoSQL app with CosmosDB</a></li>
+   <li><a href="/azure/cosmos-db/create-documentdb-java">Build a NoSQL app with Cosmos DB</a></li>
 </ul>
 
 ## Management APIs
