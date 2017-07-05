@@ -19,14 +19,10 @@ ms.service: sql-database
 
 Azure SQL Database is a relational database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data. 
 
-- [Client JDBC driver](https://docs.microsoft.com/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server)
-- [Management API](https://docs.microsoft.com/java/api/overview/azure/sql/managementapi)
+## Client JDBC driver
 
-## Import the libraries
+[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the [SQL database JDBC driver](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server) in your project.
 
-[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven project's `pom.xml` file to use the libraries in your own project.
-
-### JDBC driver
 
 ```XML
 <dependency>
@@ -36,7 +32,20 @@ Azure SQL Database is a relational database service using the Microsoft SQL Serv
 </dependency>
 ```   
 
-### Management API
+### Example
+
+Use a JDBC connection string to connect to SQL database and select all records in a table.
+
+```java
+Connection conn = DriverManager.getConnection(connectionString);
+Statement statement = conn.createStatement();
+ResultSet resultSet = statement.executeQuery("SELECT * FROM SALES");
+```
+
+## Management API
+
+Create and manage Azure SQL Database instances in your subscription with the management API. [Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.
+
 
 ```XML
 <dependency>
@@ -46,17 +55,9 @@ Azure SQL Database is a relational database service using the Microsoft SQL Serv
 </dependency>
 ```
 
-## Examples
+### Example
 
-Use a JDBC connection string to connect to SQL database and select all records in the sales table.
-
-```java
-Connection conn = DriverManager.getConnection(connectionString);
-Statement statement = conn.createStatement();
-ResultSet resultSet = statement.executeQuery("SELECT * FROM SALES");
-```
-
-Create a SQL Database service instance and restrict access to a range of IP addresses using a firewall rule uisng the management API.
+Create a SQL Database service instance and restrict access to a range of IP addresses using a firewall rule with the management API.
 
 ```java
 SqlServer sqlServer = azure.sqlServers().define(sqlServerName)
@@ -72,4 +73,4 @@ SqlServer sqlServer = azure.sqlServers().define(sqlServerName)
 
 [!INCLUDE [java-sql-samples](../docs-ref-conceptual/includes/sql.md)]
 
-View the [complete list]((https://azure.microsoft.com/en-us/resources/samples/?platform=java&term=SQL)) of SQL database samplessa.
+View the [complete list]((https://azure.microsoft.com/resources/samples/?platform=java&term=SQL)) of Azure SQL database samples.
