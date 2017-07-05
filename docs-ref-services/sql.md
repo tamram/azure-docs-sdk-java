@@ -17,11 +17,13 @@ ms.service: sql-database
 
 ## Overview
 
-Azure SQL Database is a relational database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data. 
+[Azure SQL Database](/azure/sql-database/sql-database-technical-overview) is a relational database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data. 
 
 ## Client JDBC driver
 
-[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the [SQL database JDBC driver](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server) in your project.
+Connect to Azure SQL Database from your applications using the [SQL Database JDBC driver](/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server). You can use the [Java JDBC API](https://docs.oracle.com/javase/8/docs/technotes/guides/jdbc/) to directly work with the database or use frameworks built on top of JBDC such as Hibernate, Spring Data, and jOOQ.
+
+[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the JDBC driver in your project.
 
 
 ```XML
@@ -34,7 +36,7 @@ Azure SQL Database is a relational database service using the Microsoft SQL Serv
 
 ### Example
 
-Use a JDBC connection string to connect to SQL database and select all records in a table.
+Use a JDBC to connect to SQL database and select all records in a table.
 
 ```java
 Connection conn = DriverManager.getConnection(connectionString);
@@ -44,7 +46,9 @@ ResultSet resultSet = statement.executeQuery("SELECT * FROM SALES");
 
 ## Management API
 
-Create and manage Azure SQL Database instances in your subscription with the management API. [Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.
+Create and manage Azure SQL Database resources in your subscription with the management API.   
+
+[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven `pom.xml` file to use the management API in your project.
 
 
 ```XML
@@ -57,7 +61,7 @@ Create and manage Azure SQL Database instances in your subscription with the man
 
 ### Example
 
-Create a SQL Database service instance and restrict access to a range of IP addresses using a firewall rule with the management API.
+Create a SQL Database resource and restrict access to a range of IP addresses using a firewall rule with the management API.
 
 ```java
 SqlServer sqlServer = azure.sqlServers().define(sqlServerName)
