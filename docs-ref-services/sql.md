@@ -77,4 +77,4 @@ SqlServer sqlServer = azure.sqlServers().define(sqlServerName)
 
 [!INCLUDE [java-sql-samples](../docs-ref-conceptual/includes/sql.md)]
 
-View the [complete list](https://azure.microsoft.com/resources/samples/?platform=java&term=SQL)) of Azure SQL database samples.
+View the [complete list](https://azure.microsoft.com/resources/samples/?platform=java&term=SQL) of Azure SQL database samples.
