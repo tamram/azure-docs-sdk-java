@@ -1,32 +1,30 @@
 ---
 title: Azure SQL Database libraries for Java
-description: 
+description: Connect to Azure SQL database using the JDBC driver or mangement Azure SQL database instances with the management API.
 keywords: Azure, Java, SDK, API, SQL, database , JDBC
 author: rloutlaw
 ms.author: routlaw
 manager: douge
-ms.date: 05/17/2017
-ms.topic: article
+ms.date: 07/05/2017
+ms.topic: reference
 ms.prod: azure
 ms.technology: azure
 ms.devlang: java
-ms.service: appservice
+ms.service: sql-database
 ---
 
 # Azure SQL Database libraries for Java
 
 ## Overview
 
-Work with data stored in  [Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-technical-overview)  from Java with the Azure SQL database JDBC driver. The driver can be used to issue SQL queries directly from your code through JDBC or through data access frameworks like [Spring Data JPA](http://projects.spring.io/spring-data-jpa/) and [Hibernate](http://hibernate.org/orm/).
+Azure SQL Database is a relational database service using the Microsoft SQL Server engine that supports relational, JSON, spatial, and XML data. 
 
-The management libraries provide an interface to create, manage, and scale Azure SQL Database deployments from your Java code. Set up and manage databases in [elastic pools](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-elastic-pool) to share resources and configure databases across multiple regions from your code.
-
-- [Client library](https://docs.microsoft.com/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server)
+- [Client JDBC driver](https://docs.microsoft.com/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server)
 - [Management API](https://docs.microsoft.com/java/api/overview/azure/sql/managementapi)
 
 ## Import the libraries
 
-Add a dependency to your Maven project's `pom.xml` file to use the libraries in your own project.
+[Add a dependency](https://maven.apache.org/guides/getting-started/index.html#How_do_I_use_external_dependencies) to your Maven project's `pom.xml` file to use the libraries in your own project.
 
 ### JDBC driver
 
@@ -38,7 +36,7 @@ Add a dependency to your Maven project's `pom.xml` file to use the libraries in 
 </dependency>
 ```   
 
-### Management
+### Management API
 
 ```XML
 <dependency>
@@ -48,24 +46,30 @@ Add a dependency to your Maven project's `pom.xml` file to use the libraries in 
 </dependency>
 ```
 
-## Example
+## Examples
 
-Connect to a Azure SQL database and select all records in the sales table.
+Use a JDBC connection string to connect to SQL database and select all records in the sales table.
 
 ```java
+Connection conn = DriverManager.getConnection(connectionString);
+Statement statement = conn.createStatement();
+ResultSet resultSet = statement.executeQuery("SELECT * FROM SALES");
+```
 
-String url = String.format("jdbc:sqlserver://%s.database.windows.net:1433;database=%s;user=%s;password=%s;encrypt=true;hostNameInCertificate=*.database.windows.net;loginTimeout=30;", hostName, dbName, user, password);
-Connection connection = null;
-try {
-    connection = DriverManager.getConnection(url);
-    String selectSql = "SELECT * FROM SALES";
-    Statement statement = connection.createStatement();
-    ResultSet resultSet = statement.executeQuery(selectSql);
-}
+Create a SQL Database service instance and restrict access to a range of IP addresses using a firewall rule uisng the management API.
+
+```java
+SqlServer sqlServer = azure.sqlServers().define(sqlServerName)
+                    .withRegion(Region.US_EAST)
+                    .withNewResourceGroup(rgName)
+                    .withAdministratorLogin(administratorLogin)
+                    .withAdministratorPassword(administratorPassword)
+                    .withNewFirewallRule(startIPAddress, endIPAddress)
+                    .create();
 ```
 
 ## Samples
 
-[!INCLUDE [java-sql-samples](../docs-ref-conceptual/includes/java-sql-samples.md)]
+[!INCLUDE [java-sql-samples](../docs-ref-conceptual/includes/sql.md)]
 
-Explore more [sample Java code](https://azure.microsoft.com/resources/samples/?platform=java) you can use in your apps.
+View the [complete list]((https://azure.microsoft.com/en-us/resources/samples/?platform=java&term=SQL)) of SQL database samplessa.
