@@ -36,7 +36,7 @@ Connect to Azure SQL Database from your applications using the [SQL Database JDB
 
 ### Example
 
-Use a JDBC to connect to SQL database and select all records in a table.
+Connect to SQL database and select all records in a table using JDBC.
 
 ```java
 Connection conn = DriverManager.getConnection(connectionString);
