@@ -61,7 +61,7 @@ Create and manage Azure SQL Database resources in your subscription with the man
 
 ### Example
 
-Create a SQL Database resource and restrict access to a range of IP addresses using a firewall rule with the management API.
+Create a SQL Database resource and restrict access to a range of IP addresses using a firewall rule.
 
 ```java
 SqlServer sqlServer = azure.sqlServers().define(sqlServerName)
@@ -77,4 +77,4 @@ SqlServer sqlServer = azure.sqlServers().define(sqlServerName)
 
 [!INCLUDE [java-sql-samples](../docs-ref-conceptual/includes/sql.md)]
 
-View the [complete list]((https://azure.microsoft.com/resources/samples/?platform=java&term=SQL)) of Azure SQL database samples.
+View the [complete list](https://azure.microsoft.com/resources/samples/?platform=java&term=SQL)) of Azure SQL database samples.
