@@ -42,7 +42,7 @@ items:
   - java
   name: AmqpLinkDetachForced
   nameWithType: AmqpErrorCode.AmqpLinkDetachForced
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.AmqpLinkDetachForced
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.AmqpLinkDetachForced
   type: Field
   source:
     remote: *o0
@@ -61,7 +61,7 @@ items:
   - java
   name: ConnectionForced
   nameWithType: AmqpErrorCode.ConnectionForced
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.ConnectionForced
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.ConnectionForced
   type: Field
   source:
     remote: *o0
@@ -80,7 +80,7 @@ items:
   - java
   name: IllegalState
   nameWithType: AmqpErrorCode.IllegalState
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.IllegalState
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.IllegalState
   type: Field
   source:
     remote: *o0
@@ -99,7 +99,7 @@ items:
   - java
   name: InternalError
   nameWithType: AmqpErrorCode.InternalError
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.InternalError
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.InternalError
   type: Field
   source:
     remote: *o0
@@ -118,7 +118,7 @@ items:
   - java
   name: NotAllowed
   nameWithType: AmqpErrorCode.NotAllowed
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.NotAllowed
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.NotAllowed
   type: Field
   source:
     remote: *o0
@@ -137,7 +137,7 @@ items:
   - java
   name: NotFound
   nameWithType: AmqpErrorCode.NotFound
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.NotFound
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.NotFound
   type: Field
   source:
     remote: *o0
@@ -156,7 +156,7 @@ items:
   - java
   name: NotImplemented
   nameWithType: AmqpErrorCode.NotImplemented
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.NotImplemented
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.NotImplemented
   type: Field
   source:
     remote: *o0
@@ -175,7 +175,7 @@ items:
   - java
   name: PayloadSizeExceeded
   nameWithType: AmqpErrorCode.PayloadSizeExceeded
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.PayloadSizeExceeded
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.PayloadSizeExceeded
   type: Field
   source:
     remote: *o0
@@ -194,7 +194,7 @@ items:
   - java
   name: ResourceLimitExceeded
   nameWithType: AmqpErrorCode.ResourceLimitExceeded
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.ResourceLimitExceeded
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.ResourceLimitExceeded
   type: Field
   source:
     remote: *o0
@@ -213,7 +213,7 @@ items:
   - java
   name: Stolen
   nameWithType: AmqpErrorCode.Stolen
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.Stolen
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.Stolen
   type: Field
   source:
     remote: *o0
@@ -232,7 +232,7 @@ items:
   - java
   name: UnauthorizedAccess
   nameWithType: AmqpErrorCode.UnauthorizedAccess
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.UnauthorizedAccess
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpErrorCode.UnauthorizedAccess
   type: Field
   source:
     remote: *o0

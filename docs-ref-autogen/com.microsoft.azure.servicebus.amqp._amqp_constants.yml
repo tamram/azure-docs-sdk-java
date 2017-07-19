@@ -20,11 +20,13 @@ items:
   - com.microsoft.azure.servicebus.amqp._amqp_constants.AMQP_PROPERTY_TO()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.AMQP_PROPERTY_USER_ID()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.APACHE()
+  - com.microsoft.azure.servicebus.amqp._amqp_constants.CBS_NODE_ADDRESS_SEGMENT()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.ENABLE_RECEIVER_RUNTIME_METRIC_NAME()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.ENQUEUED_TIME_UTC()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.ENQUEUED_TIME_UTC_ANNOTATION_NAME()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.EPOCH()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.FRAMEWORK()
+  - com.microsoft.azure.servicebus.amqp._amqp_constants.MANAGEMENT_NODE_ADDRESS_SEGMENT()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.MAX_FRAME_SIZE()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.OFFSET()
   - com.microsoft.azure.servicebus.amqp._amqp_constants.OFFSET_ANNOTATION_NAME()
@@ -86,7 +88,7 @@ items:
   - java
   name: AMQP_BATCH_MESSAGE_FORMAT
   nameWithType: AmqpConstants.AMQP_BATCH_MESSAGE_FORMAT
-  fullName: final int com.microsoft.azure.servicebus.amqp.AmqpConstants.AMQP_BATCH_MESSAGE_FORMAT
+  fullName: static final int com.microsoft.azure.servicebus.amqp.AmqpConstants.AMQP_BATCH_MESSAGE_FORMAT
   type: Field
   source:
     remote: *o0
@@ -352,7 +354,7 @@ items:
   - java
   name: APACHE
   nameWithType: AmqpConstants.APACHE
-  fullName: final String com.microsoft.azure.servicebus.amqp.AmqpConstants.APACHE
+  fullName: static final String com.microsoft.azure.servicebus.amqp.AmqpConstants.APACHE
   type: Field
   source:
     remote: *o0
@@ -361,6 +363,28 @@ items:
   package: com.microsoft.azure.servicebus.amqp
   syntax:
     content: public static final String APACHE= "apache.org"
+    return:
+      type: 3d93591e
+- uid: com.microsoft.azure.servicebus.amqp._amqp_constants.CBS_NODE_ADDRESS_SEGMENT()
+  id: CBS_NODE_ADDRESS_SEGMENT()
+  parent: com.microsoft.azure.servicebus.amqp._amqp_constants
+  href: com.microsoft.azure.servicebus.amqp._amqp_constants.yml
+  langs:
+  - java
+  name: CBS_NODE_ADDRESS_SEGMENT
+  nameWithType: AmqpConstants.CBS_NODE_ADDRESS_SEGMENT
+  fullName: final String com.microsoft.azure.servicebus.amqp.AmqpConstants.CBS_NODE_ADDRESS_SEGMENT
+  type: Field
+  source:
+    remote: &o1
+      path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/amqp/AmqpConstants.java
+      branch: master
+      repo: https://github.com/Azure/azure-service-bus-java
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/amqp/AmqpConstants.java
+    startLine: 23
+  package: com.microsoft.azure.servicebus.amqp
+  syntax:
+    content: public static final String CBS_NODE_ADDRESS_SEGMENT= "$cbs"
     return:
       type: 3d93591e
 - uid: com.microsoft.azure.servicebus.amqp._amqp_constants.ENABLE_RECEIVER_RUNTIME_METRIC_NAME()
@@ -428,7 +452,7 @@ items:
   - java
   name: EPOCH
   nameWithType: AmqpConstants.EPOCH
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.EPOCH
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.EPOCH
   type: Field
   source:
     remote: *o0
@@ -458,6 +482,25 @@ items:
     content: public static final Symbol FRAMEWORK= Symbol.valueOf("framework")
     return:
       type: 306cf83b
+- uid: com.microsoft.azure.servicebus.amqp._amqp_constants.MANAGEMENT_NODE_ADDRESS_SEGMENT()
+  id: MANAGEMENT_NODE_ADDRESS_SEGMENT()
+  parent: com.microsoft.azure.servicebus.amqp._amqp_constants
+  href: com.microsoft.azure.servicebus.amqp._amqp_constants.yml
+  langs:
+  - java
+  name: MANAGEMENT_NODE_ADDRESS_SEGMENT
+  nameWithType: AmqpConstants.MANAGEMENT_NODE_ADDRESS_SEGMENT
+  fullName: final String com.microsoft.azure.servicebus.amqp.AmqpConstants.MANAGEMENT_NODE_ADDRESS_SEGMENT
+  type: Field
+  source:
+    remote: *o1
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/amqp/AmqpConstants.java
+    startLine: 22
+  package: com.microsoft.azure.servicebus.amqp
+  syntax:
+    content: public static final String MANAGEMENT_NODE_ADDRESS_SEGMENT= "$management"
+    return:
+      type: 3d93591e
 - uid: com.microsoft.azure.servicebus.amqp._amqp_constants.MAX_FRAME_SIZE()
   id: MAX_FRAME_SIZE()
   parent: com.microsoft.azure.servicebus.amqp._amqp_constants
@@ -466,7 +509,7 @@ items:
   - java
   name: MAX_FRAME_SIZE
   nameWithType: AmqpConstants.MAX_FRAME_SIZE
-  fullName: final int com.microsoft.azure.servicebus.amqp.AmqpConstants.MAX_FRAME_SIZE
+  fullName: static final int com.microsoft.azure.servicebus.amqp.AmqpConstants.MAX_FRAME_SIZE
   type: Field
   source:
     remote: *o0
@@ -561,7 +604,7 @@ items:
   - java
   name: PLATFORM
   nameWithType: AmqpConstants.PLATFORM
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.PLATFORM
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.PLATFORM
   type: Field
   source:
     remote: *o0
@@ -580,7 +623,7 @@ items:
   - java
   name: PRODUCT
   nameWithType: AmqpConstants.PRODUCT
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.PRODUCT
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.PRODUCT
   type: Field
   source:
     remote: *o0
@@ -709,7 +752,7 @@ items:
   - java
   name: STRING_FILTER
   nameWithType: AmqpConstants.STRING_FILTER
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.STRING_FILTER
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.STRING_FILTER
   type: Field
   source:
     remote: *o0
@@ -728,7 +771,7 @@ items:
   - java
   name: VENDOR
   nameWithType: AmqpConstants.VENDOR
-  fullName: final String com.microsoft.azure.servicebus.amqp.AmqpConstants.VENDOR
+  fullName: static final String com.microsoft.azure.servicebus.amqp.AmqpConstants.VENDOR
   type: Field
   source:
     remote: *o0
@@ -747,7 +790,7 @@ items:
   - java
   name: VERSION
   nameWithType: AmqpConstants.VERSION
-  fullName: final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.VERSION
+  fullName: static final Symbol com.microsoft.azure.servicebus.amqp.AmqpConstants.VERSION
   type: Field
   source:
     remote: *o0

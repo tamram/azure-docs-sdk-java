@@ -4,8 +4,11 @@ items:
   id: _message_sender
   parent: com.microsoft.azure.servicebus
   children:
+  - com.microsoft.azure.servicebus._message_sender.cancelScheduledMessage(long)
+  - com.microsoft.azure.servicebus._message_sender.cancelScheduledMessageAsync(long)
   - com.microsoft.azure.servicebus._message_sender.create(final MessagingFactory,final String,final String)
   - com.microsoft.azure.servicebus._message_sender.getContext()
+  - com.microsoft.azure.servicebus._message_sender.getEntityPath()
   - com.microsoft.azure.servicebus._message_sender.getLastKnownError()
   - com.microsoft.azure.servicebus._message_sender.getSendPath()
   - com.microsoft.azure.servicebus._message_sender.onClose()
@@ -14,8 +17,14 @@ items:
   - com.microsoft.azure.servicebus._message_sender.onFlow(final int)
   - com.microsoft.azure.servicebus._message_sender.onOpenComplete(Exception)
   - com.microsoft.azure.servicebus._message_sender.onSendComplete(final Delivery)
+  - com.microsoft.azure.servicebus._message_sender.scheduleMessage(IMessage,Instant)
+  - com.microsoft.azure.servicebus._message_sender.scheduleMessageAsync(IMessage,Instant)
   - com.microsoft.azure.servicebus._message_sender.send(final Iterable<Message>)
+  - com.microsoft.azure.servicebus._message_sender.send(IMessage)
   - com.microsoft.azure.servicebus._message_sender.send(Message)
+  - com.microsoft.azure.servicebus._message_sender.sendAsync(IMessage)
+  - com.microsoft.azure.servicebus._message_sender.sendBatch(Collection<? extends IMessage>)
+  - com.microsoft.azure.servicebus._message_sender.sendBatchAsync(Collection<? extends IMessage>)
   href: com.microsoft.azure.servicebus._message_sender.yml
   langs:
   - java
@@ -24,7 +33,7 @@ items:
   fullName: com.microsoft.azure.servicebus.MessageSender
   type: Class
   source:
-    remote: &o0
+    remote: &o1
       path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
       branch: master
       repo: https://github.com/Azure/azure-event-hubs-java
@@ -32,18 +41,71 @@ items:
     startLine: 59
   package: com.microsoft.azure.servicebus
   summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
-  syntax: &o1
-    content: public class MessageSender extends ClientEntity implements IAmqpSender
+  syntax: &o2
+    content: public class MessageSender extends ClientEntity implements IMessageSender,IAmqpSender
   inheritance:
   - java.lang.Object
   - com.microsoft.azure.servicebus._client_entity
+  - com.microsoft.azure.servicebus.InitializableEntity
   inheritedMembers:
   - com.microsoft.azure.servicebus._client_entity.ClientEntity(final String,final ClientEntity)
   - com.microsoft.azure.servicebus._client_entity.close()
+  - com.microsoft.azure.servicebus._i_closeable.close()
+  - com.microsoft.azure.servicebus._i_closeable.closeAsync()
   - com.microsoft.azure.servicebus._client_entity.closeSync()
   - com.microsoft.azure.servicebus._client_entity.getClientId()
+  - com.microsoft.azure.servicebus._initializable_entity.InitializableEntity(String,ClientEntity)
   - com.microsoft.azure.servicebus._client_entity.setClosed()
   - com.microsoft.azure.servicebus._client_entity.throwIfClosed()
+- uid: com.microsoft.azure.servicebus._message_sender.cancelScheduledMessage(long)
+  id: cancelScheduledMessage(long)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: cancelScheduledMessage(long sequenceNumber)
+  nameWithType: MessageSender.cancelScheduledMessage(long sequenceNumber)
+  fullName: void com.microsoft.azure.servicebus.MessageSender.cancelScheduledMessage(long sequenceNumber)
+  overload: com.microsoft.azure.servicebus._message_sender.cancelScheduledMessage*
+  type: Method
+  source:
+    remote: &o0
+      path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+      branch: master
+      repo: https://github.com/Azure/azure-service-bus-java
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 159
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public void cancelScheduledMessage(long sequenceNumber)
+    parameters:
+    - id: sequenceNumber
+      type: 0364520f
+  overridden: com.microsoft.azure.servicebus._i_message_sender.cancelScheduledMessage(long)
+- uid: com.microsoft.azure.servicebus._message_sender.cancelScheduledMessageAsync(long)
+  id: cancelScheduledMessageAsync(long)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: cancelScheduledMessageAsync(long sequenceNumber)
+  nameWithType: MessageSender.cancelScheduledMessageAsync(long sequenceNumber)
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSender.cancelScheduledMessageAsync(long sequenceNumber)
+  overload: com.microsoft.azure.servicebus._message_sender.cancelScheduledMessageAsync*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 148
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public CompletableFuture<Void> cancelScheduledMessageAsync(long sequenceNumber)
+    parameters:
+    - id: sequenceNumber
+      type: 0364520f
+    return:
+      type: db03ee24
+  overridden: com.microsoft.azure.servicebus._i_message_sender.cancelScheduledMessageAsync(long)
 - uid: com.microsoft.azure.servicebus._message_sender.create(final MessagingFactory,final String,final String)
   id: create(final MessagingFactory,final String,final String)
   parent: com.microsoft.azure.servicebus._message_sender
@@ -56,7 +118,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.create*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 86
   package: com.microsoft.azure.servicebus
@@ -83,7 +145,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.getContext*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 629
   package: com.microsoft.azure.servicebus
@@ -91,6 +153,27 @@ items:
     content: public ErrorContext getContext()
     return:
       type: com.microsoft.azure.servicebus._error_context
+- uid: com.microsoft.azure.servicebus._message_sender.getEntityPath()
+  id: getEntityPath()
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: getEntityPath()
+  nameWithType: MessageSender.getEntityPath()
+  fullName: String com.microsoft.azure.servicebus.MessageSender.getEntityPath()
+  overload: com.microsoft.azure.servicebus._message_sender.getEntityPath*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 136
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public String getEntityPath()
+    return:
+      type: "26831127"
+  overridden: com.microsoft.azure.servicebus._i_message_entity.getEntityPath()
 - uid: com.microsoft.azure.servicebus._message_sender.getLastKnownError()
   id: getLastKnownError()
   parent: com.microsoft.azure.servicebus._message_sender
@@ -103,7 +186,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.getLastKnownError*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 839
   package: com.microsoft.azure.servicebus
@@ -123,7 +206,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.getSendPath*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 178
   package: com.microsoft.azure.servicebus
@@ -143,7 +226,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.onClose*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 811
   package: com.microsoft.azure.servicebus
@@ -163,7 +246,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.onClose*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 358
   package: com.microsoft.azure.servicebus
@@ -185,7 +268,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.onError*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 364
   package: com.microsoft.azure.servicebus
@@ -207,7 +290,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.onFlow*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 649
   package: com.microsoft.azure.servicebus
@@ -229,7 +312,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.onOpenComplete*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 305
   package: com.microsoft.azure.servicebus
@@ -252,7 +335,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.onSendComplete*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 438
   package: com.microsoft.azure.servicebus
@@ -262,6 +345,58 @@ items:
     - id: delivery
       type: e00ff619
   overridden: com.microsoft.azure.servicebus.amqp._i_amqp_sender.onSendComplete(final Delivery)
+- uid: com.microsoft.azure.servicebus._message_sender.scheduleMessage(IMessage,Instant)
+  id: scheduleMessage(IMessage,Instant)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+  nameWithType: MessageSender.scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+  fullName: long com.microsoft.azure.servicebus.MessageSender.scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+  overload: com.microsoft.azure.servicebus._message_sender.scheduleMessage*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 153
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public long scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+    - id: scheduledEnqueueTimeUtc
+      type: 328f8254
+    return:
+      type: 0364520f
+  overridden: com.microsoft.azure.servicebus._i_message_sender.scheduleMessage(IMessage,Instant)
+- uid: com.microsoft.azure.servicebus._message_sender.scheduleMessageAsync(IMessage,Instant)
+  id: scheduleMessageAsync(IMessage,Instant)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+  nameWithType: MessageSender.scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+  fullName: CompletableFuture<Long> com.microsoft.azure.servicebus.MessageSender.scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+  overload: com.microsoft.azure.servicebus._message_sender.scheduleMessageAsync*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 141
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public CompletableFuture<Long> scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+    - id: scheduledEnqueueTimeUtc
+      type: 328f8254
+    return:
+      type: 30822cb1
+  overridden: com.microsoft.azure.servicebus._i_message_sender.scheduleMessageAsync(IMessage,Instant)
 - uid: com.microsoft.azure.servicebus._message_sender.send(final Iterable<Message>)
   id: send(final Iterable<Message>)
   parent: com.microsoft.azure.servicebus._message_sender
@@ -274,7 +409,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.send*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 244
   package: com.microsoft.azure.servicebus
@@ -282,9 +417,31 @@ items:
     content: public CompletableFuture<Void> send(final Iterable<Message> messages)
     parameters:
     - id: messages
-      type: 0765df6a
+      type: f42d2527com.microsoft.azure.servicebus._messagea08ddfce
     return:
       type: db03ee24
+- uid: com.microsoft.azure.servicebus._message_sender.send(IMessage)
+  id: send(IMessage)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: send(IMessage message)
+  nameWithType: MessageSender.send(IMessage message)
+  fullName: void com.microsoft.azure.servicebus.MessageSender.send(IMessage message)
+  overload: com.microsoft.azure.servicebus._message_sender.send*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 87
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public void send(IMessage message)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+  overridden: com.microsoft.azure.servicebus._i_message_sender.send(IMessage)
 - uid: com.microsoft.azure.servicebus._message_sender.send(Message)
   id: send(Message)
   parent: com.microsoft.azure.servicebus._message_sender
@@ -297,7 +454,7 @@ items:
   overload: com.microsoft.azure.servicebus._message_sender.send*
   type: Method
   source:
-    remote: *o0
+    remote: *o1
     path: azure-eventhubs/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
     startLine: 287
   package: com.microsoft.azure.servicebus
@@ -305,9 +462,79 @@ items:
     content: public CompletableFuture<Void> send(Message msg)
     parameters:
     - id: msg
-      type: e78f2a4c
+      type: com.microsoft.azure.servicebus._message
     return:
       type: db03ee24
+- uid: com.microsoft.azure.servicebus._message_sender.sendAsync(IMessage)
+  id: sendAsync(IMessage)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: sendAsync(IMessage message)
+  nameWithType: MessageSender.sendAsync(IMessage message)
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSender.sendAsync(IMessage message)
+  overload: com.microsoft.azure.servicebus._message_sender.sendAsync*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 97
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public CompletableFuture<Void> sendAsync(IMessage message)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+    return:
+      type: db03ee24
+  overridden: com.microsoft.azure.servicebus._i_message_sender.sendAsync(IMessage)
+- uid: com.microsoft.azure.servicebus._message_sender.sendBatch(Collection<? extends IMessage>)
+  id: sendBatch(Collection<? extends IMessage>)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: sendBatch(Collection<? extends IMessage> message)
+  nameWithType: MessageSender.sendBatch(Collection<? extends IMessage> message)
+  fullName: void com.microsoft.azure.servicebus.MessageSender.sendBatch(Collection<? extends IMessage> message)
+  overload: com.microsoft.azure.servicebus._message_sender.sendBatch*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 92
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public void sendBatch(Collection<? extends IMessage> message)
+    parameters:
+    - id: message
+      type: d56263b8com.microsoft.azure.servicebus._i_messagea08ddfce
+  overridden: com.microsoft.azure.servicebus._i_message_sender.sendBatch(Collection<? extends IMessage>)
+- uid: com.microsoft.azure.servicebus._message_sender.sendBatchAsync(Collection<? extends IMessage>)
+  id: sendBatchAsync(Collection<? extends IMessage>)
+  parent: com.microsoft.azure.servicebus._message_sender
+  href: com.microsoft.azure.servicebus._message_sender.yml
+  langs:
+  - java
+  name: sendBatchAsync(Collection<? extends IMessage> messages)
+  nameWithType: MessageSender.sendBatchAsync(Collection<? extends IMessage> messages)
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSender.sendBatchAsync(Collection<? extends IMessage> messages)
+  overload: com.microsoft.azure.servicebus._message_sender.sendBatchAsync*
+  type: Method
+  source:
+    remote: *o0
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSender.java
+    startLine: 103
+  package: com.microsoft.azure.servicebus
+  syntax:
+    content: public CompletableFuture<Void> sendBatchAsync(Collection<? extends IMessage> messages)
+    parameters:
+    - id: messages
+      type: d56263b8com.microsoft.azure.servicebus._i_messagea08ddfce
+    return:
+      type: db03ee24
+  overridden: com.microsoft.azure.servicebus._i_message_sender.sendBatchAsync(Collection<? extends IMessage>)
 references:
 - uid: 93de0ef9com.microsoft.azure.servicebus._messaging_factory
   spec.java:
@@ -345,10 +572,16 @@ references:
   nameWithType: MessageSender.getSendPath
   fullName: String com.microsoft.azure.servicebus.MessageSender.getSendPath
   package: com.microsoft.azure.servicebus
-- uid: 0765df6a
+- uid: f42d2527com.microsoft.azure.servicebus._messagea08ddfce
   spec.java:
-  - name: final Iterable<Message>
-    fullName: final Iterable<Message>
+  - name: final Iterable<
+    fullName: final Iterable<
+  - uid: com.microsoft.azure.servicebus._message
+    name: Message
+    fullName: com.microsoft.azure.servicebus.Message
+    href: com.microsoft.azure.servicebus._message.yml
+  - name: '>'
+    fullName: '>'
 - uid: db03ee24
   spec.java:
   - name: CompletableFuture<Void>
@@ -358,10 +591,6 @@ references:
   nameWithType: MessageSender.send
   fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSender.send
   package: com.microsoft.azure.servicebus
-- uid: e78f2a4c
-  spec.java:
-  - name: Message
-    fullName: Message
 - uid: 8a99d4b0
   spec.java:
   - name: Exception
@@ -412,6 +641,68 @@ references:
   nameWithType: MessageSender.onFlow
   fullName: void com.microsoft.azure.servicebus.MessageSender.onFlow
   package: com.microsoft.azure.servicebus
+- uid: d56263b8com.microsoft.azure.servicebus._i_messagea08ddfce
+  spec.java:
+  - name: 'Collection<? extends '
+    fullName: 'Collection<? extends '
+  - uid: com.microsoft.azure.servicebus._i_message
+    name: IMessage
+    fullName: com.microsoft.azure.servicebus.IMessage
+    href: com.microsoft.azure.servicebus._i_message.yml
+  - name: '>'
+    fullName: '>'
+- uid: com.microsoft.azure.servicebus._message_sender.sendBatch*
+  name: sendBatch
+  nameWithType: MessageSender.sendBatch
+  fullName: void com.microsoft.azure.servicebus.MessageSender.sendBatch
+  package: com.microsoft.azure.servicebus
+- uid: com.microsoft.azure.servicebus._message_sender.sendAsync*
+  name: sendAsync
+  nameWithType: MessageSender.sendAsync
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSender.sendAsync
+  package: com.microsoft.azure.servicebus
+- uid: com.microsoft.azure.servicebus._message_sender.sendBatchAsync*
+  name: sendBatchAsync
+  nameWithType: MessageSender.sendBatchAsync
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSender.sendBatchAsync
+  package: com.microsoft.azure.servicebus
+- uid: com.microsoft.azure.servicebus._message_sender.getEntityPath*
+  name: getEntityPath
+  nameWithType: MessageSender.getEntityPath
+  fullName: String com.microsoft.azure.servicebus.MessageSender.getEntityPath
+  package: com.microsoft.azure.servicebus
+- uid: 328f8254
+  spec.java:
+  - name: Instant
+    fullName: Instant
+- uid: 30822cb1
+  spec.java:
+  - name: CompletableFuture<Long>
+    fullName: CompletableFuture<Long>
+- uid: com.microsoft.azure.servicebus._message_sender.scheduleMessageAsync*
+  name: scheduleMessageAsync
+  nameWithType: MessageSender.scheduleMessageAsync
+  fullName: CompletableFuture<Long> com.microsoft.azure.servicebus.MessageSender.scheduleMessageAsync
+  package: com.microsoft.azure.servicebus
+- uid: 0364520f
+  spec.java:
+  - name: long
+    fullName: long
+- uid: com.microsoft.azure.servicebus._message_sender.cancelScheduledMessageAsync*
+  name: cancelScheduledMessageAsync
+  nameWithType: MessageSender.cancelScheduledMessageAsync
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSender.cancelScheduledMessageAsync
+  package: com.microsoft.azure.servicebus
+- uid: com.microsoft.azure.servicebus._message_sender.scheduleMessage*
+  name: scheduleMessage
+  nameWithType: MessageSender.scheduleMessage
+  fullName: long com.microsoft.azure.servicebus.MessageSender.scheduleMessage
+  package: com.microsoft.azure.servicebus
+- uid: com.microsoft.azure.servicebus._message_sender.cancelScheduledMessage*
+  name: cancelScheduledMessage
+  nameWithType: MessageSender.cancelScheduledMessage
+  fullName: void com.microsoft.azure.servicebus.MessageSender.cancelScheduledMessage
+  package: com.microsoft.azure.servicebus
 - uid: com.microsoft.azure.servicebus._message_sender.getLastKnownError*
   name: getLastKnownError
   nameWithType: MessageSender.getLastKnownError
@@ -442,6 +733,26 @@ references:
     content: public final CompletableFuture<Void> close()
     return:
       type: fc984e6f
+- uid: com.microsoft.azure.servicebus._i_closeable.close()
+  parent: com.microsoft.azure.servicebus._i_closeable
+  href: com.microsoft.azure.servicebus._i_closeable.yml
+  name: close()
+  nameWithType: ICloseable.close()
+  fullName: void com.microsoft.azure.servicebus.ICloseable.close()
+  type: Method
+  syntax:
+    content: public void close()
+- uid: com.microsoft.azure.servicebus._i_closeable.closeAsync()
+  parent: com.microsoft.azure.servicebus._i_closeable
+  href: com.microsoft.azure.servicebus._i_closeable.yml
+  name: closeAsync()
+  nameWithType: ICloseable.closeAsync()
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.ICloseable.closeAsync()
+  type: Method
+  syntax:
+    content: public CompletableFuture<Void> closeAsync()
+    return:
+      type: db03ee24
 - uid: com.microsoft.azure.servicebus._client_entity.closeSync()
   parent: com.microsoft.azure.servicebus._client_entity
   href: com.microsoft.azure.servicebus._client_entity.yml
@@ -464,6 +775,7 @@ references:
     content: public String getClientId()
     return:
       type: "26831127"
+- uid: com.microsoft.azure.servicebus._initializable_entity.InitializableEntity(String,ClientEntity)
 - uid: com.microsoft.azure.servicebus._client_entity.setClosed()
   parent: com.microsoft.azure.servicebus._client_entity
   href: com.microsoft.azure.servicebus._client_entity.yml
@@ -486,6 +798,15 @@ references:
     content: protected final void throwIfClosed()
     return:
       type: 3f6357ce
+- uid: com.microsoft.azure.servicebus._i_message_sender
+  parent: com.microsoft.azure.servicebus
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: IMessageSender
+  nameWithType: IMessageSender
+  fullName: com.microsoft.azure.servicebus.IMessageSender
+  type: Interface
+  syntax:
+    content: public interface IMessageSender extends IMessageEntity
 - uid: com.microsoft.azure.servicebus._client_entity
   parent: com.microsoft.azure.servicebus
   href: com.microsoft.azure.servicebus._client_entity.yml
@@ -504,7 +825,7 @@ references:
   fullName: com.microsoft.azure.servicebus.amqp.IAmqpSender
   type: Interface
   syntax:
-    content: public interface IAmqpSender extends IAmqpLink
+    content: public interface IAmqpSender extends IAmqpLink,IAmqpLink
 - uid: com.microsoft.azure.servicebus._messaging_factory
   parent: com.microsoft.azure.servicebus
   href: com.microsoft.azure.servicebus._messaging_factory.yml
@@ -561,7 +882,7 @@ references:
   fullName: com.microsoft.azure.servicebus.MessageSender
   type: Class
   summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
-  syntax: *o1
+  syntax: *o2
 - uid: com.microsoft.azure.servicebus._timeout_tracker
   parent: com.microsoft.azure.servicebus
   href: com.microsoft.azure.servicebus._timeout_tracker.yml
@@ -571,6 +892,42 @@ references:
   type: Class
   syntax:
     content: public class TimeoutTracker
+- uid: com.microsoft.azure.servicebus._connection_string_builder
+  parent: com.microsoft.azure.servicebus
+  href: com.microsoft.azure.servicebus._connection_string_builder.yml
+  name: ConnectionStringBuilder
+  nameWithType: ConnectionStringBuilder
+  fullName: com.microsoft.azure.servicebus.ConnectionStringBuilder
+  type: Class
+  summary: >-
+    <p>
+
+      <xref href="com.microsoft.azure.servicebus._connection_string_builder" data-throw-if-not-resolved="false"></xref> can be used to construct a connection string which can establish communication with ServiceBus entities. It can also be used to perform basic validation on an existing connection string. </p>
+
+    <p>Sample Code: <preformatted><programlisting><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>ConnectionStringBuilder<sp></sp>connectionStringBuilder<sp></sp>=<sp></sp>new<sp></sp>ConnectionStringBuilder(</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusNamespaceName",</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusEntityName",<sp></sp>//<sp></sp>eventHubName<sp></sp>or<sp></sp>QueueName<sp></sp>or<sp></sp>TopicName</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKeyName",</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKey");</highlight></codeline><codeline></codeline><codeline><highlight class="normal">String<sp></sp>connectionString<sp></sp>=<sp></sp>connectionStringBuilder.toString();</highlight></codeline></programlisting></preformatted></p>
+
+    <p>A connection string is basically a string consisted of key-value pair separated by ";". Basic format is {{ &lt;}key{&gt;}={ &lt;}value{&gt;}[;{ &lt;}key{&gt;}={ &lt;}value{&gt;}]} where supported key name are as follow: <itemizedlist><listitem><p>Endpoint - the URL that contains the servicebus namespace </p></listitem><listitem><p>EntityPath - the path to the service bus entity (queue/topic/eventhub/subscription/consumergroup/partition) </p></listitem><listitem><p>SharedAccessKeyName - the key name to the corresponding shared access policy rule for the namespace, or entity. </p></listitem><listitem><p>SharedAccessKey - the key for the corresponding shared access policy rule of the namespace or entity. </p></listitem></itemizedlist></p>
+  syntax:
+    content: public class ConnectionStringBuilder
+- uid: com.microsoft.azure.servicebus.primitives._core_message_sender
+  parent: com.microsoft.azure.servicebus.primitives
+  href: com.microsoft.azure.servicebus.primitives._core_message_sender.yml
+  name: CoreMessageSender
+  nameWithType: CoreMessageSender
+  fullName: com.microsoft.azure.servicebus.primitives.CoreMessageSender
+  type: Class
+  summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
+  syntax:
+    content: public class CoreMessageSender extends ClientEntity implements IAmqpSender
+- uid: com.microsoft.azure.servicebus._message
+  parent: com.microsoft.azure.servicebus
+  href: com.microsoft.azure.servicebus._message.yml
+  name: Message
+  nameWithType: Message
+  fullName: com.microsoft.azure.servicebus.Message
+  type: Class
+  syntax:
+    content: public class Message implements IMessage
 - uid: com.microsoft.azure.servicebus.amqp._i_amqp_link.onOpenComplete(Exception)
   parent: com.microsoft.azure.servicebus.amqp._i_amqp_link
   href: com.microsoft.azure.servicebus.amqp._i_amqp_link.yml
@@ -641,3 +998,143 @@ references:
     parameters:
     - id: creditIssued
       type: cd225469
+- uid: com.microsoft.azure.servicebus._i_message_sender.send(IMessage)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: send(IMessage message)
+  nameWithType: IMessageSender.send(IMessage message)
+  fullName: void com.microsoft.azure.servicebus.IMessageSender.send(IMessage message)
+  type: Method
+  syntax:
+    content: public void send(IMessage message)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+- uid: com.microsoft.azure.servicebus._i_message
+  parent: com.microsoft.azure.servicebus
+  href: com.microsoft.azure.servicebus._i_message.yml
+  name: IMessage
+  nameWithType: IMessage
+  fullName: com.microsoft.azure.servicebus.IMessage
+  type: Interface
+  syntax:
+    content: public interface IMessage
+- uid: com.microsoft.azure.servicebus._service_bus_exception
+  parent: com.microsoft.azure.servicebus
+  href: com.microsoft.azure.servicebus._service_bus_exception.yml
+  name: ServiceBusException
+  nameWithType: ServiceBusException
+  fullName: com.microsoft.azure.servicebus.ServiceBusException
+  type: Class
+  summary: <p>This is the base exception that service bus will produce for all error cases. </p>
+  syntax:
+    content: public class ServiceBusException
+- uid: com.microsoft.azure.servicebus._i_message_sender.sendBatch(Collection<? extends IMessage>)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: sendBatch(Collection<? extends IMessage> message)
+  nameWithType: IMessageSender.sendBatch(Collection<? extends IMessage> message)
+  fullName: void com.microsoft.azure.servicebus.IMessageSender.sendBatch(Collection<? extends IMessage> message)
+  type: Method
+  syntax:
+    content: public void sendBatch(Collection<? extends IMessage> message)
+    parameters:
+    - id: message
+      type: d56263b8com.microsoft.azure.servicebus._i_messagea08ddfce
+- uid: com.microsoft.azure.servicebus._i_message_sender.sendAsync(IMessage)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: sendAsync(IMessage message)
+  nameWithType: IMessageSender.sendAsync(IMessage message)
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.IMessageSender.sendAsync(IMessage message)
+  type: Method
+  syntax:
+    content: public CompletableFuture<Void> sendAsync(IMessage message)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+    return:
+      type: db03ee24
+- uid: com.microsoft.azure.servicebus._i_message_sender.sendBatchAsync(Collection<? extends IMessage>)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: sendBatchAsync(Collection<? extends IMessage> message)
+  nameWithType: IMessageSender.sendBatchAsync(Collection<? extends IMessage> message)
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.IMessageSender.sendBatchAsync(Collection<? extends IMessage> message)
+  type: Method
+  syntax:
+    content: public CompletableFuture<Void> sendBatchAsync(Collection<? extends IMessage> message)
+    parameters:
+    - id: message
+      type: d56263b8com.microsoft.azure.servicebus._i_messagea08ddfce
+    return:
+      type: db03ee24
+- uid: com.microsoft.azure.servicebus._i_message_entity.getEntityPath()
+  parent: com.microsoft.azure.servicebus._i_message_entity
+  href: com.microsoft.azure.servicebus._i_message_entity.yml
+  name: getEntityPath()
+  nameWithType: IMessageEntity.getEntityPath()
+  fullName: String com.microsoft.azure.servicebus.IMessageEntity.getEntityPath()
+  type: Method
+  syntax:
+    content: public String getEntityPath()
+    return:
+      type: "26831127"
+- uid: com.microsoft.azure.servicebus._i_message_sender.scheduleMessageAsync(IMessage,Instant)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+  nameWithType: IMessageSender.scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+  fullName: CompletableFuture<Long> com.microsoft.azure.servicebus.IMessageSender.scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+  type: Method
+  syntax:
+    content: public CompletableFuture<Long> scheduleMessageAsync(IMessage message, Instant scheduledEnqueueTimeUtc)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+    - id: scheduledEnqueueTimeUtc
+      type: 328f8254
+    return:
+      type: 30822cb1
+- uid: com.microsoft.azure.servicebus._i_message_sender.cancelScheduledMessageAsync(long)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: cancelScheduledMessageAsync(long sequenceNumber)
+  nameWithType: IMessageSender.cancelScheduledMessageAsync(long sequenceNumber)
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.IMessageSender.cancelScheduledMessageAsync(long sequenceNumber)
+  type: Method
+  syntax:
+    content: public CompletableFuture<Void> cancelScheduledMessageAsync(long sequenceNumber)
+    parameters:
+    - id: sequenceNumber
+      type: 0364520f
+    return:
+      type: db03ee24
+- uid: com.microsoft.azure.servicebus._i_message_sender.scheduleMessage(IMessage,Instant)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+  nameWithType: IMessageSender.scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+  fullName: long com.microsoft.azure.servicebus.IMessageSender.scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+  type: Method
+  syntax:
+    content: public long scheduleMessage(IMessage message, Instant scheduledEnqueueTimeUtc)
+    parameters:
+    - id: message
+      type: com.microsoft.azure.servicebus._i_message
+    - id: scheduledEnqueueTimeUtc
+      type: 328f8254
+    return:
+      type: 0364520f
+- uid: com.microsoft.azure.servicebus._i_message_sender.cancelScheduledMessage(long)
+  parent: com.microsoft.azure.servicebus._i_message_sender
+  href: com.microsoft.azure.servicebus._i_message_sender.yml
+  name: cancelScheduledMessage(long sequenceNumber)
+  nameWithType: IMessageSender.cancelScheduledMessage(long sequenceNumber)
+  fullName: void com.microsoft.azure.servicebus.IMessageSender.cancelScheduledMessage(long sequenceNumber)
+  type: Method
+  syntax:
+    content: public void cancelScheduledMessage(long sequenceNumber)
+    parameters:
+    - id: sequenceNumber
+      type: 0364520f

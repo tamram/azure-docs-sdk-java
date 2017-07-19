@@ -24,7 +24,7 @@ items:
     startLine: 16
   package: com.microsoft.azure.servicebus.amqp
   syntax:
-    content: public class ReceiveLinkHandler extends BaseLinkHandler
+    content: public class ReceiveLinkHandler extends BaseLinkHandler,BaseLinkHandler
   inheritance:
   - java.lang.Object
   - BaseHandler
@@ -235,7 +235,7 @@ references:
   href: com.microsoft.azure.servicebus.amqp._base_link_handler.yml
   name: TRACE_LOGGER
   nameWithType: BaseLinkHandler.TRACE_LOGGER
-  fullName: final Logger com.microsoft.azure.servicebus.amqp.BaseLinkHandler.TRACE_LOGGER
+  fullName: static final Logger com.microsoft.azure.servicebus.amqp.BaseLinkHandler.TRACE_LOGGER
   type: Field
   syntax:
     content: protected static final Logger TRACE_LOGGER= Logger.getLogger(ClientConstants.SERVICEBUS_CLIENT_TRACE)
@@ -258,4 +258,4 @@ references:
   fullName: com.microsoft.azure.servicebus.amqp.IAmqpReceiver
   type: Interface
   syntax:
-    content: public interface IAmqpReceiver extends IAmqpLink
+    content: public interface IAmqpReceiver extends IAmqpLink,IAmqpLink

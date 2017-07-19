@@ -169,7 +169,7 @@ items:
   - java
   name: TRACE_LOGGER
   nameWithType: BaseLinkHandler.TRACE_LOGGER
-  fullName: final Logger com.microsoft.azure.servicebus.amqp.BaseLinkHandler.TRACE_LOGGER
+  fullName: static final Logger com.microsoft.azure.servicebus.amqp.BaseLinkHandler.TRACE_LOGGER
   type: Field
   source:
     remote: *o0

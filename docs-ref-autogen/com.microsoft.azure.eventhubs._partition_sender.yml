@@ -442,7 +442,7 @@ references:
   type: Class
   summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
   syntax:
-    content: public class MessageSender extends ClientEntity implements IAmqpSender
+    content: public class MessageSender extends ClientEntity implements IMessageSender,IAmqpSender
 - uid: com.microsoft.azure.servicebus._service_bus_exception
   parent: com.microsoft.azure.servicebus
   href: com.microsoft.azure.servicebus._service_bus_exception.yml

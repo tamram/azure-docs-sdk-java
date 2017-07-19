@@ -309,6 +309,7 @@ references:
     <p></p>
   syntax:
     content: public class PartitionSender
+- uid: com.microsoft.azure.servicebus._initializable_entity
 - uid: com.microsoft.azure.servicebus._message_receiver
   parent: com.microsoft.azure.servicebus
   href: com.microsoft.azure.servicebus._message_receiver.yml

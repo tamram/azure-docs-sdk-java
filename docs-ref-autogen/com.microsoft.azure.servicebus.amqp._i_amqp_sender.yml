@@ -22,7 +22,7 @@ items:
     startLine: 8
   package: com.microsoft.azure.servicebus.amqp
   syntax:
-    content: public interface IAmqpSender extends IAmqpLink
+    content: public interface IAmqpSender extends IAmqpLink,IAmqpLink
   inheritedMembers:
   - com.microsoft.azure.servicebus.amqp._i_amqp_link.onClose(ErrorCondition)
   - com.microsoft.azure.servicebus.amqp._i_amqp_link.onError(Exception)
@@ -144,6 +144,16 @@ references:
   summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
   syntax:
     content: public class MessageSender
+- uid: com.microsoft.azure.servicebus.primitives._core_message_sender
+  parent: com.microsoft.azure.servicebus.primitives
+  href: com.microsoft.azure.servicebus.primitives._core_message_sender.yml
+  name: CoreMessageSender
+  nameWithType: CoreMessageSender
+  fullName: com.microsoft.azure.servicebus.primitives.CoreMessageSender
+  type: Class
+  summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
+  syntax:
+    content: public class CoreMessageSender extends ClientEntity implements IAmqpSender
 - uid: com.microsoft.azure.servicebus._message_sender.onFlow(final int)
   parent: com.microsoft.azure.servicebus._message_sender
   href: com.microsoft.azure.servicebus._message_sender.yml
@@ -156,12 +166,36 @@ references:
     parameters:
     - id: creditIssued
       type: cd225469
+- uid: com.microsoft.azure.servicebus.primitives._core_message_sender.onFlow(final int)
+  parent: com.microsoft.azure.servicebus.primitives._core_message_sender
+  href: com.microsoft.azure.servicebus.primitives._core_message_sender.yml
+  name: onFlow(final int creditIssued)
+  nameWithType: CoreMessageSender.onFlow(final int creditIssued)
+  fullName: void com.microsoft.azure.servicebus.primitives.CoreMessageSender.onFlow(final int creditIssued)
+  type: Method
+  syntax:
+    content: public void onFlow(final int creditIssued)
+    parameters:
+    - id: creditIssued
+      type: cd225469
 - uid: com.microsoft.azure.servicebus._message_sender.onSendComplete(final Delivery)
   parent: com.microsoft.azure.servicebus._message_sender
   href: com.microsoft.azure.servicebus._message_sender.yml
   name: onSendComplete(final Delivery delivery)
   nameWithType: MessageSender.onSendComplete(final Delivery delivery)
   fullName: void com.microsoft.azure.servicebus.MessageSender.onSendComplete(final Delivery delivery)
+  type: Method
+  syntax:
+    content: public void onSendComplete(final Delivery delivery)
+    parameters:
+    - id: delivery
+      type: e00ff619
+- uid: com.microsoft.azure.servicebus.primitives._core_message_sender.onSendComplete(final Delivery)
+  parent: com.microsoft.azure.servicebus.primitives._core_message_sender
+  href: com.microsoft.azure.servicebus.primitives._core_message_sender.yml
+  name: onSendComplete(final Delivery delivery)
+  nameWithType: CoreMessageSender.onSendComplete(final Delivery delivery)
+  fullName: void com.microsoft.azure.servicebus.primitives.CoreMessageSender.onSendComplete(final Delivery delivery)
   type: Method
   syntax:
     content: public void onSendComplete(final Delivery delivery)

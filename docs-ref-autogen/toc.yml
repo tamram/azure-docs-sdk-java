@@ -4071,6 +4071,9 @@
   - uid: com.microsoft.azure.management.compute._virtual_machine._definition_stages._with_availability_set
     name: VirtualMachine.DefinitionStages.WithAvailabilitySet
     href: com.microsoft.azure.management.compute._virtual_machine._definition_stages._with_availability_set.yml
+  - uid: com.microsoft.azure.management.compute._virtual_machine._definition_stages._with_boot_diagnostics
+    name: VirtualMachine.DefinitionStages.WithBootDiagnostics
+    href: com.microsoft.azure.management.compute._virtual_machine._definition_stages._with_boot_diagnostics.yml
   - uid: com.microsoft.azure.management.compute._virtual_machine._definition_stages._with_create
     name: VirtualMachine.DefinitionStages.WithCreate
     href: com.microsoft.azure.management.compute._virtual_machine._definition_stages._with_create.yml
@@ -4197,6 +4200,9 @@
   - uid: com.microsoft.azure.management.compute._virtual_machine._update_stages
     name: VirtualMachine.UpdateStages
     href: com.microsoft.azure.management.compute._virtual_machine._update_stages.yml
+  - uid: com.microsoft.azure.management.compute._virtual_machine._update_stages._with_boot_diagnostics
+    name: VirtualMachine.UpdateStages.WithBootDiagnostics
+    href: com.microsoft.azure.management.compute._virtual_machine._update_stages._with_boot_diagnostics.yml
   - uid: com.microsoft.azure.management.compute._virtual_machine._update_stages._with_extension
     name: VirtualMachine.UpdateStages.WithExtension
     href: com.microsoft.azure.management.compute._virtual_machine._update_stages._with_extension.yml
@@ -5679,12 +5685,87 @@
   - uid: com.microsoft.azure.management.graphrbac._active_directory_group
     name: ActiveDirectoryGroup
     href: com.microsoft.azure.management.graphrbac._active_directory_group.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._definition
+    name: ActiveDirectoryGroup.Definition
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._definition.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages
+    name: ActiveDirectoryGroup.DefinitionStages
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._blank
+    name: ActiveDirectoryGroup.DefinitionStages.Blank
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._blank.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_create
+    name: ActiveDirectoryGroup.DefinitionStages.WithCreate
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_create.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._def0a6ec4567738d6a917301bec7a9d12ee
+    name: ActiveDirectoryGroup.DefinitionStages.WithEmailAlias
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._def0a6ec4567738d6a917301bec7a9d12ee.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_member
+    name: ActiveDirectoryGroup.DefinitionStages.WithMember
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._definition_stages._with_member.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._update
+    name: ActiveDirectoryGroup.Update
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._update.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._update_stages
+    name: ActiveDirectoryGroup.UpdateStages
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._update_stages.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_group._update_stages._with_member
+    name: ActiveDirectoryGroup.UpdateStages.WithMember
+    href: com.microsoft.azure.management.graphrbac._active_directory_group._update_stages._with_member.yml
   - uid: com.microsoft.azure.management.graphrbac._active_directory_groups
     name: ActiveDirectoryGroups
     href: com.microsoft.azure.management.graphrbac._active_directory_groups.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_object
+    name: ActiveDirectoryObject
+    href: com.microsoft.azure.management.graphrbac._active_directory_object.yml
   - uid: com.microsoft.azure.management.graphrbac._active_directory_user
     name: ActiveDirectoryUser
     href: com.microsoft.azure.management.graphrbac._active_directory_user.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._definition
+    name: ActiveDirectoryUser.Definition
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._definition.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages
+    name: ActiveDirectoryUser.DefinitionStages
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages._blank
+    name: ActiveDirectoryUser.DefinitionStages.Blank
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages._blank.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._defi727fc13bab7cfb45cf326bd4c6d224e9
+    name: ActiveDirectoryUser.DefinitionStages.WithAccontEnabled
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._defi727fc13bab7cfb45cf326bd4c6d224e9.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages._with_create
+    name: ActiveDirectoryUser.DefinitionStages.WithCreate
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages._with_create.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages._with_password
+    name: ActiveDirectoryUser.DefinitionStages.WithPassword
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._definition_stages._with_password.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._defi4f9b892ff3217c3cac7a1e083bfb0453
+    name: ActiveDirectoryUser.DefinitionStages.WithPromptToChangePasswordOnLogin
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._defi4f9b892ff3217c3cac7a1e083bfb0453.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._defi9cd90d944f57155ead08ad8bcbd58a5c
+    name: ActiveDirectoryUser.DefinitionStages.WithUsageLocation
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._defi9cd90d944f57155ead08ad8bcbd58a5c.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._defi318d566d0b728ed42ab0ccfd2721a02f
+    name: ActiveDirectoryUser.DefinitionStages.WithUserPrincipalName
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._defi318d566d0b728ed42ab0ccfd2721a02f.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._update
+    name: ActiveDirectoryUser.Update
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._update.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._update_stages
+    name: ActiveDirectoryUser.UpdateStages
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._update_stages.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._upda33211714fcfae7cdd91c4380b256d0d5
+    name: ActiveDirectoryUser.UpdateStages.WithAccontEnabled
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._upda33211714fcfae7cdd91c4380b256d0d5.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._update_stages._with_password
+    name: ActiveDirectoryUser.UpdateStages.WithPassword
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._update_stages._with_password.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._updae52d887bd6a88a2fcc210db6beeede7c
+    name: ActiveDirectoryUser.UpdateStages.WithPromptToChangePasswordOnLogin
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._updae52d887bd6a88a2fcc210db6beeede7c.yml
+  - uid: com.microsoft.azure.management.graphrbac._active_directory_user._upda6a0e179d39891ce952cd8ff22dc532f4
+    name: ActiveDirectoryUser.UpdateStages.WithUsageLocation
+    href: com.microsoft.azure.management.graphrbac._active_directory_user._upda6a0e179d39891ce952cd8ff22dc532f4.yml
   - uid: com.microsoft.azure.management.graphrbac._active_directory_users
     name: ActiveDirectoryUsers
     href: com.microsoft.azure.management.graphrbac._active_directory_users.yml
@@ -5793,6 +5874,9 @@
   - uid: com.microsoft.azure.management.graphrbac._group_get_member_groups_parameters
     name: GroupGetMemberGroupsParameters
     href: com.microsoft.azure.management.graphrbac._group_get_member_groups_parameters.yml
+  - uid: com.microsoft.azure.management.graphrbac._groups_tests
+    name: GroupsTests
+    href: com.microsoft.azure.management.graphrbac._groups_tests.yml
   - uid: com.microsoft.azure.management.graphrbac._key_credentials_update_parameters
     name: KeyCredentialsUpdateParameters
     href: com.microsoft.azure.management.graphrbac._key_credentials_update_parameters.yml
@@ -10477,6 +10561,12 @@
   - uid: com.microsoft.azure.management.storage._storage_account_check_name_availability_parameters
     name: StorageAccountCheckNameAvailabilityParameters
     href: com.microsoft.azure.management.storage._storage_account_check_name_availability_parameters.yml
+  - uid: com.microsoft.azure.management.storage._storage_account_encryption_key_source
+    name: StorageAccountEncryptionKeySource
+    href: com.microsoft.azure.management.storage._storage_account_encryption_key_source.yml
+  - uid: com.microsoft.azure.management.storage._storage_account_encryption_status
+    name: StorageAccountEncryptionStatus
+    href: com.microsoft.azure.management.storage._storage_account_encryption_status.yml
   - uid: com.microsoft.azure.management.storage._storage_account_key
     name: StorageAccountKey
     href: com.microsoft.azure.management.storage._storage_account_key.yml
@@ -10486,6 +10576,9 @@
   - uid: com.microsoft.azure.management.storage._storage_accounts
     name: StorageAccounts
     href: com.microsoft.azure.management.storage._storage_accounts.yml
+  - uid: com.microsoft.azure.management.storage._storage_service
+    name: StorageService
+    href: com.microsoft.azure.management.storage._storage_service.yml
   - uid: com.microsoft.azure.management.storage._storage_usage
     name: StorageUsage
     href: com.microsoft.azure.management.storage._storage_usage.yml
@@ -10743,6 +10836,9 @@
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser
     name: FileUploadStatusParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._job_query_response_error
+    name: JobQueryResponseError
+    href: com.microsoft.azure.sdk.iot.deps.serializer._job_query_response_error.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._jobs_parser
     name: JobsParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._jobs_parser.yml
@@ -11291,15 +11387,15 @@
   - uid: com.microsoft.azure.sdk.iot.service.jobs._job_result
     name: JobResult
     href: com.microsoft.azure.sdk.iot.service.jobs._job_result.yml
-  - uid: com.microsoft.azure.sdk.iot.service.jobs._job_result._job_status
-    name: JobResult.JobStatus
-    href: com.microsoft.azure.sdk.iot.service.jobs._job_result._job_status.yml
-  - uid: com.microsoft.azure.sdk.iot.service.jobs._job_result._job_type
-    name: JobResult.JobType
-    href: com.microsoft.azure.sdk.iot.service.jobs._job_result._job_type.yml
   - uid: com.microsoft.azure.sdk.iot.service.jobs._job_statistics
     name: JobStatistics
     href: com.microsoft.azure.sdk.iot.service.jobs._job_statistics.yml
+  - uid: com.microsoft.azure.sdk.iot.service.jobs._job_status
+    name: JobStatus
+    href: com.microsoft.azure.sdk.iot.service.jobs._job_status.yml
+  - uid: com.microsoft.azure.sdk.iot.service.jobs._job_type
+    name: JobType
+    href: com.microsoft.azure.sdk.iot.service.jobs._job_type.yml
 - uid: com.microsoft.azure.sdk.iot.service.transport
   name: com.microsoft.azure.sdk.iot.service.transport
   href: com.microsoft.azure.sdk.iot.service.transport.yml
@@ -11373,6 +11469,9 @@
   - uid: com.microsoft.azure.servicebus._client_entity
     name: ClientEntity
     href: com.microsoft.azure.servicebus._client_entity.yml
+  - uid: com.microsoft.azure.servicebus._client_factory
+    name: ClientFactory
+    href: com.microsoft.azure.servicebus._client_factory.yml
   - uid: com.microsoft.azure.servicebus._communication_exception
     name: CommunicationException
     href: com.microsoft.azure.servicebus._communication_exception.yml
@@ -11382,33 +11481,87 @@
   - uid: com.microsoft.azure.servicebus._error_context
     name: ErrorContext
     href: com.microsoft.azure.servicebus._error_context.yml
+  - uid: com.microsoft.azure.servicebus._exception_phase
+    name: ExceptionPhase
+    href: com.microsoft.azure.servicebus._exception_phase.yml
   - uid: com.microsoft.azure.servicebus._fault_tolerant_object
     name: FaultTolerantObject
     href: com.microsoft.azure.servicebus._fault_tolerant_object.yml
+  - uid: com.microsoft.azure.servicebus._i_closeable
+    name: ICloseable
+    href: com.microsoft.azure.servicebus._i_closeable.yml
   - uid: com.microsoft.azure.servicebus._illegal_connection_string_format_exception
     name: IllegalConnectionStringFormatException
     href: com.microsoft.azure.servicebus._illegal_connection_string_format_exception.yml
   - uid: com.microsoft.azure.servicebus._illegal_entity_exception
     name: IllegalEntityException
     href: com.microsoft.azure.servicebus._illegal_entity_exception.yml
+  - uid: com.microsoft.azure.servicebus._i_message
+    name: IMessage
+    href: com.microsoft.azure.servicebus._i_message.yml
+  - uid: com.microsoft.azure.servicebus._i_message_browser
+    name: IMessageBrowser
+    href: com.microsoft.azure.servicebus._i_message_browser.yml
+  - uid: com.microsoft.azure.servicebus._i_message_entity
+    name: IMessageEntity
+    href: com.microsoft.azure.servicebus._i_message_entity.yml
+  - uid: com.microsoft.azure.servicebus._i_message_handler
+    name: IMessageHandler
+    href: com.microsoft.azure.servicebus._i_message_handler.yml
+  - uid: com.microsoft.azure.servicebus._i_message_receiver
+    name: IMessageReceiver
+    href: com.microsoft.azure.servicebus._i_message_receiver.yml
+  - uid: com.microsoft.azure.servicebus._i_message_sender
+    name: IMessageSender
+    href: com.microsoft.azure.servicebus._i_message_sender.yml
+  - uid: com.microsoft.azure.servicebus._i_message_session
+    name: IMessageSession
+    href: com.microsoft.azure.servicebus._i_message_session.yml
+  - uid: com.microsoft.azure.servicebus._i_message_session_entity
+    name: IMessageSessionEntity
+    href: com.microsoft.azure.servicebus._i_message_session_entity.yml
+  - uid: com.microsoft.azure.servicebus._i_queue_client
+    name: IQueueClient
+    href: com.microsoft.azure.servicebus._i_queue_client.yml
   - uid: com.microsoft.azure.servicebus._i_receiver_settings_provider
     name: IReceiverSettingsProvider
     href: com.microsoft.azure.servicebus._i_receiver_settings_provider.yml
+  - uid: com.microsoft.azure.servicebus._i_session_handler
+    name: ISessionHandler
+    href: com.microsoft.azure.servicebus._i_session_handler.yml
+  - uid: com.microsoft.azure.servicebus._i_subscription_client
+    name: ISubscriptionClient
+    href: com.microsoft.azure.servicebus._i_subscription_client.yml
   - uid: com.microsoft.azure.servicebus._iterator_util
     name: IteratorUtil
     href: com.microsoft.azure.servicebus._iterator_util.yml
   - uid: com.microsoft.azure.servicebus._i_timeout_error_handler
     name: ITimeoutErrorHandler
     href: com.microsoft.azure.servicebus._i_timeout_error_handler.yml
+  - uid: com.microsoft.azure.servicebus._i_topic_client
+    name: ITopicClient
+    href: com.microsoft.azure.servicebus._i_topic_client.yml
   - uid: com.microsoft.azure.servicebus._management_channel
     name: ManagementChannel
     href: com.microsoft.azure.servicebus._management_channel.yml
+  - uid: com.microsoft.azure.servicebus._message
+    name: Message
+    href: com.microsoft.azure.servicebus._message.yml
+  - uid: com.microsoft.azure.servicebus._message_converter
+    name: MessageConverter
+    href: com.microsoft.azure.servicebus._message_converter.yml
+  - uid: com.microsoft.azure.servicebus._message_handler_options
+    name: MessageHandlerOptions
+    href: com.microsoft.azure.servicebus._message_handler_options.yml
   - uid: com.microsoft.azure.servicebus._message_receiver
     name: MessageReceiver
     href: com.microsoft.azure.servicebus._message_receiver.yml
   - uid: com.microsoft.azure.servicebus._message_sender
     name: MessageSender
     href: com.microsoft.azure.servicebus._message_sender.yml
+  - uid: com.microsoft.azure.servicebus._message_session
+    name: MessageSession
+    href: com.microsoft.azure.servicebus._message_session.yml
   - uid: com.microsoft.azure.servicebus._messaging_factory
     name: MessagingFactory
     href: com.microsoft.azure.servicebus._messaging_factory.yml
@@ -11421,9 +11574,15 @@
   - uid: com.microsoft.azure.servicebus._payload_size_exceeded_exception
     name: PayloadSizeExceededException
     href: com.microsoft.azure.servicebus._payload_size_exceeded_exception.yml
+  - uid: com.microsoft.azure.servicebus._queue_client
+    name: QueueClient
+    href: com.microsoft.azure.servicebus._queue_client.yml
   - uid: com.microsoft.azure.servicebus._quota_exceeded_exception
     name: QuotaExceededException
     href: com.microsoft.azure.servicebus._quota_exceeded_exception.yml
+  - uid: com.microsoft.azure.servicebus._receive_mode
+    name: ReceiveMode
+    href: com.microsoft.azure.servicebus._receive_mode.yml
   - uid: com.microsoft.azure.servicebus._receiver_context
     name: ReceiverContext
     href: com.microsoft.azure.servicebus._receiver_context.yml
@@ -11448,12 +11607,18 @@
   - uid: com.microsoft.azure.servicebus._service_bus_exception
     name: ServiceBusException
     href: com.microsoft.azure.servicebus._service_bus_exception.yml
+  - uid: com.microsoft.azure.servicebus._session_handler_options
+    name: SessionHandlerOptions
+    href: com.microsoft.azure.servicebus._session_handler_options.yml
   - uid: com.microsoft.azure.servicebus._shared_access_signature_token_provider
     name: SharedAccessSignatureTokenProvider
     href: com.microsoft.azure.servicebus._shared_access_signature_token_provider.yml
   - uid: com.microsoft.azure.servicebus._string_util
     name: StringUtil
     href: com.microsoft.azure.servicebus._string_util.yml
+  - uid: com.microsoft.azure.servicebus._subscription_client
+    name: SubscriptionClient
+    href: com.microsoft.azure.servicebus._subscription_client.yml
   - uid: com.microsoft.azure.servicebus._timeout_exception
     name: TimeoutException
     href: com.microsoft.azure.servicebus._timeout_exception.yml
@@ -11466,6 +11631,9 @@
   - uid: com.microsoft.azure.servicebus._timer_type
     name: TimerType
     href: com.microsoft.azure.servicebus._timer_type.yml
+  - uid: com.microsoft.azure.servicebus._topic_client
+    name: TopicClient
+    href: com.microsoft.azure.servicebus._topic_client.yml
   - uid: com.microsoft.azure.servicebus._tracking_util
     name: TrackingUtil
     href: com.microsoft.azure.servicebus._tracking_util.yml
@@ -11557,6 +11725,164 @@
   - uid: com.microsoft.azure.servicebus.amqp._session_handler
     name: SessionHandler
     href: com.microsoft.azure.servicebus.amqp._session_handler.yml
+- uid: com.microsoft.azure.servicebus.primitives
+  name: com.microsoft.azure.servicebus.primitives
+  href: com.microsoft.azure.servicebus.primitives.yml
+  items:
+  - uid: com.microsoft.azure.servicebus.primitives._authorization_failed_exception
+    name: AuthorizationFailedException
+    href: com.microsoft.azure.servicebus.primitives._authorization_failed_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._client_constants
+    name: ClientConstants
+    href: com.microsoft.azure.servicebus.primitives._client_constants.yml
+  - uid: com.microsoft.azure.servicebus.primitives._client_entity
+    name: ClientEntity
+    href: com.microsoft.azure.servicebus.primitives._client_entity.yml
+  - uid: com.microsoft.azure.servicebus.primitives._communication_exception
+    name: CommunicationException
+    href: com.microsoft.azure.servicebus.primitives._communication_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder
+    name: ConnectionStringBuilder
+    href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
+  - uid: com.microsoft.azure.servicebus.primitives._core_message_receiver
+    name: CoreMessageReceiver
+    href: com.microsoft.azure.servicebus.primitives._core_message_receiver.yml
+  - uid: com.microsoft.azure.servicebus.primitives._core_message_sender
+    name: CoreMessageSender
+    href: com.microsoft.azure.servicebus.primitives._core_message_sender.yml
+  - uid: com.microsoft.azure.servicebus.primitives._exception_util
+    name: ExceptionUtil
+    href: com.microsoft.azure.servicebus.primitives._exception_util.yml
+  - uid: com.microsoft.azure.servicebus.primitives._illegal_connection_string_format_exception
+    name: IllegalConnectionStringFormatException
+    href: com.microsoft.azure.servicebus.primitives._illegal_connection_string_format_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._message_lock_lost_exception
+    name: MessageLockLostException
+    href: com.microsoft.azure.servicebus.primitives._message_lock_lost_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._message_not_found_exception
+    name: MessageNotFoundException
+    href: com.microsoft.azure.servicebus.primitives._message_not_found_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._message_with_delivery_tag
+    name: MessageWithDeliveryTag
+    href: com.microsoft.azure.servicebus.primitives._message_with_delivery_tag.yml
+  - uid: com.microsoft.azure.servicebus.primitives._message_with_lock_token
+    name: MessageWithLockToken
+    href: com.microsoft.azure.servicebus.primitives._message_with_lock_token.yml
+  - uid: com.microsoft.azure.servicebus.primitives._messaging_entity_already_exists_exception
+    name: MessagingEntityAlreadyExistsException
+    href: com.microsoft.azure.servicebus.primitives._messaging_entity_already_exists_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._messaging_entity_disabled_exception
+    name: MessagingEntityDisabledException
+    href: com.microsoft.azure.servicebus.primitives._messaging_entity_disabled_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._messaging_entity_not_found_exception
+    name: MessagingEntityNotFoundException
+    href: com.microsoft.azure.servicebus.primitives._messaging_entity_not_found_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._messaging_factory
+    name: MessagingFactory
+    href: com.microsoft.azure.servicebus.primitives._messaging_factory.yml
+  - uid: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler
+    name: MiscRequestResponseOperationHandler
+    href: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.yml
+  - uid: com.microsoft.azure.servicebus.primitives._operation_cancelled_exception
+    name: OperationCancelledException
+    href: com.microsoft.azure.servicebus.primitives._operation_cancelled_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._pair
+    name: Pair
+    href: com.microsoft.azure.servicebus.primitives._pair.yml
+  - uid: com.microsoft.azure.servicebus.primitives._payload_size_exceeded_exception
+    name: PayloadSizeExceededException
+    href: com.microsoft.azure.servicebus.primitives._payload_size_exceeded_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._quota_exceeded_exception
+    name: QuotaExceededException
+    href: com.microsoft.azure.servicebus.primitives._quota_exceeded_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._receiver_disconnected_exception
+    name: ReceiverDisconnectedException
+    href: com.microsoft.azure.servicebus.primitives._receiver_disconnected_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._receiver_error_context
+    name: ReceiverErrorContext
+    href: com.microsoft.azure.servicebus.primitives._receiver_error_context.yml
+  - uid: com.microsoft.azure.servicebus.primitives._request_response_utils
+    name: RequestResponseUtils
+    href: com.microsoft.azure.servicebus.primitives._request_response_utils.yml
+  - uid: com.microsoft.azure.servicebus.primitives._request_response_work_item
+    name: RequestResponseWorkItem
+    href: com.microsoft.azure.servicebus.primitives._request_response_work_item.yml
+  - uid: com.microsoft.azure.servicebus.primitives._retry_exponential
+    name: RetryExponential
+    href: com.microsoft.azure.servicebus.primitives._retry_exponential.yml
+  - uid: com.microsoft.azure.servicebus.primitives._retry_policy
+    name: RetryPolicy
+    href: com.microsoft.azure.servicebus.primitives._retry_policy.yml
+  - uid: com.microsoft.azure.servicebus.primitives._s_a_s_util
+    name: SASUtil
+    href: com.microsoft.azure.servicebus.primitives._s_a_s_util.yml
+  - uid: com.microsoft.azure.servicebus.primitives._sender_error_context
+    name: SenderErrorContext
+    href: com.microsoft.azure.servicebus.primitives._sender_error_context.yml
+  - uid: com.microsoft.azure.servicebus.primitives._server_busy_exception
+    name: ServerBusyException
+    href: com.microsoft.azure.servicebus.primitives._server_busy_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._service_bus_exception
+    name: ServiceBusException
+    href: com.microsoft.azure.servicebus.primitives._service_bus_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._session_cannot_be_locked_exception
+    name: SessionCannotBeLockedException
+    href: com.microsoft.azure.servicebus.primitives._session_cannot_be_locked_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._session_lock_lost_exception
+    name: SessionLockLostException
+    href: com.microsoft.azure.servicebus.primitives._session_lock_lost_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._settle_mode_pair
+    name: SettleModePair
+    href: com.microsoft.azure.servicebus.primitives._settle_mode_pair.yml
+  - uid: com.microsoft.azure.servicebus.primitives._string_util
+    name: StringUtil
+    href: com.microsoft.azure.servicebus.primitives._string_util.yml
+  - uid: com.microsoft.azure.servicebus.primitives._timeout_exception
+    name: TimeoutException
+    href: com.microsoft.azure.servicebus.primitives._timeout_exception.yml
+  - uid: com.microsoft.azure.servicebus.primitives._timeout_tracker
+    name: TimeoutTracker
+    href: com.microsoft.azure.servicebus.primitives._timeout_tracker.yml
+  - uid: com.microsoft.azure.servicebus.primitives._timer
+    name: Timer
+    href: com.microsoft.azure.servicebus.primitives._timer.yml
+  - uid: com.microsoft.azure.servicebus.primitives._timer_type
+    name: TimerType
+    href: com.microsoft.azure.servicebus.primitives._timer_type.yml
+  - uid: com.microsoft.azure.servicebus.primitives._tracking_util
+    name: TrackingUtil
+    href: com.microsoft.azure.servicebus.primitives._tracking_util.yml
+  - uid: com.microsoft.azure.servicebus.primitives._util
+    name: Util
+    href: com.microsoft.azure.servicebus.primitives._util.yml
+- uid: com.microsoft.azure.servicebus.rules
+  name: com.microsoft.azure.servicebus.rules
+  href: com.microsoft.azure.servicebus.rules.yml
+  items:
+  - uid: com.microsoft.azure.servicebus.rules._correlation_filter
+    name: CorrelationFilter
+    href: com.microsoft.azure.servicebus.rules._correlation_filter.yml
+  - uid: com.microsoft.azure.servicebus.rules._false_filter
+    name: FalseFilter
+    href: com.microsoft.azure.servicebus.rules._false_filter.yml
+  - uid: com.microsoft.azure.servicebus.rules._filter
+    name: Filter
+    href: com.microsoft.azure.servicebus.rules._filter.yml
+  - uid: com.microsoft.azure.servicebus.rules._rule_action
+    name: RuleAction
+    href: com.microsoft.azure.servicebus.rules._rule_action.yml
+  - uid: com.microsoft.azure.servicebus.rules._rule_description
+    name: RuleDescription
+    href: com.microsoft.azure.servicebus.rules._rule_description.yml
+  - uid: com.microsoft.azure.servicebus.rules._sql_filter
+    name: SqlFilter
+    href: com.microsoft.azure.servicebus.rules._sql_filter.yml
+  - uid: com.microsoft.azure.servicebus.rules._sql_rule_action
+    name: SqlRuleAction
+    href: com.microsoft.azure.servicebus.rules._sql_rule_action.yml
+  - uid: com.microsoft.azure.servicebus.rules._true_filter
+    name: TrueFilter
+    href: com.microsoft.azure.servicebus.rules._true_filter.yml
 - uid: com.microsoft.azure.storage
   name: com.microsoft.azure.storage
   href: com.microsoft.azure.storage.yml
@@ -11597,6 +11923,9 @@
   - uid: com.microsoft.azure.storage._does_service_request
     name: DoesServiceRequest
     href: com.microsoft.azure.storage._does_service_request.yml
+  - uid: com.microsoft.azure.storage._error_receiving_response_event
+    name: ErrorReceivingResponseEvent
+    href: com.microsoft.azure.storage._error_receiving_response_event.yml
   - uid: com.microsoft.azure.storage._geo_replication_stats
     name: GeoReplicationStats
     href: com.microsoft.azure.storage._geo_replication_stats.yml
@@ -11863,6 +12192,9 @@
   - uid: com.microsoft.azure.storage.blob._page_range_diff
     name: PageRangeDiff
     href: com.microsoft.azure.storage.blob._page_range_diff.yml
+  - uid: com.microsoft.azure.storage.blob._premium_page_blob_tier
+    name: PremiumPageBlobTier
+    href: com.microsoft.azure.storage.blob._premium_page_blob_tier.yml
   - uid: com.microsoft.azure.storage.blob._shared_access_blob_headers
     name: SharedAccessBlobHeaders
     href: com.microsoft.azure.storage.blob._shared_access_blob_headers.yml

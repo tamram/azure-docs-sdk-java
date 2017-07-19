@@ -64,7 +64,7 @@ items:
     content: public Map<Symbol, UnknownDescribedType> getFilter(final Message lastReceivedMessage)
     parameters:
     - id: lastReceivedMessage
-      type: 8d3e47ad
+      type: 93de0ef9com.microsoft.azure.servicebus._message
     return:
       type: 39a8ce04
 - uid: com.microsoft.azure.servicebus._i_receiver_settings_provider.getProperties()
@@ -88,10 +88,14 @@ items:
     return:
       type: 6bd35e50
 references:
-- uid: 8d3e47ad
+- uid: 93de0ef9com.microsoft.azure.servicebus._message
   spec.java:
-  - name: final Message
-    fullName: final Message
+  - name: 'final '
+    fullName: 'final '
+  - uid: com.microsoft.azure.servicebus._message
+    name: Message
+    fullName: com.microsoft.azure.servicebus.Message
+    href: com.microsoft.azure.servicebus._message.yml
 - uid: 39a8ce04
   spec.java:
   - name: Map<Symbol, UnknownDescribedType>
@@ -134,20 +138,15 @@ references:
     <p></p>
   syntax:
     content: public class PartitionReceiver
-- uid: com.microsoft.azure.eventhubs._partition_receiver.getFilter(final Message)
-  parent: com.microsoft.azure.eventhubs._partition_receiver
-  href: com.microsoft.azure.eventhubs._partition_receiver.yml
-  name: getFilter(final Message lastReceivedMessage)
-  nameWithType: PartitionReceiver.getFilter(final Message lastReceivedMessage)
-  fullName: Map<Symbol, UnknownDescribedType> com.microsoft.azure.eventhubs.PartitionReceiver.getFilter(final Message lastReceivedMessage)
-  type: Method
+- uid: com.microsoft.azure.servicebus._message
+  parent: com.microsoft.azure.servicebus
+  href: com.microsoft.azure.servicebus._message.yml
+  name: Message
+  nameWithType: Message
+  fullName: com.microsoft.azure.servicebus.Message
+  type: Class
   syntax:
-    content: public Map<Symbol, UnknownDescribedType> getFilter(final Message lastReceivedMessage)
-    parameters:
-    - id: lastReceivedMessage
-      type: 8d3e47ad
-    return:
-      type: 39a8ce04
+    content: public class Message
 - uid: com.microsoft.azure.eventhubs._partition_receiver.getProperties()
   parent: com.microsoft.azure.eventhubs._partition_receiver
   href: com.microsoft.azure.eventhubs._partition_receiver.yml

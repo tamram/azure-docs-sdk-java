@@ -155,7 +155,7 @@ references:
   fullName: com.microsoft.azure.servicebus.amqp.IAmqpReceiver
   type: Interface
   syntax:
-    content: public interface IAmqpReceiver extends IAmqpLink
+    content: public interface IAmqpReceiver extends IAmqpLink,IAmqpLink
 - uid: com.microsoft.azure.servicebus.amqp._i_amqp_sender
   parent: com.microsoft.azure.servicebus.amqp
   href: com.microsoft.azure.servicebus.amqp._i_amqp_sender.yml
@@ -164,7 +164,7 @@ references:
   fullName: com.microsoft.azure.servicebus.amqp.IAmqpSender
   type: Interface
   syntax:
-    content: public interface IAmqpSender extends IAmqpLink
+    content: public interface IAmqpSender extends IAmqpLink,IAmqpLink
 - uid: com.microsoft.azure.servicebus.amqp._i_i_o_object
   parent: com.microsoft.azure.servicebus.amqp
   href: com.microsoft.azure.servicebus.amqp._i_i_o_object.yml
@@ -245,7 +245,7 @@ references:
   fullName: com.microsoft.azure.servicebus.amqp.ReceiveLinkHandler
   type: Class
   syntax:
-    content: public class ReceiveLinkHandler extends BaseLinkHandler
+    content: public class ReceiveLinkHandler extends BaseLinkHandler,BaseLinkHandler
 - uid: com.microsoft.azure.servicebus.amqp._request_response_channel
   parent: com.microsoft.azure.servicebus.amqp
   href: com.microsoft.azure.servicebus.amqp._request_response_channel.yml
@@ -281,7 +281,7 @@ references:
   fullName: com.microsoft.azure.servicebus.amqp.SendLinkHandler
   type: Class
   syntax:
-    content: public class SendLinkHandler extends BaseLinkHandler
+    content: public class SendLinkHandler extends BaseLinkHandler,BaseLinkHandler
 - uid: com.microsoft.azure.servicebus.amqp._session_handler
   parent: com.microsoft.azure.servicebus.amqp
   href: com.microsoft.azure.servicebus.amqp._session_handler.yml

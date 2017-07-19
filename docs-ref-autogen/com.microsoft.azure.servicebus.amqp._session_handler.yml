@@ -10,6 +10,7 @@ items:
   - com.microsoft.azure.servicebus.amqp._session_handler.onSessionRemoteClose(Event)
   - com.microsoft.azure.servicebus.amqp._session_handler.onSessionRemoteOpen(Event)
   - com.microsoft.azure.servicebus.amqp._session_handler.SessionHandler(final String,final Consumer<Session>,final BiConsumer<ErrorCondition, Exception>)
+  - com.microsoft.azure.servicebus.amqp._session_handler.SessionHandler(final String)
   - com.microsoft.azure.servicebus.amqp._session_handler.TRACE_LOGGER()
   href: com.microsoft.azure.servicebus.amqp._session_handler.yml
   langs:
@@ -161,6 +162,30 @@ items:
       type: acf4f1fb
     - id: onRemoteSessionOpenError
       type: 1ed0d477
+- uid: com.microsoft.azure.servicebus.amqp._session_handler.SessionHandler(final String)
+  id: SessionHandler(final String)
+  parent: com.microsoft.azure.servicebus.amqp._session_handler
+  href: com.microsoft.azure.servicebus.amqp._session_handler.yml
+  langs:
+  - java
+  name: SessionHandler(final String name)
+  nameWithType: SessionHandler.SessionHandler(final String name)
+  fullName: com.microsoft.azure.servicebus.amqp.SessionHandler.SessionHandler(final String name)
+  overload: com.microsoft.azure.servicebus.amqp._session_handler.SessionHandler*
+  type: Constructor
+  source:
+    remote:
+      path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/amqp/SessionHandler.java
+      branch: master
+      repo: https://github.com/Azure/azure-service-bus-java
+    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/amqp/SessionHandler.java
+    startLine: 23
+  package: com.microsoft.azure.servicebus.amqp
+  syntax:
+    content: public SessionHandler(final String name)
+    parameters:
+    - id: name
+      type: 3d93591e
 - uid: com.microsoft.azure.servicebus.amqp._session_handler.TRACE_LOGGER()
   id: TRACE_LOGGER()
   parent: com.microsoft.azure.servicebus.amqp._session_handler
@@ -169,7 +194,7 @@ items:
   - java
   name: TRACE_LOGGER
   nameWithType: SessionHandler.TRACE_LOGGER
-  fullName: final Logger com.microsoft.azure.servicebus.amqp.SessionHandler.TRACE_LOGGER
+  fullName: static final Logger com.microsoft.azure.servicebus.amqp.SessionHandler.TRACE_LOGGER
   type: Field
   source:
     remote: *o0

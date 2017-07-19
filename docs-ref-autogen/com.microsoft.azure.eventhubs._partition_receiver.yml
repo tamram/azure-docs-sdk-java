@@ -57,6 +57,7 @@ items:
   - com.microsoft.azure.servicebus._client_entity.close()
   - com.microsoft.azure.servicebus._client_entity.closeSync()
   - com.microsoft.azure.servicebus._client_entity.getClientId()
+  - com.microsoft.azure.servicebus._i_receiver_settings_provider.getFilter(final Message)
   - com.microsoft.azure.servicebus._client_entity.getLastKnownError()
   - com.microsoft.azure.servicebus._client_entity.setClosed()
   - com.microsoft.azure.servicebus._client_entity.throwIfClosed()
@@ -151,7 +152,6 @@ items:
       type: 8d3e47ad
     return:
       type: 39a8ce04
-  overridden: com.microsoft.azure.servicebus._i_receiver_settings_provider.getFilter(final Message)
 - uid: com.microsoft.azure.eventhubs._partition_receiver.getPartitionId()
   id: getPartitionId()
   parent: com.microsoft.azure.eventhubs._partition_receiver
@@ -745,6 +745,20 @@ references:
     content: public String getClientId()
     return:
       type: "26831127"
+- uid: com.microsoft.azure.servicebus._i_receiver_settings_provider.getFilter(final Message)
+  parent: com.microsoft.azure.servicebus._i_receiver_settings_provider
+  href: com.microsoft.azure.servicebus._i_receiver_settings_provider.yml
+  name: getFilter(final Message lastReceivedMessage)
+  nameWithType: IReceiverSettingsProvider.getFilter(final Message lastReceivedMessage)
+  fullName: Map<Symbol, UnknownDescribedType> com.microsoft.azure.servicebus.IReceiverSettingsProvider.getFilter(final Message lastReceivedMessage)
+  type: Method
+  syntax:
+    content: public Map<Symbol, UnknownDescribedType> getFilter(final Message lastReceivedMessage)
+    parameters:
+    - id: lastReceivedMessage
+      type: 93de0ef9com.microsoft.azure.servicebus._message
+    return:
+      type: 39a8ce04
 - uid: com.microsoft.azure.servicebus._client_entity.getLastKnownError()
   parent: com.microsoft.azure.servicebus._client_entity
   href: com.microsoft.azure.servicebus._client_entity.yml
@@ -816,7 +830,7 @@ references:
   type: Class
   summary: <p>Common Receiver that abstracts all amqp related details translates event-driven reactor model into async receive Api </p>
   syntax:
-    content: public class MessageReceiver extends ClientEntity implements IAmqpReceiver
+    content: public class MessageReceiver extends ClientEntity implements IMessageReceiver,IMessageBrowser,IAmqpReceiver
 - uid: com.microsoft.azure.eventhubs._receive_pump
   parent: com.microsoft.azure.eventhubs
   href: com.microsoft.azure.eventhubs._receive_pump.yml
@@ -1036,20 +1050,6 @@ references:
     <p></p>
   syntax:
     content: public class PartitionReceiveHandler
-- uid: com.microsoft.azure.servicebus._i_receiver_settings_provider.getFilter(final Message)
-  parent: com.microsoft.azure.servicebus._i_receiver_settings_provider
-  href: com.microsoft.azure.servicebus._i_receiver_settings_provider.yml
-  name: getFilter(final Message lastReceivedMessage)
-  nameWithType: IReceiverSettingsProvider.getFilter(final Message lastReceivedMessage)
-  fullName: Map<Symbol, UnknownDescribedType> com.microsoft.azure.servicebus.IReceiverSettingsProvider.getFilter(final Message lastReceivedMessage)
-  type: Method
-  syntax:
-    content: public Map<Symbol, UnknownDescribedType> getFilter(final Message lastReceivedMessage)
-    parameters:
-    - id: lastReceivedMessage
-      type: 8d3e47ad
-    return:
-      type: 39a8ce04
 - uid: com.microsoft.azure.servicebus._i_receiver_settings_provider.getProperties()
   parent: com.microsoft.azure.servicebus._i_receiver_settings_provider
   href: com.microsoft.azure.servicebus._i_receiver_settings_provider.yml
