@@ -397,7 +397,7 @@
     uid: azure.java.sdk.landingpage.services.servicefabric
     landingPageType: Service
     items:
-     - name: Management API
+    - name: Management API
       uid: azure.java.sdk.landingpage.services.servicefabric.Management API
       landingPageType: Service
       children:
