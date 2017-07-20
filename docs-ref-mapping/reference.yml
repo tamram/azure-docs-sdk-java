@@ -268,6 +268,11 @@
     uid: azure.java.sdk.landingpage.services.eventhub
     href: ~/docs-ref-services/eventhub.md
     items:
+    - name: Management API
+      uid: azure.java.sdk.landingpage.services.eventhub.Management API
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management.eventhub*
     - name: Client library
       uid: azure.java.sdk.landingpage.services.eventhub.Client library
       landingPageType: Service
@@ -392,6 +397,11 @@
     uid: azure.java.sdk.landingpage.services.servicefabric
     landingPageType: Service
     items:
+     - name: Management API
+      uid: azure.java.sdk.landingpage.services.servicefabric.Management API
+      landingPageType: Service
+      children:
+      - com.microsoft.azure.management.servicefabric*
     - name: Client library
       uid: azure.java.sdk.landingpage.services.servicefabric.Client library
       landingPageType: Service
