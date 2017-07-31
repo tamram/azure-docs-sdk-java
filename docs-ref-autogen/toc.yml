@@ -11893,6 +11893,9 @@
   - uid: com.microsoft.azure.management.resources.fluentcore.utils._provider_registration_interceptor
     name: ProviderRegistrationInterceptor
     href: com.microsoft.azure.management.resources.fluentcore.utils._provider_registration_interceptor.yml
+  - uid: com.microsoft.azure.management.resources.fluentcore.utils._resource_manager_throttling_interceptor
+    name: ResourceManagerThrottlingInterceptor
+    href: com.microsoft.azure.management.resources.fluentcore.utils._resource_manager_throttling_interceptor.yml
   - uid: com.microsoft.azure.management.resources.fluentcore.utils._resource_namer
     name: ResourceNamer
     href: com.microsoft.azure.management.resources.fluentcore.utils._resource_namer.yml
@@ -13690,21 +13693,12 @@
   - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl
     name: WebSocketHandlerImpl
     href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl.yml
-  - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl_test
-    name: WebSocketHandlerImplTest
-    href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl_test.yml
   - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl
     name: WebSocketImpl
     href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl.yml
-  - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl_test
-    name: WebSocketImplTest
-    href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl_test.yml
   - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer
     name: WebSocketSniffer
     href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer.yml
-  - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer_test
-    name: WebSocketSnifferTest
-    href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer_test.yml
   - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_upgrade
     name: WebSocketUpgrade
     href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_upgrade.yml
@@ -17482,68 +17476,3 @@
   - uid: system.fabric.security._azure_active_directory_metadata
     name: AzureActiveDirectoryMetadata
     href: system.fabric.security._azure_active_directory_metadata.yml
-- uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer
-  name: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer
-  href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer.yml
-  items:
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._error_message_parser_test
-    name: ErrorMessageParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._error_message_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_notification_parser_test
-    name: FileUploadNotificationParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_notification_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_request_parser_test
-    name: FileUploadRequestParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_request_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_response_parser_test
-    name: FileUploadResponseParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_response_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser_test
-    name: FileUploadStatusParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._helpers
-    name: Helpers
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._helpers.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._job_query_response_error_test
-    name: JobQueryResponseErrorTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._job_query_response_error_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._jobs_parser_test
-    name: JobsParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._jobs_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._jobs_response_parser_test
-    name: JobsResponseParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._jobs_response_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._jobs_statistics_parser_test
-    name: JobsStatisticsParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._jobs_statistics_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._method_parser_test
-    name: MethodParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._method_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._parser_utility_test
-    name: ParserUtilityTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._parser_utility_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._query_request_parser_test
-    name: QueryRequestParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._query_request_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._query_response_parser_test
-    name: QueryResponseParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._query_response_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_parser_test
-    name: TwinParserTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_parser_test.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_parc93226cc09b13c7fca6bcadc46c2ad5a
-    name: TwinParserTest.OnDesiredCallback
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_parc93226cc09b13c7fca6bcadc46c2ad5a.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_par59d9b182df9eddf15d3118e74362935c
-    name: TwinParserTest.OnReportedCallback
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_par59d9b182df9eddf15d3118e74362935c.yml
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_parser_test._on_tags_callback
-    name: TwinParserTest.OnTagsCallback
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.serializer._twin_parser_test._on_tags_callback.yml
-- uid: tests.unit.com.microsoft.azure.sdk.iot.deps.ws.impl
-  name: tests.unit.com.microsoft.azure.sdk.iot.deps.ws.impl
-  href: tests.unit.com.microsoft.azure.sdk.iot.deps.ws.impl.yml
-  items:
-  - uid: tests.unit.com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_upgrade_test
-    name: WebSocketUpgradeTest
-    href: tests.unit.com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_upgrade_test.yml

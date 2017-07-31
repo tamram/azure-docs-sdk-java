@@ -4,11 +4,8 @@ items:
   id: impl
   children:
   - com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl
-  - com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl_test
   - com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl
-  - com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl_test
   - com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer
-  - com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer_test
   - com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_upgrade
   href: com.microsoft.azure.sdk.iot.deps.ws.impl.yml
   langs:
@@ -36,15 +33,6 @@ references:
   type: Class
   syntax:
     content: public class WebSocketHandlerImpl implements WebSocketHandler
-- uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl_test
-  parent: com.microsoft.azure.sdk.iot.deps.ws.impl
-  href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_handler_impl_test.yml
-  name: WebSocketHandlerImplTest
-  nameWithType: WebSocketHandlerImplTest
-  fullName: com.microsoft.azure.sdk.iot.deps.ws.impl.WebSocketHandlerImplTest
-  type: Class
-  syntax:
-    content: public class WebSocketHandlerImplTest
 - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl
   parent: com.microsoft.azure.sdk.iot.deps.ws.impl
   href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl.yml
@@ -54,15 +42,6 @@ references:
   type: Class
   syntax:
     content: public class WebSocketImpl implements WebSocket
-- uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl_test
-  parent: com.microsoft.azure.sdk.iot.deps.ws.impl
-  href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_impl_test.yml
-  name: WebSocketImplTest
-  nameWithType: WebSocketImplTest
-  fullName: com.microsoft.azure.sdk.iot.deps.ws.impl.WebSocketImplTest
-  type: Class
-  syntax:
-    content: public class WebSocketImplTest
 - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer
   parent: com.microsoft.azure.sdk.iot.deps.ws.impl
   href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer.yml
@@ -72,15 +51,6 @@ references:
   type: Class
   syntax:
     content: public class WebSocketSniffer
-- uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer_test
-  parent: com.microsoft.azure.sdk.iot.deps.ws.impl
-  href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_sniffer_test.yml
-  name: WebSocketSnifferTest
-  nameWithType: WebSocketSnifferTest
-  fullName: com.microsoft.azure.sdk.iot.deps.ws.impl.WebSocketSnifferTest
-  type: Class
-  syntax:
-    content: public class WebSocketSnifferTest
 - uid: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_upgrade
   parent: com.microsoft.azure.sdk.iot.deps.ws.impl
   href: com.microsoft.azure.sdk.iot.deps.ws.impl._web_socket_upgrade.yml
