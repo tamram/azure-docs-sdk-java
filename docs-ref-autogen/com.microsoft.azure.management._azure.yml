@@ -65,11 +65,7 @@ items:
       branch: 880e2022bf46b71f481107effb7c878a9ae065dd
       repo: https://github.com/Azure/azure-sdk-for-java
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 95
-=======
     startLine: 92
->>>>>>> master
   package: com.microsoft.azure.management
   summary: <p>The entry point for accessing resource management APIs in <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref>. </p>
   syntax: &o1
@@ -90,11 +86,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 711
-=======
     startLine: 696
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public AccessManagement accessManagement()
@@ -115,11 +107,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 505
-=======
     startLine: 498
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public ApplicationGateways applicationGateways()
@@ -140,11 +128,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 647
-=======
     startLine: 640
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public AppServiceManager appServices()
@@ -165,11 +149,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 121
-=======
     startLine: 117
->>>>>>> master
   package: com.microsoft.azure.management
   summary: >-
     <p>Authenticate to <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> using an <xref href="com.microsoft.azure.management._azure" data-throw-if-not-resolved="false"></xref> credentials object.</p>
@@ -198,11 +178,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 148
-=======
     startLine: 143
->>>>>>> master
   package: com.microsoft.azure.management
   summary: <p>Authenticates API access using a properties file containing the required credentials. </p>
   syntax:
@@ -231,11 +207,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 166
-=======
     startLine: 160
->>>>>>> master
   package: com.microsoft.azure.management
   summary: <p>Authenticates API access using a RestClient instance. </p>
   syntax:
@@ -264,11 +236,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 177
-=======
     startLine: 171
->>>>>>> master
   package: com.microsoft.azure.management
   summary: <p>Authenticates API access using a RestClient instance. </p>
   syntax:
@@ -300,11 +268,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 477
-=======
     startLine: 470
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public AvailabilitySets availabilitySets()
@@ -325,11 +289,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 603
-=======
     startLine: 596
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public BatchAccounts batchAccounts()
@@ -350,11 +310,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 624
-=======
     startLine: 617
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public CdnProfiles cdnProfiles()
@@ -375,11 +331,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 589
-=======
     startLine: 582
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public ComputeUsages computeUsages()
@@ -400,11 +352,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 184
-=======
     startLine: 178
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public static Configurable configure()
@@ -425,11 +373,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 687
-=======
     startLine: 680
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Registries containerRegistries()
@@ -450,11 +394,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 679
-=======
     startLine: 672
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public ContainerServices containerServices()
@@ -475,11 +415,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 421
-=======
     startLine: 414
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Deployments deployments()
@@ -500,11 +436,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 561
-=======
     startLine: 554
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Disks disks()
@@ -525,11 +457,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 631
-=======
     startLine: 624
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public DnsZones dnsZones()
@@ -550,11 +478,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 695
-=======
     startLine: 688
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public DocumentDBAccounts documentDBs()
@@ -575,11 +499,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 435
-=======
     startLine: 428
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Features features()
@@ -600,11 +520,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 428
-=======
     startLine: 421
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public GenericResources genericResources()
@@ -625,11 +541,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 400
-=======
     startLine: 393
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Subscription getCurrentSubscription()
@@ -650,11 +562,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 498
-=======
     startLine: 491
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public LoadBalancers loadBalancers()
@@ -675,11 +583,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 582
-=======
     startLine: 575
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public NetworkInterfaces networkInterfaces()
@@ -700,11 +604,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 484
-=======
     startLine: 477
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Networks networks()
@@ -725,11 +625,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 512
-=======
     startLine: 505
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public NetworkSecurityGroups networkSecurityGroups()
@@ -750,11 +646,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 519
-=======
     startLine: 512
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public NetworkUsages networkUsages()
@@ -775,11 +667,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 526
-=======
     startLine: 519
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public NetworkWatchers networkWatchers()
@@ -800,11 +688,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 456
-=======
     startLine: 449
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public PolicyAssignments policyAssignments()
@@ -825,11 +709,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 449
-=======
     startLine: 442
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public PolicyDefinitions policyDefinitions()
@@ -850,11 +730,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 442
-=======
     startLine: 435
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Providers providers()
@@ -875,11 +751,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 575
-=======
     startLine: 568
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public PublicIPAddresses publicIPAddresses()
@@ -900,11 +772,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 617
-=======
     startLine: 610
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public RedisCaches redisCaches()
@@ -925,11 +793,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 414
-=======
     startLine: 407
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public ResourceGroups resourceGroups()
@@ -950,41 +814,13 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 491
-=======
     startLine: 484
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public RouteTables routeTables()
     return:
       type: com.microsoft.azure.management.network._route_tables
       description: <p>entry point to managing route tables </p>
-<<<<<<< HEAD
-- uid: com.microsoft.azure.management._azure.searchServices()
-  id: searchServices()
-  parent: com.microsoft.azure.management._azure
-  href: com.microsoft.azure.management._azure.yml
-  langs:
-  - java
-  name: searchServices()
-  nameWithType: Azure.searchServices()
-  fullName: SearchServices com.microsoft.azure.management.Azure.searchServices()
-  overload: com.microsoft.azure.management._azure.searchServices*
-  type: Method
-  source:
-    remote: *o0
-    path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-    startLine: 703
-  package: com.microsoft.azure.management
-  syntax:
-    content: public SearchServices searchServices()
-    return:
-      type: 274bfcc1
-      description: <p>entry point to managing Search services. </p>
-=======
->>>>>>> master
 - uid: com.microsoft.azure.management._azure.serviceBusNamespaces()
   id: serviceBusNamespaces()
   parent: com.microsoft.azure.management._azure
@@ -999,11 +835,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 662
-=======
     startLine: 655
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public ServiceBusNamespaces serviceBusNamespaces()
@@ -1024,11 +856,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 568
-=======
     startLine: 561
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Snapshots snapshots()
@@ -1049,11 +877,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 654
-=======
     startLine: 647
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public SqlServers sqlServers()
@@ -1074,11 +898,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 463
-=======
     startLine: 456
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public StorageAccounts storageAccounts()
@@ -1099,11 +919,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 470
-=======
     startLine: 463
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Usages storageUsages()
@@ -1124,11 +940,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 393
-=======
     startLine: 386
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public String subscriptionId()
@@ -1149,11 +961,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 407
-=======
     startLine: 400
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Subscriptions subscriptions()
@@ -1174,11 +982,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 610
-=======
     startLine: 603
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public TrafficManagerProfiles trafficManagerProfiles()
@@ -1199,11 +1003,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 596
-=======
     startLine: 589
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public Vaults vaults()
@@ -1224,11 +1024,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 554
-=======
     startLine: 547
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public VirtualMachineCustomImages virtualMachineCustomImages()
@@ -1249,11 +1045,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 547
-=======
     startLine: 540
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public VirtualMachineImages virtualMachineImages()
@@ -1274,11 +1066,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 533
-=======
     startLine: 526
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public VirtualMachines virtualMachines()
@@ -1299,11 +1087,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 540
-=======
     startLine: 533
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public VirtualMachineScaleSets virtualMachineScaleSets()
@@ -1324,11 +1108,7 @@ items:
   source:
     remote: *o0
     path: azure/src/main/java/com/microsoft/azure/management/Azure.java
-<<<<<<< HEAD
-    startLine: 639
-=======
     startLine: 632
->>>>>>> master
   package: com.microsoft.azure.management
   syntax:
     content: public WebApps webApps()
