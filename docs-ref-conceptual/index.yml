@@ -37,7 +37,7 @@ sections:
         src: https://docs.microsoft.com/media/common/i_code-samples.svg
       title: Code Samples
     - href: java-azure-tools.md
-      html: <p>Developer tools</p>
+      html: <p>Developer tools and IDE plugins</p>
       image:
         src: https://docs.microsoft.com/media/common/i_download-install.svg
       title: SDK &amp; Tools
@@ -46,7 +46,7 @@ sections:
       image:
         src: https://docs.microsoft.com/media/common/i_api-reference.svg
       title: API Reference
-- title: 5-Minute Quickstarts
+- title: Featured Quickstarts
   items:
   - type: paragraph
     text: 'Learn how to build Java apps with Azure services.'
@@ -65,8 +65,12 @@ sections:
       href: https://docs.microsoft.com/azure/mysql/connect-java
     - image:
         src: https://docs.microsoft.com/azure/media/index/cosmosdb.svg
-      title: Build a web app with Cosmos DB
-      href: https://docs.microsoft.com/azure/cosmos-db/create-documentdb-java
+      title: Authenticate your users with Azure AD
+      href: https://docs.microsoft.com/azure/active-directory/develop/active-directory-devquickstarts-webapp-java
+- title: Get Started with Java on Azure
+  items:
+  - type: markdown
+    text: <iframe src="https://channel9.msdn.com/Events/AzureOpenDev/June2017/How-to-Session-Deploying-a-Spring-Boot-app-to-Azure/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
 - title: Samples
   items:
   - type: list
@@ -75,3 +79,15 @@ sections:
     - html: <a href="https://github.com/Azure-Samples/mysql-spring-boot-todo">Create a web app with Spring Boot and MySQL</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/storage-blob-java-getting-started/">Azure Blob Storage with Java</a>
     - html: <a href="https://azure.microsoft.com/resources/samples/azure-cosmos-db-mongodb-java-getting-started/">Connect to Azure Cosmos DB with the MongoDB API</a>
+- title: Step-by-Step Tutorials
+  items:
+  - type: list
+    style: unordered
+    items:
+    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-java-mysql">Create a Java web app with Spring Boot and MySQL</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service/app-service-deploy-spring-boot-web-app-on-azure">Deploy a Spring Boot app to Azure</a>
+    - html: <a href="https://docs.microsoft.com/azure/container-service/kubernetes/container-service-deploy-spring-boot-app-on-kubernetes">Deploy a Spring Boot app to a Kuberenetes cluster in Azure</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-intellij-create-hello-world-web-app">Create and deploy an app with IntelliJ</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-web/app-service-web-eclipse-create-hello-world-web-app">Create and deploy an app with Eclipse</a>
+    - html: <a href="https://docs.microsoft.com/azure/app-service-api/app-service-api-nodejs-api-app">Build a Java RESTful API and deploy it to Azure</a>
+    - html: <a href="https://docs.microsoft.com/azure/redis-cache/cache-java-get-started">Speed up your Java apps with Azure Redis Cache</a>
