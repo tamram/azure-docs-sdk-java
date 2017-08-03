@@ -70,7 +70,7 @@ sections:
 - title: Get Started with Java on Azure
   items:
   - type: markdown
-    text: <iframe src="https://channel9.msdn.com/Events/AzureOpenDev/June2017/How-to-Session-Deploying-a-Spring-Boot-app-to-Azure/player" width="640" height="360" allowFullScreen frameBorder="0"></iframe>
+    text: <iframe src="https://channel9.msdn.com/Events/AzureOpenDev/June2017/How-to-Session-Deploying-a-Spring-Boot-app-to-Azure/player" width="480" height="270" allowFullScreen frameBorder="0"></iframe>
 - title: Samples
   items:
   - type: list
