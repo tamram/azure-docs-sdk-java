@@ -21,10 +21,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key item containing key metadata. </p>
@@ -45,7 +45,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 70
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -70,7 +70,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 118
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key identifier. </p>
@@ -92,7 +92,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 50
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -117,7 +117,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 110
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -142,7 +142,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 90
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -167,7 +167,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 80
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -196,7 +196,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 60
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -225,7 +225,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyItem.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyItem.java
     startLine: 100
   package: com.microsoft.azure.keyvault.models
   summary: >-

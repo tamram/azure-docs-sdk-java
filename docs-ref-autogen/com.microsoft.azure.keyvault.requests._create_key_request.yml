@@ -20,10 +20,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 15
   package: com.microsoft.azure.keyvault.requests
   summary: <p>The create key request class. </p>
@@ -44,7 +44,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 182
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -65,7 +65,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 154
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -86,13 +86,13 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 175
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public List<JsonWebKeyOperation> keyOperations()
     return:
-      type: 5618da2dcom.microsoft.azure.keyvault.webkey._json_web_key_operationa08ddfce
+      type: 3f7414eb
       description: <p>the key operations </p>
 - uid: com.microsoft.azure.keyvault.requests._create_key_request.keySize()
   id: keySize()
@@ -107,7 +107,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 168
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -128,13 +128,13 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 161
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public JsonWebKeyType keyType()
     return:
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_type
+      type: 827fbe25
       description: <p>the key type </p>
 - uid: com.microsoft.azure.keyvault.requests._create_key_request.tags()
   id: tags()
@@ -149,7 +149,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 189
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -170,7 +170,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
     startLine: 147
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -193,6 +193,10 @@ references:
   nameWithType: CreateKeyRequest.keyName
   fullName: String com.microsoft.azure.keyvault.requests.CreateKeyRequest.keyName
   package: com.microsoft.azure.keyvault.requests
+- uid: 827fbe25
+  spec.java:
+  - name: JsonWebKeyType
+    fullName: JsonWebKeyType
 - uid: com.microsoft.azure.keyvault.requests._create_key_request.keyType*
   name: keyType
   nameWithType: CreateKeyRequest.keyType
@@ -207,16 +211,10 @@ references:
   nameWithType: CreateKeyRequest.keySize
   fullName: Integer com.microsoft.azure.keyvault.requests.CreateKeyRequest.keySize
   package: com.microsoft.azure.keyvault.requests
-- uid: 5618da2dcom.microsoft.azure.keyvault.webkey._json_web_key_operationa08ddfce
+- uid: 3f7414eb
   spec.java:
-  - name: List<
-    fullName: List<
-  - uid: com.microsoft.azure.keyvault.webkey._json_web_key_operation
-    name: JsonWebKeyOperation
-    fullName: com.microsoft.azure.keyvault.webkey.JsonWebKeyOperation
-    href: com.microsoft.azure.keyvault.webkey._json_web_key_operation.yml
-  - name: '>'
-    fullName: '>'
+  - name: List<JsonWebKeyOperation>
+    fullName: List<JsonWebKeyOperation>
 - uid: com.microsoft.azure.keyvault.requests._create_key_request.keyOperations*
   name: keyOperations
   nameWithType: CreateKeyRequest.keyOperations
@@ -236,26 +234,6 @@ references:
   nameWithType: CreateKeyRequest.tags
   fullName: Map<String, String> com.microsoft.azure.keyvault.requests.CreateKeyRequest.tags
   package: com.microsoft.azure.keyvault.requests
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key_type
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key_type.yml
-  name: JsonWebKeyType
-  nameWithType: JsonWebKeyType
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKeyType
-  type: Class
-  summary: <p>Defines values for <xref href="com.microsoft.azure.keyvault.webkey._json_web_key_type" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public class JsonWebKeyType
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key_operation
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key_operation.yml
-  name: JsonWebKeyOperation
-  nameWithType: JsonWebKeyOperation
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKeyOperation
-  type: Class
-  summary: <p>Defines values for <xref href="com.microsoft.azure.keyvault.webkey._json_web_key_operation" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public class JsonWebKeyOperation
 - uid: com.microsoft.azure.keyvault.models._key_attributes
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_attributes.yml

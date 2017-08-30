@@ -13,10 +13,10 @@ items:
   type: Namespace
   source:
     remote:
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/authentication/ChallengeCache.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/authentication/ChallengeCache.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/authentication/ChallengeCache.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/authentication/ChallengeCache.java
     startLine: 6
   summary: <p>This package contains the classes for <xref href="com.microsoft.azure.keyvault._key_vault_client" data-throw-if-not-resolved="false"></xref>. Performs cryptographic key operations and vault operations against the Key Vault service. </p>
   syntax:

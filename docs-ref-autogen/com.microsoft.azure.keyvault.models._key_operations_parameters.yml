@@ -17,10 +17,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
     startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key operations parameters. </p>
@@ -41,7 +41,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
     startLine: 37
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -51,7 +51,7 @@ items:
   syntax:
     content: public JsonWebKeyEncryptionAlgorithm algorithm()
     return:
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>the algorithm value </p>
 - uid: com.microsoft.azure.keyvault.models._key_operations_parameters.value()
   id: value()
@@ -66,7 +66,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
     startLine: 57
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -91,7 +91,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
     startLine: 47
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -102,7 +102,7 @@ items:
     content: public KeyOperationsParameters withAlgorithm(JsonWebKeyEncryptionAlgorithm algorithm)
     parameters:
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>the algorithm value to set </p>
     return:
       type: com.microsoft.azure.keyvault.models._key_operations_parameters
@@ -120,7 +120,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
     startLine: 70
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -137,6 +137,10 @@ items:
       type: com.microsoft.azure.keyvault.models._key_operations_parameters
       description: <p>the <xref href="com.microsoft.azure.keyvault.models._key_operations_parameters" data-throw-if-not-resolved="false"></xref> object itself. </p>
 references:
+- uid: 250de8ff
+  spec.java:
+  - name: JsonWebKeyEncryptionAlgorithm
+    fullName: JsonWebKeyEncryptionAlgorithm
 - uid: com.microsoft.azure.keyvault.models._key_operations_parameters.algorithm*
   name: algorithm
   nameWithType: KeyOperationsParameters.algorithm
@@ -161,16 +165,6 @@ references:
   nameWithType: KeyOperationsParameters.withValue
   fullName: KeyOperationsParameters com.microsoft.azure.keyvault.models.KeyOperationsParameters.withValue
   package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm.yml
-  name: JsonWebKeyEncryptionAlgorithm
-  nameWithType: JsonWebKeyEncryptionAlgorithm
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKeyEncryptionAlgorithm
-  type: Class
-  summary: <p>Defines values for <xref href="com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public class JsonWebKeyEncryptionAlgorithm
 - uid: com.microsoft.azure.keyvault.models._key_operations_parameters
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_operations_parameters.yml

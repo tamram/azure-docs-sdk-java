@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
     startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>Exception thrown for an invalid response with <xref href="com.microsoft.azure.keyvault.models._key_vault_error" data-throw-if-not-resolved="false"></xref> information. </p>
@@ -41,7 +41,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
     startLine: 42
   package: com.microsoft.azure.keyvault.models
   syntax:
@@ -61,7 +61,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
     startLine: 26
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -90,7 +90,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
     startLine: 37
   package: com.microsoft.azure.keyvault.models
   summary: >-

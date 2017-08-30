@@ -22,10 +22,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 25
   package: com.microsoft.azure.keyvault.models
   summary: <p>A <xref href="com.microsoft.azure.keyvault.models._key_bundle" data-throw-if-not-resolved="false"></xref> consisting of a WebKey plus its attributes. </p>
@@ -46,7 +46,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 76
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -71,7 +71,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 56
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -81,7 +81,7 @@ items:
   syntax:
     content: public JsonWebKey key()
     return:
-      type: com.microsoft.azure.keyvault.webkey._json_web_key
+      type: f80711ad
       description: <p>the key value </p>
 - uid: com.microsoft.azure.keyvault.models._key_bundle.keyIdentifier()
   id: keyIdentifier()
@@ -96,7 +96,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 124
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key identifier. </p>
@@ -118,7 +118,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 116
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -143,7 +143,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 96
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -168,7 +168,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 131
   package: com.microsoft.azure.keyvault.models
   syntax:
@@ -188,7 +188,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 86
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -217,7 +217,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 66
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -228,7 +228,7 @@ items:
     content: public KeyBundle withKey(JsonWebKey key)
     parameters:
     - id: key
-      type: com.microsoft.azure.keyvault.webkey._json_web_key
+      type: f80711ad
       description: <p>the key value to set </p>
     return:
       type: com.microsoft.azure.keyvault.models._key_bundle
@@ -246,7 +246,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyBundle.java
     startLine: 106
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -263,6 +263,10 @@ items:
       type: com.microsoft.azure.keyvault.models._key_bundle
       description: <p>the <xref href="com.microsoft.azure.keyvault.models._key_bundle" data-throw-if-not-resolved="false"></xref> object itself. </p>
 references:
+- uid: f80711ad
+  spec.java:
+  - name: JsonWebKey
+    fullName: JsonWebKey
 - uid: com.microsoft.azure.keyvault.models._key_bundle.key*
   name: key
   nameWithType: KeyBundle.key
@@ -320,16 +324,6 @@ references:
   nameWithType: KeyBundle.toString
   fullName: String com.microsoft.azure.keyvault.models.KeyBundle.toString
   package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key.yml
-  name: JsonWebKey
-  nameWithType: JsonWebKey
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKey
-  type: Class
-  summary: <p>As of <ulink url="http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18">http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18</ulink>. </p>
-  syntax:
-    content: public class JsonWebKey
 - uid: com.microsoft.azure.keyvault.models._key_attributes
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_attributes.yml

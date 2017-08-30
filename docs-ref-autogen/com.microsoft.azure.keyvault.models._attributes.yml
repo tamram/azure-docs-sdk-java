@@ -21,10 +21,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>The object attributes managed by the KeyVault service. </p>
@@ -45,7 +45,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 129
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -70,7 +70,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 55
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -95,7 +95,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 102
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -120,7 +120,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 75
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -145,7 +145,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 141
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -170,7 +170,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 65
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -199,7 +199,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 115
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -228,7 +228,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Attributes.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Attributes.java
     startLine: 88
   package: com.microsoft.azure.keyvault.models
   summary: >-

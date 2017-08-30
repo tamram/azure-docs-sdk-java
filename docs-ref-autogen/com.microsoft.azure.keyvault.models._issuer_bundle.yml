@@ -24,10 +24,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 23
   package: com.microsoft.azure.keyvault.models
   summary: <p>The issuer for Key Vault certificate. </p>
@@ -48,7 +48,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 128
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -73,7 +73,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 88
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -98,7 +98,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 59
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -123,7 +123,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 147
   package: com.microsoft.azure.keyvault.models
   summary: <p>The issuer identifier. </p>
@@ -145,7 +145,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 108
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -170,7 +170,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 68
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -195,7 +195,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 155
   package: com.microsoft.azure.keyvault.models
   syntax:
@@ -215,7 +215,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 138
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -244,7 +244,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 98
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -273,7 +273,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 118
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -302,7 +302,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/IssuerBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/IssuerBundle.java
     startLine: 78
   package: com.microsoft.azure.keyvault.models
   summary: >-

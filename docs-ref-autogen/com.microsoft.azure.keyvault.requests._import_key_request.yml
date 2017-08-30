@@ -19,10 +19,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
     startLine: 14
   package: com.microsoft.azure.keyvault.requests
   summary: <p>The import key request class. </p>
@@ -43,7 +43,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
     startLine: 157
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -64,13 +64,13 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
     startLine: 150
   package: com.microsoft.azure.keyvault.requests
   syntax:
     content: public JsonWebKey key()
     return:
-      type: com.microsoft.azure.keyvault.webkey._json_web_key
+      type: f80711ad
       description: <p>the key </p>
 - uid: com.microsoft.azure.keyvault.requests._import_key_request.keyAttributes()
   id: keyAttributes()
@@ -85,7 +85,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
     startLine: 164
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -106,7 +106,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
     startLine: 143
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -127,7 +127,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
     startLine: 171
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -148,7 +148,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
     startLine: 136
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -171,6 +171,10 @@ references:
   nameWithType: ImportKeyRequest.keyName
   fullName: String com.microsoft.azure.keyvault.requests.ImportKeyRequest.keyName
   package: com.microsoft.azure.keyvault.requests
+- uid: f80711ad
+  spec.java:
+  - name: JsonWebKey
+    fullName: JsonWebKey
 - uid: com.microsoft.azure.keyvault.requests._import_key_request.key*
   name: key
   nameWithType: ImportKeyRequest.key
@@ -199,16 +203,6 @@ references:
   nameWithType: ImportKeyRequest.tags
   fullName: Map<String, String> com.microsoft.azure.keyvault.requests.ImportKeyRequest.tags
   package: com.microsoft.azure.keyvault.requests
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key.yml
-  name: JsonWebKey
-  nameWithType: JsonWebKey
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKey
-  type: Class
-  summary: <p>As of <ulink url="http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18">http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18</ulink>. </p>
-  syntax:
-    content: public class JsonWebKey
 - uid: com.microsoft.azure.keyvault.models._key_attributes
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_attributes.yml

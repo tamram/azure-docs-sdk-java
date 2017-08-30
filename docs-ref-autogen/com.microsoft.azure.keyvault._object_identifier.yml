@@ -26,10 +26,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 15
   package: com.microsoft.azure.keyvault
   summary: <p>The key vault object identifier. </p>
@@ -49,7 +49,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 70
   package: com.microsoft.azure.keyvault
   syntax:
@@ -69,7 +69,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 172
   package: com.microsoft.azure.keyvault
   summary: <p>Gets full authority for a URL by appending port to the url authority. </p>
@@ -94,7 +94,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 71
   package: com.microsoft.azure.keyvault
   syntax:
@@ -114,7 +114,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 23
   package: com.microsoft.azure.keyvault
   summary: <p>Verifies whether the identifier belongs to a key vault object. </p>
@@ -142,7 +142,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 68
   package: com.microsoft.azure.keyvault
   syntax:
@@ -162,7 +162,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 76
   package: com.microsoft.azure.keyvault
   summary: <p>Constructor. </p>
@@ -181,7 +181,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 128
   package: com.microsoft.azure.keyvault
   summary: <p>Constructor. </p>
@@ -207,7 +207,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 85
   package: com.microsoft.azure.keyvault
   summary: <p>Constructor. </p>
@@ -236,7 +236,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 96
   package: com.microsoft.azure.keyvault
   summary: <p>Constructor. </p>
@@ -268,7 +268,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 218
   package: com.microsoft.azure.keyvault
   syntax:
@@ -287,7 +287,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 67
   package: com.microsoft.azure.keyvault
   syntax:
@@ -307,7 +307,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 54
   package: com.microsoft.azure.keyvault
   summary: <p>Verifies a value is null or empty. Returns the value if non-empty and throws exception if empty. </p>
@@ -335,7 +335,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/ObjectIdentifier.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/ObjectIdentifier.java
     startLine: 69
   package: com.microsoft.azure.keyvault
   syntax:

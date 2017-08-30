@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 15
   package: com.microsoft.azure.keyvault.requests
   summary: <p>The update certificate policy request class. </p>
@@ -40,7 +40,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 122
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -61,7 +61,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 129
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -82,7 +82,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 115
   package: com.microsoft.azure.keyvault.requests
   syntax:

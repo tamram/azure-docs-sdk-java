@@ -17,10 +17,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Trigger.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Trigger.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Trigger.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Trigger.java
     startLine: 17
   package: com.microsoft.azure.keyvault.models
   summary: <p>A condition to be satisfied for an action to be executed. </p>
@@ -41,7 +41,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Trigger.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Trigger.java
     startLine: 56
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -66,7 +66,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Trigger.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Trigger.java
     startLine: 36
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -91,7 +91,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Trigger.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Trigger.java
     startLine: 66
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -120,7 +120,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/Trigger.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/Trigger.java
     startLine: 46
   package: com.microsoft.azure.keyvault.models
   summary: >-

@@ -18,10 +18,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
     startLine: 18
   package: com.microsoft.azure.keyvault.requests
   summary: <p>The create certificate request class. </p>
@@ -42,7 +42,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
     startLine: 182
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -63,7 +63,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
     startLine: 168
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -84,7 +84,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
     startLine: 175
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -105,7 +105,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
     startLine: 189
   package: com.microsoft.azure.keyvault.requests
   syntax:
@@ -126,7 +126,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/CreateCertificateRequest.java
     startLine: 161
   package: com.microsoft.azure.keyvault.requests
   syntax:

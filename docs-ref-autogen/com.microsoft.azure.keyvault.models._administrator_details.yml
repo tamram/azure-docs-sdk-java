@@ -21,10 +21,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 17
   package: com.microsoft.azure.keyvault.models
   summary: <p>Details of the organization administrator of the certificate issuer. </p>
@@ -45,7 +45,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 87
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -70,7 +70,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 47
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -95,7 +95,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 67
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -120,7 +120,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 107
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -145,7 +145,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 97
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -174,7 +174,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 57
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -203,7 +203,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 77
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -232,7 +232,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/AdministratorDetails.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/AdministratorDetails.java
     startLine: 117
   package: com.microsoft.azure.keyvault.models
   summary: >-

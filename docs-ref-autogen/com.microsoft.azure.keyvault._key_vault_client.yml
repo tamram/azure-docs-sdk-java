@@ -140,10 +140,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 65
   package: com.microsoft.azure.keyvault
   summary: <p>Initializes a new instance of the <xref href="com.microsoft.azure.keyvault._key_vault_client" data-throw-if-not-resolved="false"></xref> class. </p>
@@ -164,7 +164,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 95
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -189,7 +189,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 86
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -214,7 +214,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 522
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -246,7 +246,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 534
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -281,7 +281,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1306
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -310,7 +310,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1323
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -342,7 +342,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 221
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -371,7 +371,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 240
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -403,7 +403,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 599
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -417,7 +417,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -438,7 +438,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 613
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -452,7 +452,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -476,7 +476,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1049
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -508,7 +508,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1061
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -543,7 +543,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1118
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -572,7 +572,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1129
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -604,7 +604,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1283
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -636,7 +636,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1295
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -671,7 +671,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1646
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -703,7 +703,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1658
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -738,7 +738,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 295
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -770,7 +770,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 307
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -805,7 +805,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 776
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -837,7 +837,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 788
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -872,7 +872,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 571
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -886,7 +886,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -907,7 +907,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 585
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -921,7 +921,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -945,7 +945,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 131
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -970,7 +970,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 77
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -995,7 +995,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1517
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1024,7 +1024,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1542
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1056,7 +1056,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1567
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1091,7 +1091,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1529
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1123,7 +1123,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1554
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1158,7 +1158,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1580
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1196,7 +1196,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1096
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1225,7 +1225,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1107
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1257,7 +1257,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1259
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1289,7 +1289,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1271
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1324,7 +1324,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1622
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1356,7 +1356,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1634
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1391,7 +1391,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1428
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1423,7 +1423,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1440
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1458,7 +1458,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 354
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1487,7 +1487,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 378
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1519,7 +1519,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 403
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1554,7 +1554,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 366
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1586,7 +1586,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 390
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1621,7 +1621,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 416
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1659,7 +1659,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1705
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1691,7 +1691,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1717
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1726,7 +1726,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 835
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1755,7 +1755,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 860
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1787,7 +1787,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 885
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1822,7 +1822,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 847
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1854,7 +1854,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 872
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1889,7 +1889,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 898
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1927,7 +1927,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 161
   package: com.microsoft.azure.keyvault
   syntax:
@@ -1948,7 +1948,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1340
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -1977,7 +1977,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1359
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2009,7 +2009,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 259
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2038,7 +2038,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 277
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2070,7 +2070,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 187
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2096,7 +2096,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 177
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2122,7 +2122,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1140
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2151,7 +2151,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1162
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2183,7 +2183,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1174
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2218,7 +2218,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1151
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2250,7 +2250,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1003
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2279,7 +2279,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1025
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2311,7 +2311,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1037
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2346,7 +2346,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1014
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2378,7 +2378,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1379
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2410,7 +2410,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1403
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2445,7 +2445,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1416
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2483,7 +2483,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1391
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2518,7 +2518,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 476
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2547,7 +2547,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 498
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2579,7 +2579,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 510
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2614,7 +2614,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 487
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2646,7 +2646,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 428
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2678,7 +2678,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 452
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2713,7 +2713,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 465
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2751,7 +2751,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 440
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2786,7 +2786,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 909
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2815,7 +2815,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 931
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2847,7 +2847,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 943
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2882,7 +2882,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 920
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2914,7 +2914,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 955
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2946,7 +2946,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 979
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -2981,7 +2981,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 992
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3019,7 +3019,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 967
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3054,7 +3054,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 113
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3079,7 +3079,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1669
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3108,7 +3108,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1686
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3140,7 +3140,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 147
   package: com.microsoft.azure.keyvault
   syntax:
@@ -3161,7 +3161,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 546
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3193,7 +3193,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 558
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3228,7 +3228,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 154
   package: com.microsoft.azure.keyvault
   syntax:
@@ -3249,7 +3249,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 168
   package: com.microsoft.azure.keyvault
   syntax:
@@ -3270,7 +3270,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1073
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3302,7 +3302,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1085
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3337,7 +3337,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1185
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3366,7 +3366,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1203
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3398,7 +3398,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 739
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3427,7 +3427,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 757
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3459,7 +3459,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 627
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3473,7 +3473,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_signature_algorithm
+      type: e1578188
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -3494,7 +3494,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 641
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3508,7 +3508,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_signature_algorithm
+      type: e1578188
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -3532,7 +3532,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 713
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3546,7 +3546,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -3567,7 +3567,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 727
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3581,7 +3581,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -3605,7 +3605,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1481
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3634,7 +3634,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1499
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3666,7 +3666,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1221
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3695,7 +3695,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1240
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3730,7 +3730,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1591
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3759,7 +3759,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1606
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3791,7 +3791,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1451
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3820,7 +3820,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 1466
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3852,7 +3852,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 318
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3881,7 +3881,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 336
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3913,7 +3913,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 799
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3942,7 +3942,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 817
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3974,7 +3974,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 197
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -3999,7 +3999,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 656
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -4013,7 +4013,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_signature_algorithm
+      type: e1578188
       description: <p>The signing/verification algorithm. For more information on possible algorithm types, see JsonWebKeySignatureAlgorithm. </p>
     - id: digest
       type: ccd9418d
@@ -4037,7 +4037,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 671
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -4051,7 +4051,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_signature_algorithm
+      type: e1578188
       description: <p>The signing/verification algorithm. For more information on possible algorithm types, see JsonWebKeySignatureAlgorithm. </p>
     - id: digest
       type: ccd9418d
@@ -4078,7 +4078,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 104
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -4104,7 +4104,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 140
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -4130,7 +4130,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 122
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -4156,7 +4156,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 685
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -4170,7 +4170,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -4191,7 +4191,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/KeyVaultClient.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/KeyVaultClient.java
     startLine: 699
   package: com.microsoft.azure.keyvault
   summary: >-
@@ -4205,7 +4205,7 @@ items:
       type: "26831127"
       description: <p>The full key identifier </p>
     - id: algorithm
-      type: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
+      type: 250de8ff
       description: <p>algorithm identifier </p>
     - id: value
       type: ccd9418d
@@ -4505,6 +4505,10 @@ references:
   nameWithType: KeyVaultClient.restoreKeyAsync
   fullName: ServiceFuture<KeyBundle> com.microsoft.azure.keyvault.KeyVaultClient.restoreKeyAsync
   package: com.microsoft.azure.keyvault
+- uid: 250de8ff
+  spec.java:
+  - name: JsonWebKeyEncryptionAlgorithm
+    fullName: JsonWebKeyEncryptionAlgorithm
 - uid: com.microsoft.azure.keyvault._key_vault_client.encrypt*
   name: encrypt
   nameWithType: KeyVaultClient.encrypt
@@ -4545,6 +4549,10 @@ references:
   nameWithType: KeyVaultClient.decryptAsync
   fullName: ServiceFuture<KeyOperationResult> com.microsoft.azure.keyvault.KeyVaultClient.decryptAsync
   package: com.microsoft.azure.keyvault
+- uid: e1578188
+  spec.java:
+  - name: JsonWebKeySignatureAlgorithm
+    fullName: JsonWebKeySignatureAlgorithm
 - uid: com.microsoft.azure.keyvault._key_vault_client.sign*
   name: sign
   nameWithType: KeyVaultClient.sign
@@ -5186,26 +5194,6 @@ references:
   summary: <p>The key operation result. </p>
   syntax:
     content: public class KeyOperationResult
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm.yml
-  name: JsonWebKeyEncryptionAlgorithm
-  nameWithType: JsonWebKeyEncryptionAlgorithm
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKeyEncryptionAlgorithm
-  type: Class
-  summary: <p>Defines values for <xref href="com.microsoft.azure.keyvault.webkey._json_web_key_encryption_algorithm" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public class JsonWebKeyEncryptionAlgorithm
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key_signature_algorithm
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key_signature_algorithm.yml
-  name: JsonWebKeySignatureAlgorithm
-  nameWithType: JsonWebKeySignatureAlgorithm
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKeySignatureAlgorithm
-  type: Class
-  summary: <p>Defines values for <xref href="com.microsoft.azure.keyvault.webkey._json_web_key_signature_algorithm" data-throw-if-not-resolved="false"></xref>. </p>
-  syntax:
-    content: public class JsonWebKeySignatureAlgorithm
 - uid: com.microsoft.azure.keyvault.models._key_verify_result
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_verify_result.yml

@@ -26,10 +26,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 18
   package: com.microsoft.azure.keyvault.models
   summary: <p>Management policy for a certificate. </p>
@@ -50,7 +50,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 176
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -75,7 +75,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 67
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -100,7 +100,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 156
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -125,7 +125,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 76
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -150,7 +150,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 136
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -175,7 +175,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 96
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -200,7 +200,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 186
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -229,7 +229,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 166
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -258,7 +258,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 86
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -287,7 +287,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 146
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -316,7 +316,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 106
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -345,7 +345,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 126
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -374,7 +374,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificatePolicy.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificatePolicy.java
     startLine: 116
   package: com.microsoft.azure.keyvault.models
   summary: >-

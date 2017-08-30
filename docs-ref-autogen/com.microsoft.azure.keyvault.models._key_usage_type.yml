@@ -26,10 +26,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 17
   package: com.microsoft.azure.keyvault.models
   summary: <p>Defines values for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -49,7 +49,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 37
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value cRLSign for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -69,7 +69,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 28
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value dataEncipherment for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -89,7 +89,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 43
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value decipherOnly for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -109,7 +109,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value digitalSignature for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -129,7 +129,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 40
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value encipherOnly for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -150,7 +150,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 67
   package: com.microsoft.azure.keyvault.models
   syntax:
@@ -173,7 +173,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 62
   package: com.microsoft.azure.keyvault.models
   syntax:
@@ -192,7 +192,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 31
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value keyAgreement for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -212,7 +212,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 34
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value keyCertSign for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -232,7 +232,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 25
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value keyEncipherment for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -253,7 +253,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 51
   package: com.microsoft.azure.keyvault.models
   summary: <p>Creates a custom value for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -275,7 +275,7 @@ items:
   type: Field
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 22
   package: com.microsoft.azure.keyvault.models
   summary: <p>Static value nonRepudiation for <xref href="com.microsoft.azure.keyvault.models._key_usage_type" data-throw-if-not-resolved="false"></xref>. </p>
@@ -296,7 +296,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyUsageType.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyUsageType.java
     startLine: 57
   package: com.microsoft.azure.keyvault.models
   syntax:

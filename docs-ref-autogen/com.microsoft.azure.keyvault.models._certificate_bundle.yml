@@ -30,10 +30,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 27
   package: com.microsoft.azure.keyvault.models
   summary: <p>A certificate bundle consists of a certificate (X509) plus its attributes. </p>
@@ -54,7 +54,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 175
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -79,7 +79,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 135
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -104,7 +104,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 214
   package: com.microsoft.azure.keyvault.models
   summary: <p>The certificate identifier. </p>
@@ -126,7 +126,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 155
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -151,7 +151,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 87
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -176,7 +176,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 236
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key identifier. </p>
@@ -198,7 +198,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 96
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -223,7 +223,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 126
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -248,7 +248,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 225
   package: com.microsoft.azure.keyvault.models
   summary: <p>The secret identifier. </p>
@@ -270,7 +270,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 105
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -295,7 +295,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 195
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -320,7 +320,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 244
   package: com.microsoft.azure.keyvault.models
   syntax:
@@ -340,7 +340,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 185
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -369,7 +369,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 145
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -398,7 +398,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 165
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -427,7 +427,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 205
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -456,7 +456,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/CertificateBundle.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/CertificateBundle.java
     startLine: 114
   package: com.microsoft.azure.keyvault.models
   summary: >-

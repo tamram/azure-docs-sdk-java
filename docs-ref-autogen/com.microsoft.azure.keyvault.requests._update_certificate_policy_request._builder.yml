@@ -16,10 +16,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 23
   package: com.microsoft.azure.keyvault.requests
   summary: <p>The <xref href="com.microsoft.azure.keyvault.requests._update_certificate_policy_request" data-throw-if-not-resolved="false"></xref> builder. </p>
@@ -40,7 +40,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 63
   package: com.microsoft.azure.keyvault.requests
   summary: >-
@@ -65,7 +65,7 @@ items:
   type: Constructor
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 41
   package: com.microsoft.azure.keyvault.requests
   summary: >-
@@ -94,7 +94,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyRequest.java
     startLine: 53
   package: com.microsoft.azure.keyvault.requests
   summary: >-

@@ -21,10 +21,10 @@ items:
   type: Class
   source:
     remote: &o0
-      path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
-      branch: bb950b2a0255c017040501de0c19e4849361ca1d
-      repo: https://github.com/Azure/azure-keyvault-java
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+      path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+      branch: mvn
+      repo: git@github.com:Azure/azure-docs-sdk-java.git
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 19
   package: com.microsoft.azure.keyvault.models
   summary: <p>The key import parameters. </p>
@@ -45,7 +45,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 49
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -70,7 +70,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 69
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -80,7 +80,7 @@ items:
   syntax:
     content: public JsonWebKey key()
     return:
-      type: com.microsoft.azure.keyvault.webkey._json_web_key
+      type: f80711ad
       description: <p>the key value </p>
 - uid: com.microsoft.azure.keyvault.models._key_import_parameters.keyAttributes()
   id: keyAttributes()
@@ -95,7 +95,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 89
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -120,7 +120,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 109
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -145,7 +145,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 59
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -174,7 +174,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 79
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -185,7 +185,7 @@ items:
     content: public KeyImportParameters withKey(JsonWebKey key)
     parameters:
     - id: key
-      type: com.microsoft.azure.keyvault.webkey._json_web_key
+      type: f80711ad
       description: <p>the key value to set </p>
     return:
       type: com.microsoft.azure.keyvault.models._key_import_parameters
@@ -203,7 +203,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 99
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -232,7 +232,7 @@ items:
   type: Method
   source:
     remote: *o0
-    path: azure-keyvault/src/main/java/com/microsoft/azure/keyvault/models/KeyImportParameters.java
+    path: mvn/azure-keyvault/com/microsoft/azure/keyvault/models/KeyImportParameters.java
     startLine: 119
   package: com.microsoft.azure.keyvault.models
   summary: >-
@@ -263,6 +263,10 @@ references:
   nameWithType: KeyImportParameters.withHsm
   fullName: KeyImportParameters com.microsoft.azure.keyvault.models.KeyImportParameters.withHsm
   package: com.microsoft.azure.keyvault.models
+- uid: f80711ad
+  spec.java:
+  - name: JsonWebKey
+    fullName: JsonWebKey
 - uid: com.microsoft.azure.keyvault.models._key_import_parameters.key*
   name: key
   nameWithType: KeyImportParameters.key
@@ -297,16 +301,6 @@ references:
   nameWithType: KeyImportParameters.withTags
   fullName: KeyImportParameters com.microsoft.azure.keyvault.models.KeyImportParameters.withTags
   package: com.microsoft.azure.keyvault.models
-- uid: com.microsoft.azure.keyvault.webkey._json_web_key
-  parent: com.microsoft.azure.keyvault.webkey
-  href: com.microsoft.azure.keyvault.webkey._json_web_key.yml
-  name: JsonWebKey
-  nameWithType: JsonWebKey
-  fullName: com.microsoft.azure.keyvault.webkey.JsonWebKey
-  type: Class
-  summary: <p>As of <ulink url="http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18">http://tools.ietf.org/html/draft-ietf-jose-json-web-key-18</ulink>. </p>
-  syntax:
-    content: public class JsonWebKey
 - uid: com.microsoft.azure.keyvault.models._key_attributes
   parent: com.microsoft.azure.keyvault.models
   href: com.microsoft.azure.keyvault.models._key_attributes.yml
