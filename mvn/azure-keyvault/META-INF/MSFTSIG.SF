@@ -1,0 +1,272 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest-Main-Attributes: 7XKxd1QsxVgmXpRNXuHviMOCork=
+Created-By: 1.6.0_30 (Sun Microsystems Inc.)
+SHA1-Digest-Manifest: 5c1NuqP+tQdJjOWrM6BdBj30TR4=
+
+Name: com/microsoft/azure/keyvault/models/KeyBundle.java
+SHA1-Digest: 7pzDBdg97b14PXT1mTir3j1HXz8=
+
+Name: com/microsoft/azure/keyvault/requests/ImportCertificateRequest.j
+ ava
+SHA1-Digest: SfZoEOjD1T69yhor46Adk6kRVAM=
+
+Name: com/microsoft/azure/keyvault/models/KeyImportParameters.java
+SHA1-Digest: Gd5ekGnghGy1YwB43+KlmNMgGk0=
+
+Name: com/microsoft/azure/keyvault/models/KeyVaultErrorException.java
+SHA1-Digest: Y1HHmFlAQRQodjLO9hzi6TRxoIA=
+
+Name: com/microsoft/azure/keyvault/models/LifetimeAction.java
+SHA1-Digest: JxbCVpdEoK5F7FadGjB/bxFocB0=
+
+Name: com/microsoft/azure/keyvault/models/KeyOperationsParameters.java
+SHA1-Digest: nYe27HGcChUr4mX9ScOkj/SJnFA=
+
+Name: com/microsoft/azure/keyvault/requests/UpdateCertificateRequest.j
+ ava
+SHA1-Digest: w1je9betbdUEptaOrapNvG8lqCs=
+
+Name: com/microsoft/azure/keyvault/models/CertificateOperation.java
+SHA1-Digest: dAQnQM55ECMqTB5kugXp5Tzk3kk=
+
+Name: com/microsoft/azure/keyvault/models/KeyProperties.java
+SHA1-Digest: 9Kv9vwLtdGwoUTl69KuMl0I0SjQ=
+
+Name: com/microsoft/azure/keyvault/requests/SetSecretRequest.java
+SHA1-Digest: WdHBhNGdvZ6G0yn4nWVBwDahFo0=
+
+Name: com/microsoft/azure/keyvault/models/CertificateUpdateParameters.
+ java
+SHA1-Digest: lxEiTsyYyNaDfQ8HeIGdaCOXqEw=
+
+Name: com/microsoft/azure/keyvault/models/CertificateCreateParameters.
+ java
+SHA1-Digest: B5hpTC6CpjgR3V9KeGB3eMPIJXo=
+
+Name: com/microsoft/azure/keyvault/models/X509CertificateProperties.ja
+ va
+SHA1-Digest: f2Xazz3g2izvSzlMD/5UBzLXC/0=
+
+Name: com/microsoft/azure/keyvault/models/KeyItem.java
+SHA1-Digest: LqPNScwv6xnmcHL0ZkaJwsuGdf0=
+
+Name: com/microsoft/azure/keyvault/models/Trigger.java
+SHA1-Digest: GTcl8iANq8YhUaP2Q2ZSKv34TiI=
+
+Name: com/microsoft/azure/keyvault/package-info.java
+SHA1-Digest: DWSFy9FNSZn9mXxI0a3nWLE9TMI=
+
+Name: com/microsoft/azure/keyvault/models/KeySignParameters.java
+SHA1-Digest: idXF5P5L1dRoAYcDrGBQ8vnA6g4=
+
+Name: com/microsoft/azure/keyvault/models/SecretProperties.java
+SHA1-Digest: UfkvULoPSOT2kIA9ak6M7JUjjis=
+
+Name: com/microsoft/azure/keyvault/models/SecretItem.java
+SHA1-Digest: ukcrofvwg0KJzIDFPCYIIGDEsgU=
+
+Name: com/microsoft/azure/keyvault/SecretIdentifier.java
+SHA1-Digest: HyxFBYv0QuLWl6Woz8pDRzC5Vkw=
+
+Name: com/microsoft/azure/keyvault/models/package-info.java
+SHA1-Digest: QsN7TpIxK+oZkmPRqQb0/Fxk7vY=
+
+Name: com/microsoft/azure/keyvault/models/IssuerParameters.java
+SHA1-Digest: qC+PHMI643EvBmQIKjEh1xAd2OM=
+
+Name: com/microsoft/azure/keyvault/requests/package-info.java
+SHA1-Digest: zWLHocQ+GDpSg5RgcqB9mbd2Yp0=
+
+Name: com/microsoft/azure/keyvault/models/CertificateIssuerItem.java
+SHA1-Digest: 5aPVBfBQKtmywpbTMKVX8C7Qhak=
+
+Name: com/microsoft/azure/keyvault/models/CertificateItem.java
+SHA1-Digest: SCV2p1NSRGkv6pZOk+mjWNSOOWk=
+
+Name: com/microsoft/azure/keyvault/models/CertificateIssuerUpdateParam
+ eters.java
+SHA1-Digest: 2PI1LmjNYpwOwYyZK0kB4YBLtBs=
+
+Name: com/microsoft/azure/keyvault/KeyIdentifier.java
+SHA1-Digest: bAlEN9+YXBnme8tw5BsXB4BZSzw=
+
+Name: com/microsoft/azure/keyvault/requests/UpdateKeyRequest.java
+SHA1-Digest: e1Y0RPrPkYEZ7VgqGLu0VDGi0So=
+
+Name: com/microsoft/azure/keyvault/models/KeyAttributes.java
+SHA1-Digest: C40AZWDtuuEqPR0lMvHgLEWogTY=
+
+Name: com/microsoft/azure/keyvault/models/CertificateImportParameters.
+ java
+SHA1-Digest: UK1e6XDKaaL8N0o4MyVygWWgel4=
+
+Name: com/microsoft/azure/keyvault/KeyVaultClient.java
+SHA1-Digest: LDy7GPIpTAjibN9IF9b2Zwkxvto=
+
+Name: com/microsoft/azure/keyvault/models/CertificateMergeParameters.j
+ ava
+SHA1-Digest: iXyiXWlBkw7H9TKYyqJa3ZP4qTI=
+
+Name: com/microsoft/azure/keyvault/authentication/KeyVaultCredentials.
+ java
+SHA1-Digest: hOarg2nMN7SkdCMVAbDRGQMhz4o=
+
+Name: com/microsoft/azure/keyvault/models/CertificateOperationUpdatePa
+ rameter.java
+SHA1-Digest: b0x4RhVwrWKeE3zmV31o6lXzsWk=
+
+Name: com/microsoft/azure/keyvault/models/SecretBundle.java
+SHA1-Digest: CqH/HqPMNdznS6kMfcC0aGgctPU=
+
+Name: com/microsoft/azure/keyvault/models/PendingCertificateSigningReq
+ uestResult.java
+SHA1-Digest: NQobLR22SDZSs1rlkC2GUtN6Hdk=
+
+Name: com/microsoft/azure/keyvault/ObjectIdentifier.java
+SHA1-Digest: Fwh183tt76P+F0oDNmwo8YZFJSc=
+
+Name: com/microsoft/azure/keyvault/models/KeyVerifyResult.java
+SHA1-Digest: jrLZBfOUvVj1E4XgqhkpV5IF+aE=
+
+Name: com/microsoft/azure/keyvault/CertificateOperationIdentifier.java
+SHA1-Digest: nmmf0+N1yxRxsTWQG0Ei9NcWhfQ=
+
+Name: com/microsoft/azure/keyvault/requests/MergeCertificateRequest.ja
+ va
+SHA1-Digest: SOnnX1qS88/cTdfW6MC7ze2j/Eg=
+
+Name: META-INF/maven/com.microsoft.azure/azure-keyvault/pom.xml
+SHA1-Digest: xEZMsQ72Z18r2Xy3N2J9Sm/F9DY=
+
+Name: com/microsoft/azure/keyvault/requests/ImportKeyRequest.java
+SHA1-Digest: X2qyQ9dK1MQxWpRKOYOsKHU9kp0=
+
+Name: com/microsoft/azure/keyvault/models/IssuerAttributes.java
+SHA1-Digest: /f0YCHwyb30nZlKkt29oF0UFrZo=
+
+Name: com/microsoft/azure/keyvault/models/CertificatePolicy.java
+SHA1-Digest: dmh0ELj9QDzBVndcN9HvjNW6rYs=
+
+Name: com/microsoft/azure/keyvault/authentication/package-info.java
+SHA1-Digest: oT5oR4JZl8F/bLBeS9OZ6hYzRSo=
+
+Name: com/microsoft/azure/keyvault/requests/SetCertificateIssuerReques
+ t.java
+SHA1-Digest: pyJub03HkuJOeboMYAw7Kl4jEd8=
+
+Name: com/microsoft/azure/keyvault/requests/UpdateCertificateIssuerReq
+ uest.java
+SHA1-Digest: EZ1mgFw7OqHhH/jeTzG87wlZfb8=
+
+Name: com/microsoft/azure/keyvault/models/IssuerCredentials.java
+SHA1-Digest: MN3vRFS03sCXZ4ycvfljENJeoBY=
+
+Name: com/microsoft/azure/keyvault/models/Error.java
+SHA1-Digest: wjIAr51azVKOTt5Y06QDUIEkt88=
+
+Name: com/microsoft/azure/keyvault/authentication/ChallengeCache.java
+SHA1-Digest: BAmk2vFN/PdIGKqVaWp+jwhShTs=
+
+Name: com/microsoft/azure/keyvault/models/Contact.java
+SHA1-Digest: yUBVZSiUUJO38O2oKc3uJOP+z1o=
+
+Name: com/microsoft/azure/keyvault/models/CertificateIssuerSetParamete
+ rs.java
+SHA1-Digest: 79k3Nzsv4wB9BAFqXp67ickDBTM=
+
+Name: com/microsoft/azure/keyvault/models/KeyRestoreParameters.java
+SHA1-Digest: D+dS0aTX6nt8Lu8715TxYbCTlYk=
+
+Name: com/microsoft/azure/keyvault/CertificateIdentifier.java
+SHA1-Digest: RJEVEBZe++RveuiNtAwDWZ95X9o=
+
+Name: com/microsoft/azure/keyvault/models/OrganizationDetails.java
+SHA1-Digest: ovM5nMN+wYqctVQZhs8Z4Ar/aKg=
+
+Name: com/microsoft/azure/keyvault/models/SecretAttributes.java
+SHA1-Digest: XzaSbY6aE/gtaoRO0zV6o29YeX4=
+
+Name: com/microsoft/azure/keyvault/models/KeyUsageType.java
+SHA1-Digest: CVwpEYpQMpZSzq/pP4HxQreCdRs=
+
+Name: com/microsoft/azure/keyvault/models/BackupKeyResult.java
+SHA1-Digest: zwbLR/4hLn+XXTMHkt1IO0rGVAg=
+
+Name: com/microsoft/azure/keyvault/models/KeyUpdateParameters.java
+SHA1-Digest: CyeOSq05s0f6wisv4GMLlZ8tRyk=
+
+Name: com/microsoft/azure/keyvault/models/AdministratorDetails.java
+SHA1-Digest: O5cEhtR+CulYREXYX52NbJsTUAw=
+
+Name: com/microsoft/azure/keyvault/requests/UpdateCertificateOperation
+ Request.java
+SHA1-Digest: F6jUcJQehhmJO7XvYFblx9z0o+8=
+
+Name: com/microsoft/azure/keyvault/models/KeyVaultError.java
+SHA1-Digest: 77rX1vRlLwTkGYb2cLAOHEGnXIQ=
+
+Name: META-INF/maven/com.microsoft.azure/azure-keyvault/pom.properties
+SHA1-Digest: 8EF3DZg9ye9U9gmRxgG4TO93TTo=
+
+Name: com/microsoft/azure/keyvault/models/SubjectAlternativeNames.java
+SHA1-Digest: bC9VyseLX2Q5hCJtp2Tyvh3gVKk=
+
+Name: com/microsoft/azure/keyvault/models/SecretUpdateParameters.java
+SHA1-Digest: X3M7/5pcuQHnBtdTUs4g0uyYM/k=
+
+Name: com/microsoft/azure/keyvault/models/KeyOperationResult.java
+SHA1-Digest: BZAZNUwLAGALnkTVGbu/5VLDuPw=
+
+Name: com/microsoft/azure/keyvault/IssuerIdentifier.java
+SHA1-Digest: pblXMlwoG3fBY9aQfLIc/k6Powo=
+
+Name: com/microsoft/azure/keyvault/models/PageImpl.java
+SHA1-Digest: kw1YIVrZSqZ4oXR0Q2rTar0Uino=
+
+Name: com/microsoft/azure/keyvault/models/CertificateBundle.java
+SHA1-Digest: /3iUPCA8dEVj8arX0bWDZUdCGrg=
+
+Name: com/microsoft/azure/keyvault/requests/UpdateCertificatePolicyReq
+ uest.java
+SHA1-Digest: DuptIXcJM24N77Q5mMNYP5fbGXc=
+
+Name: com/microsoft/azure/keyvault/models/Attributes.java
+SHA1-Digest: QqCq7oFdSeBqQUvwTS1qKTtOcCw=
+
+Name: com/microsoft/azure/keyvault/models/IssuerBundle.java
+SHA1-Digest: KvP3LrURRDH8o1cojjh5arn4Opo=
+
+Name: com/microsoft/azure/keyvault/models/KeyCreateParameters.java
+SHA1-Digest: Xb/w1kUxBpiFYEen6aMCXlGZrSo=
+
+Name: com/microsoft/azure/keyvault/requests/UpdateSecretRequest.java
+SHA1-Digest: QJuHt9Twi4h5qeVuiJS1J+Y2nM4=
+
+Name: com/microsoft/azure/keyvault/models/CertificateAttributes.java
+SHA1-Digest: sC+rZKuejI0EfTtrZs3/i4JczYI=
+
+Name: com/microsoft/azure/keyvault/models/Action.java
+SHA1-Digest: aDRA4yaJcWTyBeU7kNyyrgKUsoo=
+
+Name: com/microsoft/azure/keyvault/requests/CreateKeyRequest.java
+SHA1-Digest: CQCBxOrYpFEAODUZXjC263mcTRU=
+
+Name: com/microsoft/azure/keyvault/models/ActionType.java
+SHA1-Digest: 8GV1fefCbc/DjWW2QnLBQsKgBAU=
+
+Name: com/microsoft/azure/keyvault/models/KeyVerifyParameters.java
+SHA1-Digest: GtroTum4T1rzK4QKsiubusPXo6M=
+
+Name: com/microsoft/azure/keyvault/models/SecretSetParameters.java
+SHA1-Digest: K5MheYO8lOKsXjgA+lxiBO0ZlAM=
+
+Name: com/microsoft/azure/keyvault/requests/CreateCertificateRequest.j
+ ava
+SHA1-Digest: 4EmQ7Pbe0rDHMLrWn/GecSENI60=
+
+Name: com/microsoft/azure/keyvault/KeyVaultClientImpl.java
+SHA1-Digest: EgHv1Py45shna/sCqeUYF/MnK4g=
+
+Name: com/microsoft/azure/keyvault/models/Contacts.java
+SHA1-Digest: UFLCdPcI15ViV+tzm9GJw+2o548=
+
