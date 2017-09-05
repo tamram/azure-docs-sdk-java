@@ -20,7 +20,6 @@ items:
   - com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.getStatusReason()
   - com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.getStatusUpdatedTime()
   - com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.getTagsMap()
-  - com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.getVersion()
   - com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.manager()
   - com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.properties()
   - com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.resetDesiredProperty(Map<String, Object>)
@@ -120,7 +119,7 @@ items:
   source:
     remote: *o0
     path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 974
+    startLine: 963
   package: com.microsoft.azure.sdk.iot.deps.serializer
   summary: >-
     <p>Getter for connection state</p>
@@ -145,7 +144,7 @@ items:
   source:
     remote: *o0
     path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 985
+    startLine: 974
   package: com.microsoft.azure.sdk.iot.deps.serializer
   summary: >-
     <p>Getter for connection state updated date and time</p>
@@ -295,7 +294,7 @@ items:
   source:
     remote: *o0
     path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 996
+    startLine: 985
   package: com.microsoft.azure.sdk.iot.deps.serializer
   summary: >-
     <p>Getter for last activity time</p>
@@ -370,7 +369,7 @@ items:
   source:
     remote: *o0
     path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 940
+    startLine: 929
   package: com.microsoft.azure.sdk.iot.deps.serializer
   summary: >-
     <p>Getter for device status</p>
@@ -395,7 +394,7 @@ items:
   source:
     remote: *o0
     path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 952
+    startLine: 941
   package: com.microsoft.azure.sdk.iot.deps.serializer
   summary: >-
     <p>Getter for status reason</p>
@@ -420,7 +419,7 @@ items:
   source:
     remote: *o0
     path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 963
+    startLine: 952
   package: com.microsoft.azure.sdk.iot.deps.serializer
   summary: >-
     <p>Getter for status updated date and time</p>
@@ -459,31 +458,6 @@ items:
   exceptions:
   - type: cbf33bbe
     description: <p>This exception is thrown if tags the is not enabled. </p>
-- uid: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.getVersion()
-  id: getVersion()
-  parent: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser
-  href: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.yml
-  langs:
-  - java
-  name: getVersion()
-  nameWithType: TwinParser.getVersion()
-  fullName: Integer com.microsoft.azure.sdk.iot.deps.serializer.TwinParser.getVersion()
-  overload: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.getVersion*
-  type: Method
-  source:
-    remote: *o0
-    path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 912
-  package: com.microsoft.azure.sdk.iot.deps.serializer
-  summary: >-
-    <p>Getter for Twin version</p>
-
-    <p></p>
-  syntax:
-    content: public Integer getVersion()
-    return:
-      type: 08effaa0
-      description: <p>A Integer representing a twin tags and properties version in the JSON. It can be<programlisting><codeline><highlight class="normal">null<sp></sp></highlight></codeline></programlisting></p>
 - uid: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.manager()
   id: manager()
   parent: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser
@@ -689,7 +663,7 @@ items:
   source:
     remote: *o0
     path: deps/src/main/java/com/microsoft/azure/sdk/iot/deps/serializer/TwinParser.java
-    startLine: 925
+    startLine: 914
   package: com.microsoft.azure.sdk.iot.deps.serializer
   summary: >-
     <p>Setter for ETag.</p>
@@ -1311,11 +1285,6 @@ references:
   name: getETag
   nameWithType: TwinParser.getETag
   fullName: String com.microsoft.azure.sdk.iot.deps.serializer.TwinParser.getETag
-  package: com.microsoft.azure.sdk.iot.deps.serializer
-- uid: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.getVersion*
-  name: getVersion
-  nameWithType: TwinParser.getVersion
-  fullName: Integer com.microsoft.azure.sdk.iot.deps.serializer.TwinParser.getVersion
   package: com.microsoft.azure.sdk.iot.deps.serializer
 - uid: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser.setETag*
   name: setETag

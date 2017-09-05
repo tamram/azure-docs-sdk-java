@@ -31,8 +31,9 @@ items:
       branch: master
       repo: https://github.com/Azure/azure-service-bus-java
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 57
+    startLine: 56
   package: com.microsoft.azure.servicebus.primitives
+  summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
   syntax: &o1
     content: public class CoreMessageSender extends ClientEntity
   inheritance:
@@ -62,7 +63,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 1018
+    startLine: 972
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<Void> cancelScheduledMessageAsync(Long[] sequenceNumbers, Duration timeout)
@@ -87,7 +88,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 86
+    startLine: 81
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public static CompletableFuture<CoreMessageSender> create(final MessagingFactory factory, final String sendLinkName, final String senderPath)
@@ -114,7 +115,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 641
+    startLine: 651
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public ErrorContext getContext()
@@ -134,7 +135,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 193
+    startLine: 170
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public String getSendPath()
@@ -154,7 +155,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 885
+    startLine: 847
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: protected CompletableFuture<Void> onClose()
@@ -174,7 +175,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 410
+    startLine: 364
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public void onClose(ErrorCondition condition)
@@ -195,7 +196,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 419
+    startLine: 373
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public void onError(Exception completionException)
@@ -216,7 +217,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 657
+    startLine: 667
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public void onFlow(final int creditIssued)
@@ -237,7 +238,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 346
+    startLine: 314
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public void onOpenComplete(Exception completionException)
@@ -258,7 +259,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 467
+    startLine: 453
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public void onSendComplete(final Delivery delivery)
@@ -279,7 +280,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 1052
+    startLine: 998
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<Collection<Message>> peekMessagesAsync(long fromSequenceNumber, int messageCount)
@@ -304,7 +305,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 951
+    startLine: 913
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<long[]> scheduleMessageAsync(Message[] messages, Duration timeout)
@@ -329,7 +330,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 280
+    startLine: 252
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<Void> sendAsync(final Iterable<Message> messages)
@@ -352,7 +353,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/CoreMessageSender.java
-    startLine: 329
+    startLine: 298
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<Void> sendAsync(Message msg)
@@ -618,12 +619,7 @@ references:
   nameWithType: ClientEntity
   fullName: com.microsoft.azure.servicebus.primitives.ClientEntity
   type: Class
-  summary: >-
-    <p>Contract for all client entities with Open-Close/Abort state m/c </p>
-
-    <p>main-purpose: closeAll related entities </p>
-
-    <p>Internal-class </p>
+  summary: '<p>Contract for all client entities with Open-Close/Abort state m/c main-purpose: closeAll related entities Internal-class </p>'
   syntax:
     content: public class ClientEntity
 - uid: com.microsoft.azure.servicebus.primitives._messaging_factory
@@ -633,7 +629,7 @@ references:
   nameWithType: MessagingFactory
   fullName: com.microsoft.azure.servicebus.primitives.MessagingFactory
   type: Class
-  summary: <p>Abstracts all AMQP related details and encapsulates an AMQP connection and manages its life cycle. Each instance of this class represent one AMQP connection to the namespace. If an application creates multiple senders, receivers or clients using the same MessagingFacotry instance, all those senders, receivers or clients will share the same connection to the namespace. </p>
+  summary: <p>Abstracts all amqp related details and exposes AmqpConnection object Manages connection life-cycle </p>
   syntax:
     content: public class MessagingFactory
 - uid: com.microsoft.azure.servicebus.primitives._retry_policy
@@ -643,7 +639,6 @@ references:
   nameWithType: RetryPolicy
   fullName: com.microsoft.azure.servicebus.primitives.RetryPolicy
   type: Class
-  summary: <p>Represents an abstraction of a policy for retrying messaging operations when an exception is encountered. Some exceptions encountered by a sender or receiver can be transient like ServerBusy and the operation will succeed if retried. Clients can specify a retry policy using <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder" data-throw-if-not-resolved="false"></xref> which guides senders and receivers to automatically retry the failed operation before throwing the exception to the client application. Users should not implement this class, instead should use one of the provided implementations through <xref href="com.microsoft.azure.servicebus.primitives._retry_policy.getDefault()" data-throw-if-not-resolved="false"></xref> or <xref href="com.microsoft.azure.servicebus.primitives._retry_policy.getNoRetry()" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public class RetryPolicy
 - uid: com.microsoft.azure.servicebus.primitives._core_message_sender
@@ -653,6 +648,7 @@ references:
   nameWithType: CoreMessageSender
   fullName: com.microsoft.azure.servicebus.primitives.CoreMessageSender
   type: Class
+  summary: <p>Abstracts all amqp related details translates event-driven reactor model into async send Api </p>
   syntax: *o1
 - uid: com.microsoft.azure.servicebus.primitives._timeout_tracker
   parent: com.microsoft.azure.servicebus.primitives

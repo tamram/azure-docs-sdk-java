@@ -7,7 +7,6 @@ items:
   - com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.addRuleAsync(RuleDescription)
   - com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.create(MessagingFactory,String)
   - com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.getMessageSessionsAsync(Date,int,int,String)
-  - com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.getRulesAsync(int,int)
   - com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.onClose()
   - com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.removeRuleAsync(String)
   href: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.yml
@@ -23,7 +22,7 @@ items:
       branch: master
       repo: https://github.com/Azure/azure-service-bus-java
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/MiscRequestResponseOperationHandler.java
-    startLine: 14
+    startLine: 11
   package: com.microsoft.azure.servicebus.primitives
   syntax: &o1
     content: public class MiscRequestResponseOperationHandler extends ClientEntity
@@ -54,7 +53,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/MiscRequestResponseOperationHandler.java
-    startLine: 206
+    startLine: 120
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<Void> addRuleAsync(RuleDescription ruleDescription)
@@ -77,7 +76,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/MiscRequestResponseOperationHandler.java
-    startLine: 35
+    startLine: 26
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public static CompletableFuture<MiscRequestResponseOperationHandler> create(MessagingFactory factory, String entityPath)
@@ -102,7 +101,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/MiscRequestResponseOperationHandler.java
-    startLine: 135
+    startLine: 56
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<Pair<String[], Integer>> getMessageSessionsAsync(Date lastUpdatedTime, int skip, int top, String lastSessionId)
@@ -117,31 +116,6 @@ items:
       type: "26831127"
     return:
       type: 9cdf14d0com.microsoft.azure.servicebus.primitives._pairff5c67ed
-- uid: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.getRulesAsync(int,int)
-  id: getRulesAsync(int,int)
-  parent: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler
-  href: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.yml
-  langs:
-  - java
-  name: getRulesAsync(int skip, int top)
-  nameWithType: MiscRequestResponseOperationHandler.getRulesAsync(int skip, int top)
-  fullName: CompletableFuture<Collection<RuleDescription>> com.microsoft.azure.servicebus.primitives.MiscRequestResponseOperationHandler.getRulesAsync(int skip, int top)
-  overload: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.getRulesAsync*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/MiscRequestResponseOperationHandler.java
-    startLine: 235
-  package: com.microsoft.azure.servicebus.primitives
-  syntax:
-    content: public CompletableFuture<Collection<RuleDescription>> getRulesAsync(int skip, int top)
-    parameters:
-    - id: skip
-      type: f75371fa
-    - id: top
-      type: f75371fa
-    return:
-      type: 9161dfdccom.microsoft.azure.servicebus.rules._rule_descriptione7daa122
 - uid: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.onClose()
   id: onClose()
   parent: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler
@@ -156,7 +130,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/MiscRequestResponseOperationHandler.java
-    startLine: 75
+    startLine: 35
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: protected CompletableFuture<Void> onClose()
@@ -176,7 +150,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/MiscRequestResponseOperationHandler.java
-    startLine: 178
+    startLine: 95
   package: com.microsoft.azure.servicebus.primitives
   syntax:
     content: public CompletableFuture<Void> removeRuleAsync(String ruleName)
@@ -246,21 +220,6 @@ references:
   name: addRuleAsync
   nameWithType: MiscRequestResponseOperationHandler.addRuleAsync
   fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.primitives.MiscRequestResponseOperationHandler.addRuleAsync
-  package: com.microsoft.azure.servicebus.primitives
-- uid: 9161dfdccom.microsoft.azure.servicebus.rules._rule_descriptione7daa122
-  spec.java:
-  - name: CompletableFuture<Collection<
-    fullName: CompletableFuture<Collection<
-  - uid: com.microsoft.azure.servicebus.rules._rule_description
-    name: RuleDescription
-    fullName: com.microsoft.azure.servicebus.rules.RuleDescription
-    href: com.microsoft.azure.servicebus.rules._rule_description.yml
-  - name: '>>'
-    fullName: '>>'
-- uid: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler.getRulesAsync*
-  name: getRulesAsync
-  nameWithType: MiscRequestResponseOperationHandler.getRulesAsync
-  fullName: CompletableFuture<Collection<RuleDescription>> com.microsoft.azure.servicebus.primitives.MiscRequestResponseOperationHandler.getRulesAsync
   package: com.microsoft.azure.servicebus.primitives
 - uid: com.microsoft.azure.servicebus.primitives._client_entity.ClientEntity(final String,final ClientEntity)
   parent: com.microsoft.azure.servicebus.primitives._client_entity
@@ -372,12 +331,7 @@ references:
   nameWithType: ClientEntity
   fullName: com.microsoft.azure.servicebus.primitives.ClientEntity
   type: Class
-  summary: >-
-    <p>Contract for all client entities with Open-Close/Abort state m/c </p>
-
-    <p>main-purpose: closeAll related entities </p>
-
-    <p>Internal-class </p>
+  summary: '<p>Contract for all client entities with Open-Close/Abort state m/c main-purpose: closeAll related entities Internal-class </p>'
   syntax:
     content: public class ClientEntity
 - uid: com.microsoft.azure.servicebus.primitives._messaging_factory
@@ -387,7 +341,7 @@ references:
   nameWithType: MessagingFactory
   fullName: com.microsoft.azure.servicebus.primitives.MessagingFactory
   type: Class
-  summary: <p>Abstracts all AMQP related details and encapsulates an AMQP connection and manages its life cycle. Each instance of this class represent one AMQP connection to the namespace. If an application creates multiple senders, receivers or clients using the same MessagingFacotry instance, all those senders, receivers or clients will share the same connection to the namespace. </p>
+  summary: <p>Abstracts all amqp related details and exposes AmqpConnection object Manages connection life-cycle </p>
   syntax:
     content: public class MessagingFactory extends ClientEntity
 - uid: com.microsoft.azure.servicebus.primitives._misc_request_response_operation_handler
@@ -417,9 +371,5 @@ references:
   nameWithType: RuleDescription
   fullName: com.microsoft.azure.servicebus.rules.RuleDescription
   type: Class
-  summary: >-
-    <p>Representation of a rule defined on service bus topics.</p>
-
-    <p></p>
   syntax:
     content: public class RuleDescription

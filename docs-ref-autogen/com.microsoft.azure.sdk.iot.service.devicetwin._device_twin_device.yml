@@ -18,7 +18,6 @@ items:
   - com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.getTags()
   - com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.getTagsMap()
   - com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.getTwinParser()
-  - com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.getVersion()
   - com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.reportedPropertiesToString()
   - com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.setDesiredProperties(Map<String, Object>)
   - com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.setDesiredProperties(Set<Pair>)
@@ -61,7 +60,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 203
+    startLine: 175
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>Clear desired properties set so far </p>
   syntax:
@@ -80,7 +79,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 160
+    startLine: 132
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   syntax:
     content: public void clearTags()
@@ -98,7 +97,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 211
+    startLine: 183
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>Clear tags and desired properties set so far </p>
   syntax:
@@ -117,7 +116,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 375
+    startLine: 343
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>String representation for this device containing desired properties </p>
   syntax:
@@ -139,7 +138,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 33
+    startLine: 32
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Constructor to create instance for a device</p>
@@ -171,7 +170,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 289
+    startLine: 261
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Getter for the desired properties</p>
@@ -196,7 +195,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 169
+    startLine: 141
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>Getter to get Desired Properties set </p>
   syntax:
@@ -218,7 +217,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 56
+    startLine: 54
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>Getter to get device ID </p>
   syntax:
@@ -240,7 +239,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 91
+    startLine: 89
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Getter for the eTag</p>
@@ -265,7 +264,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 302
+    startLine: 274
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Getter for the reported properties</p>
@@ -290,7 +289,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 221
+    startLine: 193
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>Getter to get Reported Properties Set </p>
   syntax:
@@ -312,7 +311,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 151
+    startLine: 123
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>Getter to get Tags Set </p>
   syntax:
@@ -334,7 +333,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 276
+    startLine: 248
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Getter for the tags</p>
@@ -359,7 +358,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 315
+    startLine: 287
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Getter for the twin serializer object for this device</p>
@@ -370,31 +369,6 @@ items:
     return:
       type: com.microsoft.azure.sdk.iot.deps.serializer._twin_parser
       description: <p>An object for twin serializer for this device </p>
-- uid: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.getVersion()
-  id: getVersion()
-  parent: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device
-  href: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.yml
-  langs:
-  - java
-  name: getVersion()
-  nameWithType: DeviceTwinDevice.getVersion()
-  fullName: Integer com.microsoft.azure.sdk.iot.service.devicetwin.DeviceTwinDevice.getVersion()
-  overload: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.getVersion*
-  type: Method
-  source:
-    remote: *o0
-    path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 117
-  package: com.microsoft.azure.sdk.iot.service.devicetwin
-  summary: >-
-    <p>Getter for the Twin version</p>
-
-    <p></p>
-  syntax:
-    content: public Integer getVersion()
-    return:
-      type: 08effaa0
-      description: <p>the stored version. It can be<programlisting><codeline><highlight class="normal">null<sp></sp></highlight></codeline></programlisting> . </p>
 - uid: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.reportedPropertiesToString()
   id: reportedPropertiesToString()
   parent: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device
@@ -409,7 +383,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 395
+    startLine: 363
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>String representation for this device containing reported properties </p>
   syntax:
@@ -431,7 +405,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 250
+    startLine: 222
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Setter for the desired properties</p>
@@ -457,7 +431,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 184
+    startLine: 156
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Setter for the desired properties</p>
@@ -486,7 +460,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 70
+    startLine: 68
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Setter for ETag</p>
@@ -515,7 +489,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 237
+    startLine: 209
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Setter for the reported properties</p>
@@ -541,7 +515,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 263
+    startLine: 235
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Setter for the tags</p>
@@ -567,7 +541,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 131
+    startLine: 103
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: >-
     <p>Setter for the tags</p>
@@ -596,7 +570,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 354
+    startLine: 322
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>String representation for this device containing tags </p>
   syntax:
@@ -618,7 +592,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/devicetwin/DeviceTwinDevice.java
-    startLine: 327
+    startLine: 299
   package: com.microsoft.azure.sdk.iot.service.devicetwin
   summary: <p>String representation for this device containing device id, tags, desired and reported properties </p>
   syntax:
@@ -654,15 +628,6 @@ references:
   name: getETag
   nameWithType: DeviceTwinDevice.getETag
   fullName: String com.microsoft.azure.sdk.iot.service.devicetwin.DeviceTwinDevice.getETag
-  package: com.microsoft.azure.sdk.iot.service.devicetwin
-- uid: 08effaa0
-  spec.java:
-  - name: Integer
-    fullName: Integer
-- uid: com.microsoft.azure.sdk.iot.service.devicetwin._device_twin_device.getVersion*
-  name: getVersion
-  nameWithType: DeviceTwinDevice.getVersion
-  fullName: Integer com.microsoft.azure.sdk.iot.service.devicetwin.DeviceTwinDevice.getVersion
   package: com.microsoft.azure.sdk.iot.service.devicetwin
 - uid: b398a0f1com.microsoft.azure.sdk.iot.service.devicetwin._paira08ddfce
   spec.java:

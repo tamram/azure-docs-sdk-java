@@ -11,8 +11,8 @@ items:
   - com.microsoft.azure.servicebus._message_session.getStateAsync()
   - com.microsoft.azure.servicebus._message_session.isBrowsableSession()
   - com.microsoft.azure.servicebus._message_session.isSessionReceiver()
-  - com.microsoft.azure.servicebus._message_session.renewSessionLock()
-  - com.microsoft.azure.servicebus._message_session.renewSessionLockAsync()
+  - com.microsoft.azure.servicebus._message_session.renewLock()
+  - com.microsoft.azure.servicebus._message_session.renewLockAsync()
   - com.microsoft.azure.servicebus._message_session.setState(byte [])
   - com.microsoft.azure.servicebus._message_session.setStateAsync(byte [])
   href: com.microsoft.azure.servicebus._message_session.yml
@@ -28,7 +28,7 @@ items:
       branch: master
       repo: https://github.com/Azure/azure-service-bus-java
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 16
+    startLine: 13
   package: com.microsoft.azure.servicebus
   syntax:
     content: public class MessageSession implements IMessageSession
@@ -49,6 +49,8 @@ items:
   - com.microsoft.azure.servicebus._i_closeable.closeAsync()
   - com.microsoft.azure.servicebus._message_receiver.complete(UUID)
   - com.microsoft.azure.servicebus._message_receiver.completeAsync(UUID)
+  - com.microsoft.azure.servicebus._message_receiver.completeBatch(Collection<? extends IMessage>)
+  - com.microsoft.azure.servicebus._message_receiver.completeBatchAsync(Collection<? extends IMessage>)
   - com.microsoft.azure.servicebus._message_receiver.deadLetter(UUID)
   - com.microsoft.azure.servicebus._message_receiver.deadLetter(UUID,Map<String, Object>)
   - com.microsoft.azure.servicebus._message_receiver.deadLetter(UUID,String,String)
@@ -81,16 +83,16 @@ items:
   - com.microsoft.azure.servicebus._message_receiver.peekBatchAsync(long,int)
   - com.microsoft.azure.servicebus._message_receiver.receive()
   - com.microsoft.azure.servicebus._message_receiver.receive(Duration)
+  - com.microsoft.azure.servicebus._message_receiver.receive(long)
   - com.microsoft.azure.servicebus._message_receiver.receiveAsync()
   - com.microsoft.azure.servicebus._message_receiver.receiveAsync(Duration)
+  - com.microsoft.azure.servicebus._message_receiver.receiveAsync(long)
   - com.microsoft.azure.servicebus._message_receiver.receiveBatch(int)
   - com.microsoft.azure.servicebus._message_receiver.receiveBatch(int,Duration)
+  - com.microsoft.azure.servicebus._message_receiver.receiveBatch(Collection<Long>)
   - com.microsoft.azure.servicebus._message_receiver.receiveBatchAsync(int)
   - com.microsoft.azure.servicebus._message_receiver.receiveBatchAsync(int,Duration)
-  - com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessage(long)
-  - com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessageAsync(long)
-  - com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessageBatch(Collection<Long>)
-  - com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessageBatchAsync(Collection<Long>)
+  - com.microsoft.azure.servicebus._message_receiver.receiveBatchAsync(Collection<Long>)
   - com.microsoft.azure.servicebus._message_receiver.renewMessageLock(IMessage)
   - com.microsoft.azure.servicebus._message_receiver.renewMessageLockAsync(IMessage)
   - com.microsoft.azure.servicebus._message_receiver.renewMessageLockBatch(Collection<? extends IMessage>)
@@ -112,13 +114,12 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 45
+    startLine: 48
   package: com.microsoft.azure.servicebus
   syntax:
     content: public Instant getLockedUntilUtc()
     return:
       type: 328f8254
-      description: <p>Gets the time that the session identified by <xref href="com.microsoft.azure.servicebus._i_message_session.getSessionId()" data-throw-if-not-resolved="false"></xref> is locked until for this client. </p>
   overridden: com.microsoft.azure.servicebus._i_message_session.getLockedUntilUtc()
 - uid: com.microsoft.azure.servicebus._message_session.getRequestedSessionId()
   id: getRequestedSessionId()
@@ -134,7 +135,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 40
+    startLine: 42
   package: com.microsoft.azure.servicebus
   syntax:
     content: protected String getRequestedSessionId()
@@ -154,13 +155,12 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 80
+    startLine: 84
   package: com.microsoft.azure.servicebus
   syntax:
     content: public String getSessionId()
     return:
       type: "26831127"
-      description: <p>Gets the SessionId. </p>
   overridden: com.microsoft.azure.servicebus._i_message_session.getSessionId()
 - uid: com.microsoft.azure.servicebus._message_session.getState()
   id: getState()
@@ -176,23 +176,13 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 70
+    startLine: 74
   package: com.microsoft.azure.servicebus
-  summary: >-
-    <p>Gets the session state.</p>
-
-    <p></p>
   syntax:
     content: public byte [] getState()
     return:
       type: ccd9418d
-      description: <p>The session state </p>
   overridden: com.microsoft.azure.servicebus._i_message_session.getState()
-  exceptions:
-  - type: 8256ba40
-    description: <p>if the current thread was interrupted while waiting </p>
-  - type: 73fec9fb
-    description: <p>if get state failed. </p>
 - uid: com.microsoft.azure.servicebus._message_session.getStateAsync()
   id: getStateAsync()
   parent: com.microsoft.azure.servicebus._message_session
@@ -207,18 +197,13 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 75
+    startLine: 79
   package: com.microsoft.azure.servicebus
-  summary: <p>Asynchronously gets the session state. </p>
   syntax:
     content: public CompletableFuture<byte[]> getStateAsync()
     return:
       type: 5fe2dfa4
-      description: <p>a CompletableFuture representing the pending session state retrieving. </p>
   overridden: com.microsoft.azure.servicebus._i_message_session.getStateAsync()
-  see:
-  - type: com.microsoft.azure.servicebus._i_message_session.getState()
-    description: ''
 - uid: com.microsoft.azure.servicebus._message_session.isBrowsableSession()
   id: isBrowsableSession()
   parent: com.microsoft.azure.servicebus._message_session
@@ -233,7 +218,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 35
+    startLine: 36
   package: com.microsoft.azure.servicebus
   syntax:
     content: protected boolean isBrowsableSession()
@@ -259,67 +244,46 @@ items:
     content: protected final boolean isSessionReceiver()
     return:
       type: 4dda0764
-- uid: com.microsoft.azure.servicebus._message_session.renewSessionLock()
-  id: renewSessionLock()
+- uid: com.microsoft.azure.servicebus._message_session.renewLock()
+  id: renewLock()
   parent: com.microsoft.azure.servicebus._message_session
   href: com.microsoft.azure.servicebus._message_session.yml
   langs:
   - java
-  name: renewSessionLock()
-  nameWithType: MessageSession.renewSessionLock()
-  fullName: void com.microsoft.azure.servicebus.MessageSession.renewSessionLock()
-  overload: com.microsoft.azure.servicebus._message_session.renewSessionLock*
+  name: renewLock()
+  nameWithType: MessageSession.renewLock()
+  fullName: void com.microsoft.azure.servicebus.MessageSession.renewLock()
+  overload: com.microsoft.azure.servicebus._message_session.renewLock*
   type: Method
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 50
+    startLine: 53
   package: com.microsoft.azure.servicebus
-  summary: >-
-    <p>Renews the lock on the session specified by the <xref href="com.microsoft.azure.servicebus._i_message_session.getSessionId()" data-throw-if-not-resolved="false"></xref>. The lock will be renewed based on the setting specified on the entity. </p>
-
-    <p>When you accept a session, the session is locked for this client instance by the service for a duration as specified during the Queue/Subscription creation. If processing of the session requires longer than this duration, the session-lock needs to be renewed. For each renewal, the session-lock is renewed by the entity's LockDuration. </p>
-
-    <p>Renewal of session renews all the messages in the session as well. Each individual message need not be renewed.</p>
-
-    <p></p>
   syntax:
-    content: public void renewSessionLock()
-  overridden: com.microsoft.azure.servicebus._i_message_session.renewSessionLock()
-  exceptions:
-  - type: 8256ba40
-    description: <p>if the current thread was interrupted while waiting </p>
-  - type: 73fec9fb
-    description: <p>if the renew failed. </p>
-- uid: com.microsoft.azure.servicebus._message_session.renewSessionLockAsync()
-  id: renewSessionLockAsync()
+    content: public void renewLock()
+  overridden: com.microsoft.azure.servicebus._i_message_session.renewLock()
+- uid: com.microsoft.azure.servicebus._message_session.renewLockAsync()
+  id: renewLockAsync()
   parent: com.microsoft.azure.servicebus._message_session
   href: com.microsoft.azure.servicebus._message_session.yml
   langs:
   - java
-  name: renewSessionLockAsync()
-  nameWithType: MessageSession.renewSessionLockAsync()
-  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSession.renewSessionLockAsync()
-  overload: com.microsoft.azure.servicebus._message_session.renewSessionLockAsync*
+  name: renewLockAsync()
+  nameWithType: MessageSession.renewLockAsync()
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSession.renewLockAsync()
+  overload: com.microsoft.azure.servicebus._message_session.renewLockAsync*
   type: Method
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 55
+    startLine: 58
   package: com.microsoft.azure.servicebus
-  summary: >-
-    <p>Renews the lock on the session specified by the <xref href="com.microsoft.azure.servicebus._i_message_session.getSessionId()" data-throw-if-not-resolved="false"></xref>. The lock will be renewed based on the setting specified on the entity.</p>
-
-    <p></p>
   syntax:
-    content: public CompletableFuture<Void> renewSessionLockAsync()
+    content: public CompletableFuture<Void> renewLockAsync()
     return:
       type: db03ee24
-      description: <p>a CompletableFuture representing the pending renew. </p>
-  overridden: com.microsoft.azure.servicebus._i_message_session.renewSessionLockAsync()
-  see:
-  - type: com.microsoft.azure.servicebus._i_message_session.renewSessionLock()
-    description: ''
+  overridden: com.microsoft.azure.servicebus._i_message_session.renewLockAsync()
 - uid: com.microsoft.azure.servicebus._message_session.setState(byte [])
   id: setState(byte [])
   parent: com.microsoft.azure.servicebus._message_session
@@ -334,24 +298,14 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 60
+    startLine: 63
   package: com.microsoft.azure.servicebus
-  summary: >-
-    <p>Set a custom state on the session which can be later retrieved using <xref href="com.microsoft.azure.servicebus._i_message_session.getState()" data-throw-if-not-resolved="false"></xref>.</p>
-
-    <p></p>
   syntax:
     content: public void setState(byte[] sessionState)
     parameters:
-    - id: state
+    - id: sessionState
       type: ccd9418d
-      description: <p>The session state. </p>
   overridden: com.microsoft.azure.servicebus._i_message_session.setState(byte [])
-  exceptions:
-  - type: 8256ba40
-    description: <p>if the current thread was interrupted while waiting </p>
-  - type: 73fec9fb
-    description: <p>if the set state failed. </p>
 - uid: com.microsoft.azure.servicebus._message_session.setStateAsync(byte [])
   id: setStateAsync(byte [])
   parent: com.microsoft.azure.servicebus._message_session
@@ -366,25 +320,16 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/MessageSession.java
-    startLine: 65
+    startLine: 69
   package: com.microsoft.azure.servicebus
-  summary: >-
-    <p>Asynchronously set a custom state on the session which can be later retrieved using <xref href="com.microsoft.azure.servicebus._i_message_session.getState()" data-throw-if-not-resolved="false"></xref>.</p>
-
-    <p></p>
   syntax:
     content: public CompletableFuture<Void> setStateAsync(byte[] sessionState)
     parameters:
-    - id: state
+    - id: sessionState
       type: ccd9418d
-      description: <p>The session state. </p>
     return:
       type: db03ee24
-      description: <p>a CompletableFuture representing the pending session state setting. </p>
   overridden: com.microsoft.azure.servicebus._i_message_session.setStateAsync(byte [])
-  see:
-  - type: com.microsoft.azure.servicebus._i_message_session.setState(byte [])
-    description: ''
 references:
 - uid: 4dda0764
   spec.java:
@@ -422,27 +367,19 @@ references:
   nameWithType: MessageSession.getLockedUntilUtc
   fullName: Instant com.microsoft.azure.servicebus.MessageSession.getLockedUntilUtc
   package: com.microsoft.azure.servicebus
-- uid: 8256ba40
-  spec.java:
-  - name: InterruptedException
-    fullName: InterruptedException
-- uid: 73fec9fb
-  spec.java:
-  - name: ServiceBusException
-    fullName: ServiceBusException
-- uid: com.microsoft.azure.servicebus._message_session.renewSessionLock*
-  name: renewSessionLock
-  nameWithType: MessageSession.renewSessionLock
-  fullName: void com.microsoft.azure.servicebus.MessageSession.renewSessionLock
+- uid: com.microsoft.azure.servicebus._message_session.renewLock*
+  name: renewLock
+  nameWithType: MessageSession.renewLock
+  fullName: void com.microsoft.azure.servicebus.MessageSession.renewLock
   package: com.microsoft.azure.servicebus
 - uid: db03ee24
   spec.java:
   - name: CompletableFuture<Void>
     fullName: CompletableFuture<Void>
-- uid: com.microsoft.azure.servicebus._message_session.renewSessionLockAsync*
-  name: renewSessionLockAsync
-  nameWithType: MessageSession.renewSessionLockAsync
-  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSession.renewSessionLockAsync
+- uid: com.microsoft.azure.servicebus._message_session.renewLockAsync*
+  name: renewLockAsync
+  nameWithType: MessageSession.renewLockAsync
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.MessageSession.renewLockAsync
   package: com.microsoft.azure.servicebus
 - uid: ccd9418d
   spec.java:
@@ -513,7 +450,6 @@ references:
   nameWithType: ICloseable.close()
   fullName: void com.microsoft.azure.servicebus.ICloseable.close()
   type: Method
-  summary: <p>Synchronously closes and disposes any resources associated with this object. Calling this method is equivalent of calling . This method blocks until this object is closed. </p>
   syntax:
     content: public void close()
 - uid: com.microsoft.azure.servicebus.primitives._client_entity.closeAsync()
@@ -534,14 +470,14 @@ references:
   nameWithType: ICloseable.closeAsync()
   fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.ICloseable.closeAsync()
   type: Method
-  summary: <p>Closes and disposes any resources associated with this object. An object cannot be used after it is closed. This is an asynchronous method that returns a CompletableFuture immediately. This object is completely closed when the returned CompletableFuture is completed. </p>
   syntax:
     content: public CompletableFuture<Void> closeAsync()
     return:
       type: db03ee24
-      description: <p>a CompletableFuture representing the closing of this object. </p>
 - uid: com.microsoft.azure.servicebus._message_receiver.complete(UUID)
 - uid: com.microsoft.azure.servicebus._message_receiver.completeAsync(UUID)
+- uid: com.microsoft.azure.servicebus._message_receiver.completeBatch(Collection<? extends IMessage>)
+- uid: com.microsoft.azure.servicebus._message_receiver.completeBatchAsync(Collection<? extends IMessage>)
 - uid: com.microsoft.azure.servicebus._message_receiver.deadLetter(UUID)
 - uid: com.microsoft.azure.servicebus._message_receiver.deadLetter(UUID,Map<String, Object>)
 - uid: com.microsoft.azure.servicebus._message_receiver.deadLetter(UUID,String,String)
@@ -612,16 +548,16 @@ references:
 - uid: com.microsoft.azure.servicebus._message_receiver.peekBatchAsync(long,int)
 - uid: com.microsoft.azure.servicebus._message_receiver.receive()
 - uid: com.microsoft.azure.servicebus._message_receiver.receive(Duration)
+- uid: com.microsoft.azure.servicebus._message_receiver.receive(long)
 - uid: com.microsoft.azure.servicebus._message_receiver.receiveAsync()
 - uid: com.microsoft.azure.servicebus._message_receiver.receiveAsync(Duration)
+- uid: com.microsoft.azure.servicebus._message_receiver.receiveAsync(long)
 - uid: com.microsoft.azure.servicebus._message_receiver.receiveBatch(int)
 - uid: com.microsoft.azure.servicebus._message_receiver.receiveBatch(int,Duration)
+- uid: com.microsoft.azure.servicebus._message_receiver.receiveBatch(Collection<Long>)
 - uid: com.microsoft.azure.servicebus._message_receiver.receiveBatchAsync(int)
 - uid: com.microsoft.azure.servicebus._message_receiver.receiveBatchAsync(int,Duration)
-- uid: com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessage(long)
-- uid: com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessageAsync(long)
-- uid: com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessageBatch(Collection<Long>)
-- uid: com.microsoft.azure.servicebus._message_receiver.receiveDeferredMessageBatchAsync(Collection<Long>)
+- uid: com.microsoft.azure.servicebus._message_receiver.receiveBatchAsync(Collection<Long>)
 - uid: com.microsoft.azure.servicebus._message_receiver.renewMessageLock(IMessage)
 - uid: com.microsoft.azure.servicebus._message_receiver.renewMessageLockAsync(IMessage)
 - uid: com.microsoft.azure.servicebus._message_receiver.renewMessageLockBatch(Collection<? extends IMessage>)
@@ -659,14 +595,6 @@ references:
   nameWithType: IMessageSession
   fullName: com.microsoft.azure.servicebus.IMessageSession
   type: Interface
-  summary: >-
-    <p>Describes a Session object. <xref href="com.microsoft.azure.servicebus._i_message_session" data-throw-if-not-resolved="false"></xref> can be used to perform operations on sessions. </p>
-
-    <p>Service Bus Sessions, also called 'Groups' in the AMQP 1.0 protocol, are unbounded sequences of related messages. ServiceBus guarantees ordering of messages in a session. </p>
-
-    <p>Any sender can create a session when submitting messages into a Topic or Queue by setting the <ref refid="" kindref="compound">Message#sessionId</ref> property on <xref href="com.microsoft.azure.servicebus._message" data-throw-if-not-resolved="false"></xref> to some application defined unique identifier. At the AMQP 1.0 protocol level, this value maps to the group-id property. </p>
-
-    <p>Sessions come into existence when there is at least one message with the session's SessionId in the Queue or Topic subscription. Once a Session exists, there is no defined moment or gesture for when the session expires or disappears. </p>
   syntax:
     content: public interface IMessageSession extends IMessageReceiver
 - uid: com.microsoft.azure.servicebus._browsable_message_session
@@ -678,11 +606,13 @@ references:
   fullName: com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder
   type: Class
   summary: >-
-    <p>This class can be used to construct a connection string which can establish communication with ServiceBus entities. It can also be used to perform basic validation on an existing connection string. </p>
+    <p>
 
-    <p>Sample Code: <preformatted><programlisting><codeline><highlight class="normal">ConnectionStringBuilder<sp></sp>connectionStringBuilder<sp></sp>=<sp></sp>new<sp></sp>ConnectionStringBuilder(</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusNamespaceName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusEntityName",<sp></sp>//<sp></sp>QueueName<sp></sp>or<sp></sp>TopicName<sp></sp>or<sp></sp>SubscriptionPath</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKeyName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKey");</highlight></codeline><codeline><highlight class="normal"><sp></sp></highlight></codeline><codeline><highlight class="normal">String<sp></sp>connectionString<sp></sp>=<sp></sp>connectionStringBuilder.toString();</highlight></codeline></programlisting></preformatted></p>
+      <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder" data-throw-if-not-resolved="false"></xref> can be used to construct a connection string which can establish communication with ServiceBus entities. It can also be used to perform basic validation on an existing connection string. </p>
 
-    <p>A connection string is basically a string consisted of key-value pair separated by ";". Basic format is {{ &lt;}key{&gt;}={ &lt;}value{&gt;}[;{ &lt;}key{&gt;}={ &lt;}value{&gt;}]} where supported key name are as follow: <itemizedlist><listitem><p>Endpoint - URL that points to the servicebus namespace </p></listitem><listitem><p>EntityPath - Path to the service bus entity (queue/topic/subscription/). For queues and topics, it is just the entity name. For subscriptions, path is &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt; </p></listitem><listitem><p>SharedAccessKeyName - Key name to the corresponding shared access policy rule for the namespace, or entity. </p></listitem><listitem><p>SharedAccessKey - Key value for the corresponding shared access policy rule of the namespace or entity. </p></listitem><listitem><p>SharedAccessSignatureToken - Instead of a key name and key value, clients can provide an already generated SAS Token. </p></listitem><listitem><p>OperationTimeout - Default timeout to be used for all senders, receiver and clients created from this connection string. </p></listitem><listitem><p><xref href="com.microsoft.azure.servicebus.primitives._retry_policy" data-throw-if-not-resolved="false"></xref> - Name of the retry policy. </p></listitem></itemizedlist></p>
+    <p>Sample Code: <preformatted><programlisting><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>ConnectionStringBuilder<sp></sp>connectionStringBuilder<sp></sp>=<sp></sp>new<sp></sp>ConnectionStringBuilder(</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusNamespaceName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusEntityName",<sp></sp>//<sp></sp>eventHubName<sp></sp>or<sp></sp>QueueName<sp></sp>or<sp></sp>TopicName<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKeyName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKey");</highlight></codeline><codeline><highlight class="normal"><sp></sp></highlight></codeline><codeline><highlight class="normal">String<sp></sp>connectionString<sp></sp>=<sp></sp>connectionStringBuilder.toString();</highlight></codeline></programlisting></preformatted></p>
+
+    <p>A connection string is basically a string consisted of key-value pair separated by ";". Basic format is {{ &lt;}key{&gt;}={ &lt;}value{&gt;}[;{ &lt;}key{&gt;}={ &lt;}value{&gt;}]} where supported key name are as follow: <itemizedlist><listitem><p>Endpoint - the URL that contains the servicebus namespace </p></listitem><listitem><p>EntityPath - the path to the service bus entity (queue/topic/eventhub/subscription/consumergroup/partition) </p></listitem><listitem><p>SharedAccessKeyName - the key name to the corresponding shared access policy rule for the namespace, or entity. </p></listitem><listitem><p>SharedAccessKey - the key for the corresponding shared access policy rule of the namespace or entity. </p></listitem></itemizedlist></p>
   syntax:
     content: public class ConnectionStringBuilder
 - uid: com.microsoft.azure.servicebus._receive_mode
@@ -692,10 +622,6 @@ references:
   nameWithType: ReceiveMode
   fullName: com.microsoft.azure.servicebus.ReceiveMode
   type: Enum
-  summary: >-
-    <p>Enumeration to represent the two receive modes Azure Service Bus supports.</p>
-
-    <p></p>
   syntax:
     content: public enum ReceiveMode
 - uid: com.microsoft.azure.servicebus.primitives._messaging_factory
@@ -705,7 +631,7 @@ references:
   nameWithType: MessagingFactory
   fullName: com.microsoft.azure.servicebus.primitives.MessagingFactory
   type: Class
-  summary: <p>Abstracts all AMQP related details and encapsulates an AMQP connection and manages its life cycle. Each instance of this class represent one AMQP connection to the namespace. If an application creates multiple senders, receivers or clients using the same MessagingFacotry instance, all those senders, receivers or clients will share the same connection to the namespace. </p>
+  summary: <p>Abstracts all amqp related details and exposes AmqpConnection object Manages connection life-cycle </p>
   syntax:
     content: public class MessagingFactory
 - uid: com.microsoft.azure.servicebus._i_message_session.getLockedUntilUtc()
@@ -719,7 +645,84 @@ references:
     content: public Instant getLockedUntilUtc()
     return:
       type: 328f8254
-      description: <p>Gets the time that the session identified by <xref href="com.microsoft.azure.servicebus._i_message_session.getSessionId()" data-throw-if-not-resolved="false"></xref> is locked until for this client. </p>
+- uid: com.microsoft.azure.servicebus._i_message_session.renewLock()
+  parent: com.microsoft.azure.servicebus._i_message_session
+  href: com.microsoft.azure.servicebus._i_message_session.yml
+  name: renewLock()
+  nameWithType: IMessageSession.renewLock()
+  fullName: void com.microsoft.azure.servicebus.IMessageSession.renewLock()
+  type: Method
+  syntax:
+    content: public void renewLock()
+- uid: com.microsoft.azure.servicebus.primitives._service_bus_exception
+  parent: com.microsoft.azure.servicebus.primitives
+  href: com.microsoft.azure.servicebus.primitives._service_bus_exception.yml
+  name: ServiceBusException
+  nameWithType: ServiceBusException
+  fullName: com.microsoft.azure.servicebus.primitives.ServiceBusException
+  type: Class
+  summary: <p>This is the base exception that service bus will produce for all error cases. </p>
+  syntax:
+    content: public class ServiceBusException
+- uid: com.microsoft.azure.servicebus._i_message_session.renewLockAsync()
+  parent: com.microsoft.azure.servicebus._i_message_session
+  href: com.microsoft.azure.servicebus._i_message_session.yml
+  name: renewLockAsync()
+  nameWithType: IMessageSession.renewLockAsync()
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.IMessageSession.renewLockAsync()
+  type: Method
+  syntax:
+    content: public CompletableFuture<Void> renewLockAsync()
+    return:
+      type: db03ee24
+- uid: com.microsoft.azure.servicebus._i_message_session.setState(byte [])
+  parent: com.microsoft.azure.servicebus._i_message_session
+  href: com.microsoft.azure.servicebus._i_message_session.yml
+  name: setState(byte[] state)
+  nameWithType: IMessageSession.setState(byte[] state)
+  fullName: void com.microsoft.azure.servicebus.IMessageSession.setState(byte[] state)
+  type: Method
+  syntax:
+    content: public void setState(byte[] state)
+    parameters:
+    - id: state
+      type: ccd9418d
+- uid: com.microsoft.azure.servicebus._i_message_session.setStateAsync(byte [])
+  parent: com.microsoft.azure.servicebus._i_message_session
+  href: com.microsoft.azure.servicebus._i_message_session.yml
+  name: setStateAsync(byte[] state)
+  nameWithType: IMessageSession.setStateAsync(byte[] state)
+  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.IMessageSession.setStateAsync(byte[] state)
+  type: Method
+  syntax:
+    content: public CompletableFuture<Void> setStateAsync(byte[] state)
+    parameters:
+    - id: state
+      type: ccd9418d
+    return:
+      type: db03ee24
+- uid: com.microsoft.azure.servicebus._i_message_session.getState()
+  parent: com.microsoft.azure.servicebus._i_message_session
+  href: com.microsoft.azure.servicebus._i_message_session.yml
+  name: getState()
+  nameWithType: IMessageSession.getState()
+  fullName: byte [] com.microsoft.azure.servicebus.IMessageSession.getState()
+  type: Method
+  syntax:
+    content: public byte [] getState()
+    return:
+      type: ccd9418d
+- uid: com.microsoft.azure.servicebus._i_message_session.getStateAsync()
+  parent: com.microsoft.azure.servicebus._i_message_session
+  href: com.microsoft.azure.servicebus._i_message_session.yml
+  name: getStateAsync()
+  nameWithType: IMessageSession.getStateAsync()
+  fullName: CompletableFuture<byte[]> com.microsoft.azure.servicebus.IMessageSession.getStateAsync()
+  type: Method
+  syntax:
+    content: public CompletableFuture<byte[]> getStateAsync()
+    return:
+      type: 5fe2dfa4
 - uid: com.microsoft.azure.servicebus._i_message_session.getSessionId()
   parent: com.microsoft.azure.servicebus._i_message_session
   href: com.microsoft.azure.servicebus._i_message_session.yml
@@ -731,113 +734,3 @@ references:
     content: public String getSessionId()
     return:
       type: "26831127"
-      description: <p>Gets the SessionId. </p>
-- uid: com.microsoft.azure.servicebus._i_message_session.renewSessionLock()
-  parent: com.microsoft.azure.servicebus._i_message_session
-  href: com.microsoft.azure.servicebus._i_message_session.yml
-  name: renewSessionLock()
-  nameWithType: IMessageSession.renewSessionLock()
-  fullName: void com.microsoft.azure.servicebus.IMessageSession.renewSessionLock()
-  type: Method
-  summary: >-
-    <p>Renews the lock on the session specified by the <xref href="com.microsoft.azure.servicebus._i_message_session.getSessionId()" data-throw-if-not-resolved="false"></xref>. The lock will be renewed based on the setting specified on the entity. </p>
-
-    <p>When you accept a session, the session is locked for this client instance by the service for a duration as specified during the Queue/Subscription creation. If processing of the session requires longer than this duration, the session-lock needs to be renewed. For each renewal, the session-lock is renewed by the entity's LockDuration. </p>
-
-    <p>Renewal of session renews all the messages in the session as well. Each individual message need not be renewed.</p>
-
-    <p></p>
-  syntax:
-    content: public void renewSessionLock()
-- uid: com.microsoft.azure.servicebus.primitives._service_bus_exception
-  parent: com.microsoft.azure.servicebus.primitives
-  href: com.microsoft.azure.servicebus.primitives._service_bus_exception.yml
-  name: ServiceBusException
-  nameWithType: ServiceBusException
-  fullName: com.microsoft.azure.servicebus.primitives.ServiceBusException
-  type: Class
-  summary: <p>This is the base exception that service bus will generate for all error cases. </p>
-  syntax:
-    content: public class ServiceBusException
-- uid: com.microsoft.azure.servicebus._i_message_session.renewSessionLockAsync()
-  parent: com.microsoft.azure.servicebus._i_message_session
-  href: com.microsoft.azure.servicebus._i_message_session.yml
-  name: renewSessionLockAsync()
-  nameWithType: IMessageSession.renewSessionLockAsync()
-  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.IMessageSession.renewSessionLockAsync()
-  type: Method
-  summary: >-
-    <p>Renews the lock on the session specified by the <xref href="com.microsoft.azure.servicebus._i_message_session.getSessionId()" data-throw-if-not-resolved="false"></xref>. The lock will be renewed based on the setting specified on the entity.</p>
-
-    <p></p>
-  syntax:
-    content: public CompletableFuture<Void> renewSessionLockAsync()
-    return:
-      type: db03ee24
-      description: <p>a CompletableFuture representing the pending renew. </p>
-- uid: com.microsoft.azure.servicebus._i_message_session.setState(byte [])
-  parent: com.microsoft.azure.servicebus._i_message_session
-  href: com.microsoft.azure.servicebus._i_message_session.yml
-  name: setState(byte[] state)
-  nameWithType: IMessageSession.setState(byte[] state)
-  fullName: void com.microsoft.azure.servicebus.IMessageSession.setState(byte[] state)
-  type: Method
-  summary: >-
-    <p>Set a custom state on the session which can be later retrieved using <xref href="com.microsoft.azure.servicebus._i_message_session.getState()" data-throw-if-not-resolved="false"></xref>.</p>
-
-    <p></p>
-  syntax:
-    content: public void setState(byte[] state)
-    parameters:
-    - id: state
-      type: ccd9418d
-      description: <p>The session state. </p>
-- uid: com.microsoft.azure.servicebus._i_message_session.getState()
-  parent: com.microsoft.azure.servicebus._i_message_session
-  href: com.microsoft.azure.servicebus._i_message_session.yml
-  name: getState()
-  nameWithType: IMessageSession.getState()
-  fullName: byte [] com.microsoft.azure.servicebus.IMessageSession.getState()
-  type: Method
-  summary: >-
-    <p>Gets the session state.</p>
-
-    <p></p>
-  syntax:
-    content: public byte [] getState()
-    return:
-      type: ccd9418d
-      description: <p>The session state </p>
-- uid: com.microsoft.azure.servicebus._i_message_session.setStateAsync(byte [])
-  parent: com.microsoft.azure.servicebus._i_message_session
-  href: com.microsoft.azure.servicebus._i_message_session.yml
-  name: setStateAsync(byte[] state)
-  nameWithType: IMessageSession.setStateAsync(byte[] state)
-  fullName: CompletableFuture<Void> com.microsoft.azure.servicebus.IMessageSession.setStateAsync(byte[] state)
-  type: Method
-  summary: >-
-    <p>Asynchronously set a custom state on the session which can be later retrieved using <xref href="com.microsoft.azure.servicebus._i_message_session.getState()" data-throw-if-not-resolved="false"></xref>.</p>
-
-    <p></p>
-  syntax:
-    content: public CompletableFuture<Void> setStateAsync(byte[] state)
-    parameters:
-    - id: state
-      type: ccd9418d
-      description: <p>The session state. </p>
-    return:
-      type: db03ee24
-      description: <p>a CompletableFuture representing the pending session state setting. </p>
-- uid: com.microsoft.azure.servicebus._i_message_session.getStateAsync()
-  parent: com.microsoft.azure.servicebus._i_message_session
-  href: com.microsoft.azure.servicebus._i_message_session.yml
-  name: getStateAsync()
-  nameWithType: IMessageSession.getStateAsync()
-  fullName: CompletableFuture<byte[]> com.microsoft.azure.servicebus.IMessageSession.getStateAsync()
-  type: Method
-  summary: <p>Asynchronously gets the session state. </p>
-  syntax:
-    content: public CompletableFuture<byte[]> getStateAsync()
-    return:
-      type: 5fe2dfa4
-      description: <p>a CompletableFuture representing the pending session state retrieving. </p>

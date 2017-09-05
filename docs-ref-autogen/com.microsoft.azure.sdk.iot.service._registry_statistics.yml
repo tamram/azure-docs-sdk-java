@@ -20,7 +20,7 @@ items:
       branch: master
       repo: https://github.com/Azure/azure-iot-sdk-java
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/RegistryStatistics.java
-    startLine: 9
+    startLine: 7
   package: com.microsoft.azure.sdk.iot.service
   syntax:
     content: public class RegistryStatistics
@@ -40,7 +40,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/RegistryStatistics.java
-    startLine: 22
+    startLine: 20
   package: com.microsoft.azure.sdk.iot.service
   syntax:
     content: public long getDisabledDeviceCount()
@@ -60,7 +60,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/RegistryStatistics.java
-    startLine: 27
+    startLine: 25
   package: com.microsoft.azure.sdk.iot.service
   syntax:
     content: public long getEnabledDeviceCount()
@@ -80,7 +80,7 @@ items:
   source:
     remote: *o0
     path: service/iot-service-client/src/main/java/com/microsoft/azure/sdk/iot/service/RegistryStatistics.java
-    startLine: 32
+    startLine: 30
   package: com.microsoft.azure.sdk.iot.service
   syntax:
     content: public long getTotalDeviceCount()
@@ -106,12 +106,3 @@ references:
   nameWithType: RegistryStatistics.getTotalDeviceCount
   fullName: long com.microsoft.azure.sdk.iot.service.RegistryStatistics.getTotalDeviceCount
   package: com.microsoft.azure.sdk.iot.service
-- uid: com.microsoft.azure.sdk.iot.deps.serializer._registry_statistics_parser
-  parent: com.microsoft.azure.sdk.iot.deps.serializer
-  href: com.microsoft.azure.sdk.iot.deps.serializer._registry_statistics_parser.yml
-  name: RegistryStatisticsParser
-  nameWithType: RegistryStatisticsParser
-  fullName: com.microsoft.azure.sdk.iot.deps.serializer.RegistryStatisticsParser
-  type: Class
-  syntax:
-    content: public class RegistryStatisticsParser

@@ -10,7 +10,6 @@ items:
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.ConnectionStringBuilder(final URI,final String,final String)
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.ConnectionStringBuilder(String)
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.ConnectionStringBuilder(String,String)
-  - com.microsoft.azure.servicebus.primitives._connection_string_builder.DefaultOperationTimeout()
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.getEndpoint()
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.getEntityPath()
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.getOperationTimeout()
@@ -20,7 +19,6 @@ items:
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.getSharedAccessSignatureToken()
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.setOperationTimeout(final Duration)
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.setRetryPolicy(final RetryPolicy)
-  - com.microsoft.azure.servicebus.primitives._connection_string_builder.toLoggableString()
   - com.microsoft.azure.servicebus.primitives._connection_string_builder.toString()
   href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
   langs:
@@ -35,15 +33,17 @@ items:
       branch: master
       repo: https://github.com/Azure/azure-service-bus-java
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 39
+    startLine: 35
   package: com.microsoft.azure.servicebus.primitives
   summary: >-
-    <p>This class can be used to construct a connection string which can establish communication with ServiceBus entities. It can also be used to perform basic validation on an existing connection string. </p>
+    <p>
 
-    <p>Sample Code: <preformatted><programlisting><codeline><highlight class="normal">ConnectionStringBuilder<sp></sp>connectionStringBuilder<sp></sp>=<sp></sp>new<sp></sp>ConnectionStringBuilder(</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusNamespaceName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusEntityName",<sp></sp>//<sp></sp>QueueName<sp></sp>or<sp></sp>TopicName<sp></sp>or<sp></sp>SubscriptionPath</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKeyName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKey");</highlight></codeline><codeline><highlight class="normal"><sp></sp></highlight></codeline><codeline><highlight class="normal">String<sp></sp>connectionString<sp></sp>=<sp></sp>connectionStringBuilder.toString();</highlight></codeline></programlisting></preformatted></p>
+      <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder" data-throw-if-not-resolved="false"></xref> can be used to construct a connection string which can establish communication with ServiceBus entities. It can also be used to perform basic validation on an existing connection string. </p>
 
-    <p>A connection string is basically a string consisted of key-value pair separated by ";". Basic format is {{ &lt;}key{&gt;}={ &lt;}value{&gt;}[;{ &lt;}key{&gt;}={ &lt;}value{&gt;}]} where supported key name are as follow: <itemizedlist><listitem><p>Endpoint - URL that points to the servicebus namespace </p></listitem><listitem><p>EntityPath - Path to the service bus entity (queue/topic/subscription/). For queues and topics, it is just the entity name. For subscriptions, path is &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt; </p></listitem><listitem><p>SharedAccessKeyName - Key name to the corresponding shared access policy rule for the namespace, or entity. </p></listitem><listitem><p>SharedAccessKey - Key value for the corresponding shared access policy rule of the namespace or entity. </p></listitem><listitem><p>SharedAccessSignatureToken - Instead of a key name and key value, clients can provide an already generated SAS Token. </p></listitem><listitem><p>OperationTimeout - Default timeout to be used for all senders, receiver and clients created from this connection string. </p></listitem><listitem><p><xref href="com.microsoft.azure.servicebus.primitives._retry_policy" data-throw-if-not-resolved="false"></xref> - Name of the retry policy. </p></listitem></itemizedlist></p>
-  syntax: &o2
+    <p>Sample Code: <preformatted><programlisting><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>ConnectionStringBuilder<sp></sp>connectionStringBuilder<sp></sp>=<sp></sp>new<sp></sp>ConnectionStringBuilder(</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusNamespaceName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusEntityName",<sp></sp>//<sp></sp>eventHubName<sp></sp>or<sp></sp>QueueName<sp></sp>or<sp></sp>TopicName<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKeyName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKey");</highlight></codeline><codeline><highlight class="normal"><sp></sp></highlight></codeline><codeline><highlight class="normal">String<sp></sp>connectionString<sp></sp>=<sp></sp>connectionStringBuilder.toString();</highlight></codeline></programlisting></preformatted></p>
+
+    <p>A connection string is basically a string consisted of key-value pair separated by ";". Basic format is {{ &lt;}key{&gt;}={ &lt;}value{&gt;}[;{ &lt;}key{&gt;}={ &lt;}value{&gt;}]} where supported key name are as follow: <itemizedlist><listitem><p>Endpoint - the URL that contains the servicebus namespace </p></listitem><listitem><p>EntityPath - the path to the service bus entity (queue/topic/eventhub/subscription/consumergroup/partition) </p></listitem><listitem><p>SharedAccessKeyName - the key name to the corresponding shared access policy rule for the namespace, or entity. </p></listitem><listitem><p>SharedAccessKey - the key for the corresponding shared access policy rule of the namespace or entity. </p></listitem></itemizedlist></p>
+  syntax: &o1
     content: public class ConnectionStringBuilder
   inheritance:
   - java.lang.Object
@@ -61,9 +61,9 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 139
+    startLine: 130
   package: com.microsoft.azure.servicebus.primitives
-  summary: <p>Creates a new instance from namespace, entity path and SAS Key name and value. </p>
+  summary: <p>Build a connection string </p>
   syntax:
     content: public ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessKeyName, final String sharedAccessKey)
     parameters:
@@ -72,7 +72,7 @@ items:
       description: '<p>Namespace name (dns suffix - ex: .servicebus.windows.net is not required) </p>'
     - id: entityPath
       type: 3d93591e
-      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt; </p>
+      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt;. </p>
     - id: sharedAccessKeyName
       type: 3d93591e
       description: <p>Shared Access Key name </p>
@@ -85,29 +85,28 @@ items:
   href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
   langs:
   - java
-  name: ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingature)
-  nameWithType: ConnectionStringBuilder.ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingature)
-  fullName: com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingature)
+  name: ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingatureToken)
+  nameWithType: ConnectionStringBuilder.ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingatureToken)
+  fullName: com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingatureToken)
   overload: com.microsoft.azure.servicebus.primitives._connection_string_builder.ConnectionStringBuilder*
   type: Constructor
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 154
+    startLine: 145
   package: com.microsoft.azure.servicebus.primitives
-  summary: <p>Creates a new instance from namespace, entity path and already generated SAS token. </p>
+  summary: <p>Build a connection string </p>
   syntax:
-    content: public ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingature)
+    content: public ConnectionStringBuilder(final String namespaceName, final String entityPath, final String sharedAccessSingatureToken)
     parameters:
     - id: namespaceName
       type: 3d93591e
       description: '<p>Namespace name (dns suffix - ex: .servicebus.windows.net is not required) </p>'
     - id: entityPath
       type: 3d93591e
-      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt; </p>
-    - id: sharedAccessSingature
+      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt;. </p>
+    - id: sharedAccessSingatureToken
       type: 3d93591e
-      description: <p>Shared Access Signature already generated </p>
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.ConnectionStringBuilder(final URI,final String,final String,final String)
   id: ConnectionStringBuilder(final URI,final String,final String,final String)
   parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
@@ -122,9 +121,9 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 170
+    startLine: 161
   package: com.microsoft.azure.servicebus.primitives
-  summary: <p>Creates a new instance from endpoint address of the namesapce, entity path and SAS Key name and value </p>
+  summary: <p>Build a connection string </p>
   syntax:
     content: public ConnectionStringBuilder(final URI endpointAddress, final String entityPath, final String sharedAccessKeyName, final String sharedAccessKey)
     parameters:
@@ -133,7 +132,7 @@ items:
       description: <p>namespace level endpoint. This needs to be in the format of scheme://fullyQualifiedServiceBusNamespaceEndpointName </p>
     - id: entityPath
       type: 3d93591e
-      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt; </p>
+      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt;. </p>
     - id: sharedAccessKeyName
       type: 3d93591e
       description: <p>Shared Access Key name </p>
@@ -154,9 +153,9 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 185
+    startLine: 176
   package: com.microsoft.azure.servicebus.primitives
-  summary: <p>Creates a new instance from endpoint address of the namesapce, entity path and already generated SAS token. </p>
+  summary: <p>Build a connection string </p>
   syntax:
     content: public ConnectionStringBuilder(final URI endpointAddress, final String entityPath, final String sharedAccessSingature)
     parameters:
@@ -165,7 +164,7 @@ items:
       description: <p>namespace level endpoint. This needs to be in the format of scheme://fullyQualifiedServiceBusNamespaceEndpointName </p>
     - id: entityPath
       type: 3d93591e
-      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt; </p>
+      description: <p>Entity path. For queue or topic, use name. For subscription use &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt;. </p>
     - id: sharedAccessSingature
       type: 3d93591e
       description: <p>Shared Access Signature already generated </p>
@@ -183,9 +182,9 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 201
+    startLine: 191
   package: com.microsoft.azure.servicebus.primitives
-  summary: '<p>Creates a new instance from the given connection string. ConnectionString format: Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=SHARED_ACCESS_KEY_NAME;SharedAccessKey=SHARED_ACCESS_KEY or Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessSignatureToken=SHARED_ACCESS_SIGNATURE_TOKEN </p>'
+  summary: '<p>ConnectionString format: Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=SHARED_ACCESS_KEY_NAME;SharedAccessKey=SHARED_ACCESS_KEY or Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessSignatureToken=SHARED_ACCESS_SIGNATURE_TOKEN </p>'
   syntax:
     content: public ConnectionStringBuilder(String connectionString)
     parameters:
@@ -209,9 +208,9 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 214
+    startLine: 203
   package: com.microsoft.azure.servicebus.primitives
-  summary: '<p>Creates a new instance from the given connection string and entity path. A connection string may or may not include the entity path. ConnectionString format: Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=SHARED_ACCESS_KEY_NAME;SharedAccessKey=SHARED_ACCESS_KEY or Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessSignatureToken=SHARED_ACCESS_SIGNATURE_TOKEN </p>'
+  summary: '<p>ConnectionString format: Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessKeyName=SHARED_ACCESS_KEY_NAME;SharedAccessKey=SHARED_ACCESS_KEY or Endpoint=sb://namespace_DNS_Name;EntityPath=EVENT_HUB_NAME;SharedAccessSignatureToken=SHARED_ACCESS_SIGNATURE_TOKEN </p>'
   syntax:
     content: public ConnectionStringBuilder(String namespaceConnectionString, String entityPath)
     parameters:
@@ -221,26 +220,6 @@ items:
     - id: entityPath
       type: "26831127"
       description: <p>path to the entity within the namespace </p>
-- uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.DefaultOperationTimeout()
-  id: DefaultOperationTimeout()
-  parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
-  href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
-  langs:
-  - java
-  name: DefaultOperationTimeout
-  nameWithType: ConnectionStringBuilder.DefaultOperationTimeout
-  fullName: final Duration com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.DefaultOperationTimeout
-  type: Field
-  source:
-    remote: *o0
-    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 73
-  package: com.microsoft.azure.servicebus.primitives
-  summary: <p>Default operation timeout if timeout is not specified in the connection string. 30 seconds. </p>
-  syntax: &o1
-    content: public static final Duration DefaultOperationTimeout= Duration.ofSeconds(30)
-    return:
-      type: 89ac7c4d
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.getEndpoint()
   id: getEndpoint()
   parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
@@ -255,14 +234,14 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 224
+    startLine: 213
   package: com.microsoft.azure.servicebus.primitives
   summary: <p>Get the endpoint which can be used to connect to the ServiceBus Namespace </p>
   syntax:
     content: public URI getEndpoint()
     return:
       type: "62304784"
-      description: <p>Endpoint representing the service bus namespace </p>
+      description: <p>Endpoint </p>
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.getEntityPath()
   id: getEntityPath()
   parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
@@ -277,7 +256,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 260
+    startLine: 249
   package: com.microsoft.azure.servicebus.primitives
   summary: <p>Get the entity path value from the connection string </p>
   syntax:
@@ -299,9 +278,9 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 270
+    startLine: 258
   package: com.microsoft.azure.servicebus.primitives
-  summary: <p>Gets the duration after which a pending operation like SEND or RECEIVE will time out. If a timeout is not specified, it defaults to <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder.DefaultOperationTimeout()" data-throw-if-not-resolved="false"></xref> This value will be used by all operations which uses this <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder" data-throw-if-not-resolved="false"></xref>, unless explicitly over-ridden. </p>
+  summary: <p>OperationTimeout is applied in erroneous situations to notify the caller about the relevant <xref href="com.microsoft.azure.servicebus.primitives._service_bus_exception" data-throw-if-not-resolved="false"></xref></p>
   syntax:
     content: public Duration getOperationTimeout()
     return:
@@ -321,7 +300,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 289
+    startLine: 277
   package: com.microsoft.azure.servicebus.primitives
   summary: <p>Get the retry policy instance that was created as part of this builder's creation. </p>
   syntax:
@@ -346,14 +325,14 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 233
+    startLine: 222
   package: com.microsoft.azure.servicebus.primitives
   summary: <p>Get the shared access policy key value from the connection string or null. </p>
   syntax:
     content: public String getSasKey()
     return:
       type: "26831127"
-      description: <p>Shared Access Signature key value </p>
+      description: <p>Shared Access Signature key </p>
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.getSasKeyName()
   id: getSasKeyName()
   parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
@@ -368,14 +347,14 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 242
+    startLine: 231
   package: com.microsoft.azure.servicebus.primitives
   summary: <p>Get the shared access policy owner name from the connection string or null. </p>
   syntax:
     content: public String getSasKeyName()
     return:
       type: "26831127"
-      description: <p>Shared Access Signature key name </p>
+      description: <p>Shared Access Signature key name. </p>
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.getSharedAccessSignatureToken()
   id: getSharedAccessSignatureToken()
   parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
@@ -390,7 +369,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 251
+    startLine: 240
   package: com.microsoft.azure.servicebus.primitives
   summary: <p>Returns the shared access signature token from the connection string or null. </p>
   syntax:
@@ -412,12 +391,12 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 280
+    startLine: 268
   package: com.microsoft.azure.servicebus.primitives
   summary: >-
     <p>Set the OperationTimeout value in the Connection String. This value will be used by all operations which uses this <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder" data-throw-if-not-resolved="false"></xref>, unless explicitly over-ridden. </p>
 
-    <p>ConnectionString with operationTimeout is not inter-operable between java and clients in other platforms. </p>
+    <p>ConnectionString with operationTimeout is not interoperable between java and clients in other platforms. </p>
   syntax:
     content: public void setOperationTimeout(final Duration operationTimeout)
     parameters:
@@ -438,7 +417,7 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 299
+    startLine: 287
   package: com.microsoft.azure.servicebus.primitives
   summary: >-
     <p>Set the retry policy. </p>
@@ -455,26 +434,6 @@ items:
         <p>
 
           <xref href="com.microsoft.azure.servicebus.primitives._retry_policy" data-throw-if-not-resolved="false"></xref> applied for any operation performed using this ConnectionString </p>
-- uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.toLoggableString()
-  id: toLoggableString()
-  parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
-  href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
-  langs:
-  - java
-  name: toLoggableString()
-  nameWithType: ConnectionStringBuilder.toLoggableString()
-  fullName: String com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.toLoggableString()
-  overload: com.microsoft.azure.servicebus.primitives._connection_string_builder.toLoggableString*
-  type: Method
-  source:
-    remote: *o0
-    path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 502
-  package: com.microsoft.azure.servicebus.primitives
-  syntax:
-    content: public String toLoggableString()
-    return:
-      type: "26831127"
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.toString()
   id: toString()
   parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
@@ -489,19 +448,15 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/primitives/ConnectionStringBuilder.java
-    startLine: 309
+    startLine: 297
   package: com.microsoft.azure.servicebus.primitives
   summary: <p>Returns an inter-operable connection string that can be used to connect to ServiceBus Namespace </p>
-  syntax: &o3
+  syntax: &o2
     content: public String toString()
     return:
       type: "26831127"
       description: <p>connection string </p>
 references:
-- uid: 89ac7c4d
-  spec.java:
-  - name: final Duration
-    fullName: final Duration
 - uid: 3d93591e
   spec.java:
   - name: final String
@@ -557,6 +512,10 @@ references:
   nameWithType: ConnectionStringBuilder.getOperationTimeout
   fullName: Duration com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.getOperationTimeout
   package: com.microsoft.azure.servicebus.primitives
+- uid: 89ac7c4d
+  spec.java:
+  - name: final Duration
+    fullName: final Duration
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.setOperationTimeout*
   name: setOperationTimeout
   nameWithType: ConnectionStringBuilder.setOperationTimeout
@@ -585,11 +544,6 @@ references:
   nameWithType: ConnectionStringBuilder.toString
   fullName: String com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.toString
   package: com.microsoft.azure.servicebus.primitives
-- uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.toLoggableString*
-  name: toLoggableString
-  nameWithType: ConnectionStringBuilder.toLoggableString
-  fullName: String com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.toLoggableString
-  package: com.microsoft.azure.servicebus.primitives
 - uid: com.microsoft.azure.servicebus.primitives._retry_policy
   parent: com.microsoft.azure.servicebus.primitives
   href: com.microsoft.azure.servicebus.primitives._retry_policy.yml
@@ -597,7 +551,6 @@ references:
   nameWithType: RetryPolicy
   fullName: com.microsoft.azure.servicebus.primitives.RetryPolicy
   type: Class
-  summary: <p>Represents an abstraction of a policy for retrying messaging operations when an exception is encountered. Some exceptions encountered by a sender or receiver can be transient like ServerBusy and the operation will succeed if retried. Clients can specify a retry policy using <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder" data-throw-if-not-resolved="false"></xref> which guides senders and receivers to automatically retry the failed operation before throwing the exception to the client application. Users should not implement this class, instead should use one of the provided implementations through <xref href="com.microsoft.azure.servicebus.primitives._retry_policy.getDefault()" data-throw-if-not-resolved="false"></xref> or <xref href="com.microsoft.azure.servicebus.primitives._retry_policy.getNoRetry()" data-throw-if-not-resolved="false"></xref>. </p>
   syntax:
     content: public class RetryPolicy
 - uid: com.microsoft.azure.servicebus.primitives._illegal_connection_string_format_exception
@@ -610,15 +563,16 @@ references:
   summary: <p>This exception is thrown when the connection string provided does not meet the requirement for connection. </p>
   syntax:
     content: public class IllegalConnectionStringFormatException
-- uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.DefaultOperationTimeout()
-  parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
-  href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
-  name: DefaultOperationTimeout
-  nameWithType: ConnectionStringBuilder.DefaultOperationTimeout
-  fullName: final Duration com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.DefaultOperationTimeout
-  type: Field
-  summary: <p>Default operation timeout if timeout is not specified in the connection string. 30 seconds. </p>
-  syntax: *o1
+- uid: com.microsoft.azure.servicebus.primitives._service_bus_exception
+  parent: com.microsoft.azure.servicebus.primitives
+  href: com.microsoft.azure.servicebus.primitives._service_bus_exception.yml
+  name: ServiceBusException
+  nameWithType: ServiceBusException
+  fullName: com.microsoft.azure.servicebus.primitives.ServiceBusException
+  type: Class
+  summary: <p>This is the base exception that service bus will produce for all error cases. </p>
+  syntax:
+    content: public class ServiceBusException
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder
   parent: com.microsoft.azure.servicebus.primitives
   href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
@@ -627,12 +581,14 @@ references:
   fullName: com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder
   type: Class
   summary: >-
-    <p>This class can be used to construct a connection string which can establish communication with ServiceBus entities. It can also be used to perform basic validation on an existing connection string. </p>
+    <p>
 
-    <p>Sample Code: <preformatted><programlisting><codeline><highlight class="normal">ConnectionStringBuilder<sp></sp>connectionStringBuilder<sp></sp>=<sp></sp>new<sp></sp>ConnectionStringBuilder(</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusNamespaceName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusEntityName",<sp></sp>//<sp></sp>QueueName<sp></sp>or<sp></sp>TopicName<sp></sp>or<sp></sp>SubscriptionPath</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKeyName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKey");</highlight></codeline><codeline><highlight class="normal"><sp></sp></highlight></codeline><codeline><highlight class="normal">String<sp></sp>connectionString<sp></sp>=<sp></sp>connectionStringBuilder.toString();</highlight></codeline></programlisting></preformatted></p>
+      <xref href="com.microsoft.azure.servicebus.primitives._connection_string_builder" data-throw-if-not-resolved="false"></xref> can be used to construct a connection string which can establish communication with ServiceBus entities. It can also be used to perform basic validation on an existing connection string. </p>
 
-    <p>A connection string is basically a string consisted of key-value pair separated by ";". Basic format is {{ &lt;}key{&gt;}={ &lt;}value{&gt;}[;{ &lt;}key{&gt;}={ &lt;}value{&gt;}]} where supported key name are as follow: <itemizedlist><listitem><p>Endpoint - URL that points to the servicebus namespace </p></listitem><listitem><p>EntityPath - Path to the service bus entity (queue/topic/subscription/). For queues and topics, it is just the entity name. For subscriptions, path is &lt;topicName&gt;/subscriptions/&lt;subscriptionName&gt; </p></listitem><listitem><p>SharedAccessKeyName - Key name to the corresponding shared access policy rule for the namespace, or entity. </p></listitem><listitem><p>SharedAccessKey - Key value for the corresponding shared access policy rule of the namespace or entity. </p></listitem><listitem><p>SharedAccessSignatureToken - Instead of a key name and key value, clients can provide an already generated SAS Token. </p></listitem><listitem><p>OperationTimeout - Default timeout to be used for all senders, receiver and clients created from this connection string. </p></listitem><listitem><p><xref href="com.microsoft.azure.servicebus.primitives._retry_policy" data-throw-if-not-resolved="false"></xref> - Name of the retry policy. </p></listitem></itemizedlist></p>
-  syntax: *o2
+    <p>Sample Code: <preformatted><programlisting><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>ConnectionStringBuilder<sp></sp>connectionStringBuilder<sp></sp>=<sp></sp>new<sp></sp>ConnectionStringBuilder(</highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusNamespaceName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"ServiceBusEntityName",<sp></sp>//<sp></sp>eventHubName<sp></sp>or<sp></sp>QueueName<sp></sp>or<sp></sp>TopicName<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKeyName",<sp></sp></highlight></codeline><codeline><highlight class="normal"><sp></sp><sp></sp><sp></sp><sp></sp>"SharedAccessSignatureKey");</highlight></codeline><codeline><highlight class="normal"><sp></sp></highlight></codeline><codeline><highlight class="normal">String<sp></sp>connectionString<sp></sp>=<sp></sp>connectionStringBuilder.toString();</highlight></codeline></programlisting></preformatted></p>
+
+    <p>A connection string is basically a string consisted of key-value pair separated by ";". Basic format is {{ &lt;}key{&gt;}={ &lt;}value{&gt;}[;{ &lt;}key{&gt;}={ &lt;}value{&gt;}]} where supported key name are as follow: <itemizedlist><listitem><p>Endpoint - the URL that contains the servicebus namespace </p></listitem><listitem><p>EntityPath - the path to the service bus entity (queue/topic/eventhub/subscription/consumergroup/partition) </p></listitem><listitem><p>SharedAccessKeyName - the key name to the corresponding shared access policy rule for the namespace, or entity. </p></listitem><listitem><p>SharedAccessKey - the key for the corresponding shared access policy rule of the namespace or entity. </p></listitem></itemizedlist></p>
+  syntax: *o1
 - uid: com.microsoft.azure.servicebus.primitives._connection_string_builder.toString()
   parent: com.microsoft.azure.servicebus.primitives._connection_string_builder
   href: com.microsoft.azure.servicebus.primitives._connection_string_builder.yml
@@ -641,4 +597,4 @@ references:
   fullName: String com.microsoft.azure.servicebus.primitives.ConnectionStringBuilder.toString()
   type: Method
   summary: <p>Returns an inter-operable connection string that can be used to connect to ServiceBus Namespace </p>
-  syntax: *o3
+  syntax: *o2

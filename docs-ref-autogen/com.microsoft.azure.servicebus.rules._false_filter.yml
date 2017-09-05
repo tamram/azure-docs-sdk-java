@@ -19,12 +19,8 @@ items:
       branch: master
       repo: https://github.com/Azure/azure-service-bus-java
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/rules/FalseFilter.java
-    startLine: 10
+    startLine: 2
   package: com.microsoft.azure.servicebus.rules
-  summary: >-
-    <p>Represents a special kind of filter that doesn't match any message.</p>
-
-    <p></p>
   syntax: &o1
     content: public class FalseFilter extends SqlFilter
   inheritance:
@@ -47,9 +43,8 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/rules/FalseFilter.java
-    startLine: 16
+    startLine: 5
   package: com.microsoft.azure.servicebus.rules
-  summary: <p>A false filter object that is pre-created. Clients can use this object instead of recreating a new instance every time. </p>
   syntax:
     content: public static final FalseFilter DEFAULT= new FalseFilter()
     return:
@@ -68,9 +63,8 @@ items:
   source:
     remote: *o0
     path: azure-servicebus/src/main/java/com/microsoft/azure/servicebus/rules/FalseFilter.java
-    startLine: 21
+    startLine: 6
   package: com.microsoft.azure.servicebus.rules
-  summary: <p>Creates a false filter. </p>
   syntax:
     content: public FalseFilter()
 references:
@@ -94,15 +88,10 @@ references:
   nameWithType: SqlFilter.getSqlExpression()
   fullName: String com.microsoft.azure.servicebus.rules.SqlFilter.getSqlExpression()
   type: Method
-  summary: >-
-    <p>Gets the match expression of this filter.</p>
-
-    <p></p>
   syntax:
     content: public String getSqlExpression()
     return:
       type: "26831127"
-      description: <p>SQL language-based expression of this filter </p>
 - uid: com.microsoft.azure.servicebus.rules._sql_filter.SqlFilter(String)
   parent: com.microsoft.azure.servicebus.rules._sql_filter
   href: com.microsoft.azure.servicebus.rules._sql_filter.yml
@@ -110,16 +99,11 @@ references:
   nameWithType: SqlFilter.SqlFilter(String sqlExpression)
   fullName: com.microsoft.azure.servicebus.rules.SqlFilter.SqlFilter(String sqlExpression)
   type: Constructor
-  summary: >-
-    <p>Creates an instance of  with the given match expression.</p>
-
-    <p></p>
   syntax:
     content: public SqlFilter(String sqlExpression)
     parameters:
     - id: sqlExpression
       type: "26831127"
-      description: <p>SQL language-based filter expression </p>
 - uid: com.microsoft.azure.servicebus.rules._sql_filter
   parent: com.microsoft.azure.servicebus.rules
   href: com.microsoft.azure.servicebus.rules._sql_filter.yml
@@ -127,10 +111,6 @@ references:
   nameWithType: SqlFilter
   fullName: com.microsoft.azure.servicebus.rules.SqlFilter
   type: Class
-  summary: >-
-    <p>Represents a SQL language-based filter expression that is evaluated against a message.</p>
-
-    <p></p>
   syntax:
     content: public class SqlFilter
 - uid: com.microsoft.azure.servicebus.rules._false_filter
@@ -140,8 +120,4 @@ references:
   nameWithType: FalseFilter
   fullName: com.microsoft.azure.servicebus.rules.FalseFilter
   type: Class
-  summary: >-
-    <p>Represents a special kind of filter that doesn't match any message.</p>
-
-    <p></p>
   syntax: *o1
