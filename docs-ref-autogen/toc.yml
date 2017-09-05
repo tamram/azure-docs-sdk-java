@@ -10743,9 +10743,21 @@
   name: com.microsoft.azure.sdk.iot.deps.serializer
   href: com.microsoft.azure.sdk.iot.deps.serializer.yml
   items:
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._authentication_parser
+    name: AuthenticationParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._authentication_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._authentication_type_parser
+    name: AuthenticationTypeParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._authentication_type_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._device_parser
+    name: DeviceParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._device_parser.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._error_message_parser
     name: ErrorMessageParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._error_message_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._export_import_device_parser
+    name: ExportImportDeviceParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._export_import_device_parser.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_notification_parser
     name: FileUploadNotificationParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_notification_parser.yml
@@ -10758,6 +10770,9 @@
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser
     name: FileUploadStatusParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._file_upload_status_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._job_properties_parser
+    name: JobPropertiesParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._job_properties_parser.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._job_query_response_error
     name: JobQueryResponseError
     href: com.microsoft.azure.sdk.iot.deps.serializer._job_query_response_error.yml
@@ -10788,6 +10803,12 @@
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._register_manager_parser
     name: RegisterManagerParser
     href: com.microsoft.azure.sdk.iot.deps.serializer._register_manager_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._registry_statistics_parser
+    name: RegistryStatisticsParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._registry_statistics_parser.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._symmetric_key_parser
+    name: SymmetricKeyParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._symmetric_key_parser.yml
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._twin_changed_callback
     name: TwinChangedCallback
     href: com.microsoft.azure.sdk.iot.deps.serializer._twin_changed_callback.yml
@@ -10815,6 +10836,9 @@
   - uid: com.microsoft.azure.sdk.iot.deps.serializer._twin_tags
     name: TwinTags
     href: com.microsoft.azure.sdk.iot.deps.serializer._twin_tags.yml
+  - uid: com.microsoft.azure.sdk.iot.deps.serializer._x509_thumbprint_parser
+    name: X509ThumbprintParser
+    href: com.microsoft.azure.sdk.iot.deps.serializer._x509_thumbprint_parser.yml
 - uid: com.microsoft.azure.sdk.iot.deps.util
   name: com.microsoft.azure.sdk.iot.deps.util
   href: com.microsoft.azure.sdk.iot.deps.util.yml
@@ -10927,18 +10951,12 @@
   - uid: com.microsoft.azure.sdk.iot.device._device_twin._device_method_data
     name: DeviceMethodData
     href: com.microsoft.azure.sdk.iot.device._device_twin._device_method_data.yml
-  - uid: com.microsoft.azure.sdk.iot.device._device_twin._device_method_message
-    name: DeviceMethodMessage
-    href: com.microsoft.azure.sdk.iot.device._device_twin._device_method_message.yml
   - uid: com.microsoft.azure.sdk.iot.device._device_twin._device_operations
     name: DeviceOperations
     href: com.microsoft.azure.sdk.iot.device._device_twin._device_operations.yml
   - uid: com.microsoft.azure.sdk.iot.device._device_twin._device_twin
     name: DeviceTwin
     href: com.microsoft.azure.sdk.iot.device._device_twin._device_twin.yml
-  - uid: com.microsoft.azure.sdk.iot.device._device_twin._device_twin_message
-    name: DeviceTwinMessage
-    href: com.microsoft.azure.sdk.iot.device._device_twin._device_twin_message.yml
   - uid: com.microsoft.azure.sdk.iot.device._device_twin._pair
     name: Pair
     href: com.microsoft.azure.sdk.iot.device._device_twin._pair.yml
@@ -10948,6 +10966,16 @@
   - uid: com.microsoft.azure.sdk.iot.device._device_twin._property_call_back
     name: PropertyCallBack
     href: com.microsoft.azure.sdk.iot.device._device_twin._property_call_back.yml
+- uid: com.microsoft.azure.sdk.iot.device.exceptions
+  name: com.microsoft.azure.sdk.iot.device.exceptions
+  href: com.microsoft.azure.sdk.iot.device.exceptions.yml
+  items:
+  - uid: com.microsoft.azure.sdk.iot.device.exceptions._iot_hub_exception
+    name: IotHubException
+    href: com.microsoft.azure.sdk.iot.device.exceptions._iot_hub_exception.yml
+  - uid: com.microsoft.azure.sdk.iot.device.exceptions._iot_hub_size_exceeded_exception
+    name: IotHubSizeExceededException
+    href: com.microsoft.azure.sdk.iot.device.exceptions._iot_hub_size_exceeded_exception.yml
 - uid: com.microsoft.azure.sdk.iot.device.fileupload
   name: com.microsoft.azure.sdk.iot.device.fileupload
   href: com.microsoft.azure.sdk.iot.device.fileupload.yml
@@ -11018,6 +11046,24 @@
   name: com.microsoft.azure.sdk.iot.device.transport.amqps
   href: com.microsoft.azure.sdk.iot.device.transport.amqps.yml
   items:
+  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_convert_from_proton_return_value
+    name: AmqpsConvertFromProtonReturnValue
+    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_convert_from_proton_return_value.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_convert_to_proton_return_value
+    name: AmqpsConvertToProtonReturnValue
+    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_convert_to_proton_return_value.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_methods
+    name: AmqpsDeviceMethods
+    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_methods.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_operations
+    name: AmqpsDeviceOperations
+    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_operations.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_telemetry
+    name: AmqpsDeviceTelemetry
+    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_telemetry.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_twin
+    name: AmqpsDeviceTwin
+    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_device_twin.yml
   - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_iot_hub_connection
     name: AmqpsIotHubConnection
     href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_iot_hub_connection.yml
@@ -11027,6 +11073,9 @@
   - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_message._a_c_k___t_y_p_e
     name: AmqpsMessage.ACK_TYPE
     href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_message._a_c_k___t_y_p_e.yml
+  - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_send_return_value
+    name: AmqpsSendReturnValue
+    href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_send_return_value.yml
   - uid: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_transport
     name: AmqpsTransport
     href: com.microsoft.azure.sdk.iot.device.transport.amqps._amqps_transport.yml
@@ -11120,12 +11169,6 @@
   - uid: com.microsoft.azure.sdk.iot.service._device_connection_state
     name: DeviceConnectionState
     href: com.microsoft.azure.sdk.iot.service._device_connection_state.yml
-  - uid: com.microsoft.azure.sdk.iot.service._device_deserializer
-    name: DeviceDeserializer
-    href: com.microsoft.azure.sdk.iot.service._device_deserializer.yml
-  - uid: com.microsoft.azure.sdk.iot.service._device_serializer
-    name: DeviceSerializer
-    href: com.microsoft.azure.sdk.iot.service._device_serializer.yml
   - uid: com.microsoft.azure.sdk.iot.service._device_status
     name: DeviceStatus
     href: com.microsoft.azure.sdk.iot.service._device_status.yml
@@ -11205,12 +11248,21 @@
   name: com.microsoft.azure.sdk.iot.service.auth
   href: com.microsoft.azure.sdk.iot.service.auth.yml
   items:
+  - uid: com.microsoft.azure.sdk.iot.service.auth._authentication_mechanism
+    name: AuthenticationMechanism
+    href: com.microsoft.azure.sdk.iot.service.auth._authentication_mechanism.yml
+  - uid: com.microsoft.azure.sdk.iot.service.auth._authentication_type
+    name: AuthenticationType
+    href: com.microsoft.azure.sdk.iot.service.auth._authentication_type.yml
   - uid: com.microsoft.azure.sdk.iot.service.auth._iot_hub_service_sas_token
     name: IotHubServiceSasToken
     href: com.microsoft.azure.sdk.iot.service.auth._iot_hub_service_sas_token.yml
   - uid: com.microsoft.azure.sdk.iot.service.auth._symmetric_key
     name: SymmetricKey
     href: com.microsoft.azure.sdk.iot.service.auth._symmetric_key.yml
+  - uid: com.microsoft.azure.sdk.iot.service.auth._x509_thumbprint
+    name: X509Thumbprint
+    href: com.microsoft.azure.sdk.iot.service.auth._x509_thumbprint.yml
 - uid: com.microsoft.azure.sdk.iot.service.devicetwin
   name: com.microsoft.azure.sdk.iot.service.devicetwin
   href: com.microsoft.azure.sdk.iot.service.devicetwin.yml
@@ -11401,9 +11453,9 @@
   - uid: com.microsoft.azure.servicebus._i_message_browser
     name: IMessageBrowser
     href: com.microsoft.azure.servicebus._i_message_browser.yml
-  - uid: com.microsoft.azure.servicebus._i_message_entity
-    name: IMessageEntity
-    href: com.microsoft.azure.servicebus._i_message_entity.yml
+  - uid: com.microsoft.azure.servicebus._i_message_entity_client
+    name: IMessageEntityClient
+    href: com.microsoft.azure.servicebus._i_message_entity_client.yml
   - uid: com.microsoft.azure.servicebus._i_message_handler
     name: IMessageHandler
     href: com.microsoft.azure.servicebus._i_message_handler.yml
@@ -11434,9 +11486,6 @@
   - uid: com.microsoft.azure.servicebus._message
     name: Message
     href: com.microsoft.azure.servicebus._message.yml
-  - uid: com.microsoft.azure.servicebus._message_converter
-    name: MessageConverter
-    href: com.microsoft.azure.servicebus._message_converter.yml
   - uid: com.microsoft.azure.servicebus._message_handler_options
     name: MessageHandlerOptions
     href: com.microsoft.azure.servicebus._message_handler_options.yml
@@ -11928,6 +11977,9 @@
   - uid: com.microsoft.azure.storage.blob._premium_page_blob_tier
     name: PremiumPageBlobTier
     href: com.microsoft.azure.storage.blob._premium_page_blob_tier.yml
+  - uid: com.microsoft.azure.storage.blob._rehydration_status
+    name: RehydrationStatus
+    href: com.microsoft.azure.storage.blob._rehydration_status.yml
   - uid: com.microsoft.azure.storage.blob._shared_access_blob_headers
     name: SharedAccessBlobHeaders
     href: com.microsoft.azure.storage.blob._shared_access_blob_headers.yml
@@ -11937,6 +11989,9 @@
   - uid: com.microsoft.azure.storage.blob._shared_access_blob_policy
     name: SharedAccessBlobPolicy
     href: com.microsoft.azure.storage.blob._shared_access_blob_policy.yml
+  - uid: com.microsoft.azure.storage.blob._standard_blob_tier
+    name: StandardBlobTier
+    href: com.microsoft.azure.storage.blob._standard_blob_tier.yml
   - uid: com.microsoft.azure.storage.blob._sub_stream
     name: SubStream
     href: com.microsoft.azure.storage.blob._sub_stream.yml
@@ -14541,3 +14596,155 @@
   - uid: system.fabric.security._azure_active_directory_metadata
     name: AzureActiveDirectoryMetadata
     href: system.fabric.security._azure_active_directory_metadata.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot
+  name: tests.integration.com.microsoft.azure.sdk.iot
+  href: tests.integration.com.microsoft.azure.sdk.iot.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot._connection_status_callback
+    name: ConnectionStatusCallback
+    href: tests.integration.com.microsoft.azure.sdk.iot._connection_status_callback.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot._device_connection_string
+    name: DeviceConnectionString
+    href: tests.integration.com.microsoft.azure.sdk.iot._device_connection_string.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot._event_callback
+    name: EventCallback
+    href: tests.integration.com.microsoft.azure.sdk.iot._event_callback.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot._success
+    name: Success
+    href: tests.integration.com.microsoft.azure.sdk.iot._success.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot.helpers
+  name: tests.integration.com.microsoft.azure.sdk.iot.helpers
+  href: tests.integration.com.microsoft.azure.sdk.iot.helpers.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_emulator
+    name: DeviceEmulator
+    href: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_emulator.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_emulator._device_twin_property
+    name: DeviceEmulator.DeviceTwinProperty
+    href: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_emulator._device_twin_property.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_emulator._method_invoke_callback
+    name: DeviceEmulator.MethodInvokeCallback
+    href: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_emulator._method_invoke_callback.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_test_manager
+    name: DeviceTestManager
+    href: tests.integration.com.microsoft.azure.sdk.iot.helpers._device_test_manager.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.helpers._sas_token_generator
+    name: SasTokenGenerator
+    href: tests.integration.com.microsoft.azure.sdk.iot.helpers._sas_token_generator.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices
+  name: tests.integration.com.microsoft.azure.sdk.iot.iothubservices
+  href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_amqps_i_t
+    name: DeviceMethodAmqpsIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_amqps_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic8bdc06d38f6ab5c37d01874d62c8d4cc
+    name: DeviceMethodAmqpsIT.RunnableInvoke
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic8bdc06d38f6ab5c37d01874d62c8d4cc.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_amqps_ws_i_t
+    name: DeviceMethodAmqpsWsIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_amqps_ws_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic87a17b706324125065eb77959d0953db
+    name: DeviceMethodAmqpsWsIT.RunnableInvoke
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic87a17b706324125065eb77959d0953db.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_i_t
+    name: DeviceMethodIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devicfb0776901de8735214e92708e114f598
+    name: DeviceMethodIT.RunnableInvoke
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devicfb0776901de8735214e92708e114f598.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_mqtt_ws_i_t
+    name: DeviceMethodMqttWsIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_method_mqtt_ws_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devicbacef2fc0d02eff5b0f05677f5937a56
+    name: DeviceMethodMqttWsIT.RunnableInvoke
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devicbacef2fc0d02eff5b0f05677f5937a56.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_amqps_i_t
+    name: DeviceTwinAmqpsIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_amqps_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic79c312507b02e89297ad21fdd0c54dc9
+    name: DeviceTwinAmqpsIT.DeviceTwinStatusCallBack
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic79c312507b02e89297ad21fdd0c54dc9.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_amqps_ws_i_t
+    name: DeviceTwinAmqpsWsIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_amqps_ws_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devicd341801e8d5ec856b16d5b79a342289c
+    name: DeviceTwinAmqpsWsIT.DeviceTwinStatusCallBack
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devicd341801e8d5ec856b16d5b79a342289c.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_i_t
+    name: DeviceTwinIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._deviccce1dde72cae6e4af488daf98da762d8
+    name: DeviceTwinIT.DeviceTwinStatusCallBack
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._deviccce1dde72cae6e4af488daf98da762d8.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_mqtt_ws_i_t
+    name: DeviceTwinMqttWsIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._device_twin_mqtt_ws_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic50e2b08a601d0f2352ce22d54bea1e96
+    name: DeviceTwinMqttWsIT.DeviceTwinStatusCallBack
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._devic50e2b08a601d0f2352ce22d54bea1e96.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._file_upload_i_t
+    name: FileUploadIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._file_upload_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._receive_messages_i_t
+    name: ReceiveMessagesIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._receive_messages_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._send_messages_i_t
+    name: SendMessagesIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._send_messages_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._send_messages_i_t.test_device
+    name: SendMessagesIT.testDevice
+    href: tests.integration.com.microsoft.azure.sdk.iot.iothubservices._send_messages_i_t.test_device.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot.longhaul
+  name: tests.integration.com.microsoft.azure.sdk.iot.longhaul
+  href: tests.integration.com.microsoft.azure.sdk.iot.longhaul.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.longhaul._long_haul_i_t
+    name: LongHaulIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.longhaul._long_haul_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.longhaul._long_haul_i_t._long_haul_message_tests
+    name: LongHaulIT.LongHaulMessageTests
+    href: tests.integration.com.microsoft.azure.sdk.iot.longhaul._long_haul_i_t._long_haul_message_tests.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.longhaul._long_haul_i8ac4fc6082541048e75d268877bcf8e7
+    name: LongHaulIT.LongHaulMessageTests.MessageCallback
+    href: tests.integration.com.microsoft.azure.sdk.iot.longhaul._long_haul_i8ac4fc6082541048e75d268877bcf8e7.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot.net
+  name: tests.integration.com.microsoft.azure.sdk.iot.net
+  href: tests.integration.com.microsoft.azure.sdk.iot.net.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.net._iot_hub_event_uri_i_t
+    name: IotHubEventUriIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.net._iot_hub_event_uri_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.net._signature_i_t
+    name: SignatureIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.net._signature_i_t.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot.serviceclient
+  name: tests.integration.com.microsoft.azure.sdk.iot.serviceclient
+  href: tests.integration.com.microsoft.azure.sdk.iot.serviceclient.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._export_import_i_t
+    name: ExportImportIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._export_import_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._job_client_i_t
+    name: JobClientIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._job_client_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._registry_manager_i_t
+    name: RegistryManagerIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._registry_manager_i_t.yml
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._service_client_i_t
+    name: ServiceClientIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.serviceclient._service_client_i_t.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot.transport
+  name: tests.integration.com.microsoft.azure.sdk.iot.transport
+  href: tests.integration.com.microsoft.azure.sdk.iot.transport.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.transport._https_batch_message_i_t
+    name: HttpsBatchMessageIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.transport._https_batch_message_i_t.yml
+- uid: tests.integration.com.microsoft.azure.sdk.iot.transport.https
+  name: tests.integration.com.microsoft.azure.sdk.iot.transport.https
+  href: tests.integration.com.microsoft.azure.sdk.iot.transport.https.yml
+  items:
+  - uid: tests.integration.com.microsoft.azure.sdk.iot.transport.https._https_request_i_t
+    name: HttpsRequestIT
+    href: tests.integration.com.microsoft.azure.sdk.iot.transport.https._https_request_i_t.yml
