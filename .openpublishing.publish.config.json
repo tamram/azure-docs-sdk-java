@@ -19,7 +19,8 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
 	  "customized_template_paths": [
-         "_dependentPackages/memberpage.plugins/content"
+         "_dependentPackages/memberpage.plugins/content",
+         "templates"
       ],
 	  "customized_tasks": {
         "docset_prebuild": [
@@ -38,8 +39,8 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/superyyrrzz/templates.docs.msft",
-      "branch": "gitContribute",
+      "url": "https://github.com/Microsoft/templates.docs.msft",
+      "branch": "master",
       "branch_mapping": {}
     }
   ],
