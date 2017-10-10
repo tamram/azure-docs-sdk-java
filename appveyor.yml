@@ -29,7 +29,8 @@ before_build:
         }
 
 build_script:
-  - ps: if($env:is_ci_build_enabled)
+  - ps: |
+        if($env:is_ci_build_enabled)
         {
           scripts\build.ps1
           7z a inter.zip $env:APPVEYOR_BUILD_FOLDER\_javadocs\**\*
