@@ -12,6 +12,8 @@ function CloneOrPull
       {
           $ErrorActionPreference = 'SilentlyContinue'
           $out = & git clone -q --branch=$branchOrTag $gitRepo $folderName
+          echo "test whether $folderName exists:"
+          test-path $folderName
 	  if ($LastExitCode -ne 0)
           {
               echo $out
