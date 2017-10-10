@@ -32,6 +32,8 @@ build_script:
   - ps: if($env:is_ci_build_enabled)
         {
           scripts\build.ps1
+          7z a inter.zip $env:APPVEYOR_BUILD_FOLDER\_javadocs\**\*
+          7z a src.zip $env:APPVEYOR_BUILD_FOLDER\src\**\*
         }
 
 test:
@@ -41,6 +43,14 @@ on_success:
   - cmd: if "%is_ci_build_enabled%" == "True" (
            scripts\OnSuccess.cmd
          )
+
+artifacts:
+  - path: inter.zip
+    name: inter
+  - path: _javadocs\toc.yml
+    name: toc
+  - path: src.zip
+    name: src
 
 #on_finish:
 #  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
