@@ -2,6 +2,7 @@
 	"input_paths":
 	[
 		"src/azure-sdk-for-java",
+		"src/azure-sdk-for-java/azure-mgmt-containerregistry",
 		"src/azure-sdk-for-java/azure-mgmt-cdn",
 		"src/azure-iot-sdk-java",
 		"src/azure-storage-java",
